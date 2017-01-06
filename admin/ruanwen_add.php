@@ -1,43 +1,57 @@
-﻿<?php
-error_reporting(0);
+<?php
 include("checkuser.php");
 include("../include/config.php");
 include("../include/function.php");
-
-
-
-$AdminUser = $_COOKIE["AdminUser"];
-$sql = "select * from admin where AdminUser='" . $AdminUser . "'";
+$VipUser = $_COOKIE["VipUser"];
+$sql = "select * from user where VipUser='" . $VipUser . "'";
 $result = mysql_db_query($dbname, $sql);
 $rs = mysql_fetch_array($result);
 if ($rs != NULL) {
 	$yue = $rs["yue"];
 }
-
 $ID = @$_REQUEST["ID"];
-if ($ID <> "") {
-	$sqlN = "select * from ruanwen_info where ID=" . $ID . "";
-	$resultN = mysql_db_query($dbname, $sqlN);
-	$rsN = mysql_fetch_array($resultN);
+$action = @$_REQUEST["action"];
+switch ($action) {
+	case "rwadd":
+		$sqlN = "select * from ruanwen_info where ID=" . $ID;
+		$resultN = mysql_db_query($dbname, $sqlN);
+		$rsN = mysql_fetch_array($resultN);
+		$biaoti = $rsN["title"];
+		$neirong = "";
+		$is_url = substr($rsN["content"], 0, 5);
+		$is_also_url = substr($rsN["content"], 0, 6);
+		if ($is_url == "http:" || $is_also_url == "https:") {
+			$neirong = "";
+		} else {
+			$neirong = htmlspecialchars($rsN["content"]);
+		}
+		break;
+
+	case "dxadd":
+		$sqlN = "select * from daixie_info where ID=" . $ID;
+		$resultN = mysql_db_query($dbname, $sqlN);
+		$rsN = mysql_fetch_array($resultN);
+		$biaoti = $rsN["title"];
+		$neirong = htmlspecialchars($rsN["encontent"]);
+		break;
 }
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<!--王庆路 ie版本设置-->
-	<!--<meta http-equiv="X-UA-Compatible" content="IE=7"/>-->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<!--王庆路 ie版本设置 end-->
+	<meta http-equiv="X-UA-Compatible" content="IE=7"/>
 	<title>后台管理中心</title>
 	<link href="../images/reset.css" rel="stylesheet" type="text/css"/>
 	<link href="../images/zh-cn-system.css" rel="stylesheet" type="text/css"/>
 	<script language="javascript" type="text/javascript" src="../images/jquery.min.js"></script>
 	<script language="javascript" type="text/javascript" src="../images/styleswitch.js"></script>
-	<!--王庆路 将kindeditor替换为ueditor-->
-	<!--<script charset="utf-8" src="../kindeditor/kindeditor.js"></script>
-	<script>
+
+	<!--王庆路 用ueditor替换kindeditor-->
+	<!--<script charset="utf-8" src="../kindeditor/kindeditor.js"></script>-->
+	<!--<script>
 		KE.show({
 			id: 'neirong',
 			afterCreate: function (id) {
@@ -52,8 +66,8 @@ if ($ID <> "") {
 			}
 		});
 	</script>-->
-	<?php include("../ueditor.php")?>
-	<!--王庆路 将kindeditor替换为ueditor end-->
+	<?php include("../ueditor.php") ?>
+	<!--王庆路 用ueditor替换kindeditor end-->
 	<style type="text/css">
 		html {
 			_overflow-y: scroll
@@ -65,7 +79,7 @@ if ($ID <> "") {
 			height: 100%;
 			opacity: 0.4;
 			filter: alpha(opacity=40);
-			background: while;
+			background: white;
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -113,88 +127,93 @@ if ($ID <> "") {
 			_top: expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,20)||0)-(parseInt(this.currentStyle.marginBottom,20)||0)));
 		}
 	</style>
-
 </head>
 <body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
-<script language="JavaScript" type="text/JavaScript">
-	$(function() {
-		$("#conurl").hide();
-		$("#upload").hide();
-		$("#uploadLabel").hide();
-		$("#file_upload").hide();
-		$("#art_url_input").hide();
-		$("#file_upload-button").hide();
-		<!--王庆路 内容-->
-		$("#judge").val(1);
-		document.form1.fbmode[0].checked = true;
-		<!--王庆路 内容 end-->
-	});
-	function docheck()
-	{
-		if (document.form1.fbmode[0].checked)
-		{
-			$("#tid").text("内    容")
+<DIV style="_width: 80.9%; _margin-right: -12px" id=main_frameid class="pad-10 display">
+	<script language="JavaScript" type="text/JavaScript">
+		$(function () {
 			$("#conurl").hide();
+			$("#uploadComponent").hide();
+			$("#upload").hide();
+			$("#uploadLabel").hide();
 			$("#file_upload").hide();
 			$("#art_url_input").hide();
 			$("#file_upload-button").hide();
-			$("#uploadLabel").hide();
-			$("#nr").removeClass("on");
 			<!--王庆路 内容-->
 			$("#judge").val(1);
+			document.form1.fbmode[0].checked = true;
 			<!--王庆路 内容 end-->
+		});
+		function docheck() {
+			if (document.form1.fbmode[0].checked) {
+				$("#tid").text("内    容")
+				$("#conurl").hide();
+				$("#uploadComponent").hide();
+				$("#file_upload").hide();
+				$("#art_url_input").hide();
+				$("#file_upload-button").hide();
+				$("#uploadLabel").hide();
+				$("#nr").removeClass("on");
+				<!--王庆路 内容-->
+				$("#judge").val(1);
+				<!--王庆路 内容 end-->
+			}
+			else if (document.form1.fbmode[1].checked) {
+				$("#tid").text("来源网址")
+				$("#conurl").show();
+				$("#file_upload").hide();
+				$("#uploadComponent").hide();
+				$("#art_url_input").hide();
+				$("#file_upload-button").hide();
+				$("#uploadLabel").show();
+				$("#nr").addClass("on");
+				<!--王庆路 转载来源网址-->
+				$("#judge").val(2);
+				<!--王庆路 转载来源网址 end-->
+			}
+			else if (document.form1.fbmode[2].checked) {
+				$("#tid").text("上传网址")
+				$("#file_upload").show();
+				$("#file_upload-button").show();
+				$("#uploadComponent").show();
+				$("#art_url_input").show();
+				$("#uploadLabel").show();
+				$("#conurl").hide();
+				$("#nr").addClass("on");
+				<!--王庆路 word文件上传-->
+				$("#judge").val(3);
+				<!--王庆路 word文件上传 end-->
+			}
+			else {
+			}
 		}
-		else if (document.form1.fbmode[1].checked)
-		{
-			$("#tid").text("来源网址")
-			$("#conurl").show();
-			$("#file_upload").hide();
-			$("#art_url_input").hide();
-			$("#file_upload-button").hide();
-			$("#uploadLabel").show();
-			$("#nr").addClass("on");
-			<!--王庆路 转载来源网址-->
-			$("#judge").val(2);
-			<!--王庆路 转载来源网址 end-->
+	</script>
+	<style>
+		.on {
+			display: none;
 		}
-		else if (document.form1.fbmode[2].checked)
-		{
-			$("#tid").text("上传网址")
-			$("#file_upload").show();
-			$("#file_upload-button").show();
-			$("#art_url_input").show();
-			$("#uploadLabel").show();
-			$("#conurl").hide();
-			$("#nr").addClass("on");
-			<!--王庆路 word文件上传-->
-			$("#judge").val(3);
-			<!--王庆路 word文件上传 end-->
-		}
-		else{}
-	}
-</script>
-<style>
-	.on {
-		display: none;
-	}
-</style>
-<div id="main_frameid" class="pad-10 display" style="_margin-right:-12px;_width:98.9%;">
+	</style>
 	<div class="col-2  col-auto">
 		<h6>软文发布
 			<!-- <span  style="padding-left:15px;cursor:pointer" onclick="$('#form1').slideToggle();">切换发布框</span> <span id='meiturn' onclick='meiturn()' style="padding-left:15px;cursor:pointer">切换查找框</span>-->
 		</h6>
 		<div class="content">
+
 			<form id="form1" name="form1" method="post" action="saveruanwen.php?action=add" onsubmit="return check()"
 			      style="display:">
-				<!--王庆路 根据judge判断三种方式的哪一种-->
-				<input name="judge" id="judge" type="hidden">
-				<!--王庆路 根据judge判断三种方式的哪一种 end-->
-				<table width="100%" cellpadding="0" cellspacing="1" bgcolor="#e2e2e2" id='step2' style="font-size:12px">
 
+				<table width="100%" cellpadding="0" cellspacing="1" bgcolor="#e2e2e2" id='step2' style="font-size:12px">
+					<!--王庆路 根据judge判断三种方式的哪一种-->
+					<input name="judge" id="judge" type="hidden">
+					<!--王庆路 根据judge判断三种方式的哪一种 end-->
 					<tr>
-						<td width="12%" height="30" bgcolor="#FFFFFF"><div align="center">选择方式</div></td>
-						<td width="88%" align="left" bgcolor="#FFFFFF" style="padding:10px;"><p>
-								<label><input type="radio" name="fbmode" value="0" checked="checked" id="fbmode0" onclick="docheck()">
+						<td width="12%" height="30" bgcolor="#FFFFFF">
+							<div align="center">选择方式</div>
+						</td>
+						<td width="88%" align="left" bgcolor="#FFFFFF" style="padding:10px;">
+							<p>
+								<label><input type="radio" name="fbmode" value="0" checked="checked" id="fbmode0"
+								              onclick="docheck()">
 									在线录入稿件</label>
 								<label><input type="radio" name="fbmode" value="1" id="fbmode1" onclick="docheck()">
 									转载来源网址</label>
@@ -214,7 +233,7 @@ if ($ID <> "") {
 						                                                                            size="100"
 						                                                                            xml:lang="require"
 						                                                                            value="<?php if ($ID <> "") {
-							                                                                            echo $rsN["title"];
+							                                                                            echo $biaoti;
 						                                                                            } ?>"/>
 							<input type="hidden" name="dingdan" id="dingdan" value=""/>
 							（标题字数尽量控制在18个汉字内！）
@@ -225,52 +244,71 @@ if ($ID <> "") {
 							<div id="tid" align="center">内 容</div>
 						</td>
 						<td align="left" bgcolor="#FFFFFF" style="padding:10px;">
-							<div id="nr" class="">
-								<textarea name="neirong" style="width:100%;height:330px;">
-								<?php if ($ID <> "") {
-									echo htmlspecialchars($rsN["content"]);
-								} ?>
-							</textarea>
-								<input type="submit" name="button" id="buttonsave" value=" 提 交 " style="width:60px; height:25px;display:none"/>
+							<div id="nr">
+								<!--王庆路 初始去掉visibility:hidden-->
+								<textarea name="neirong"
+								          style="width:100%;height:330px;"><?php if ($ID <> "") {
+										echo $neirong;
+									} ?></textarea>
+								<!--王庆路 初始去掉visibility:hidden end-->
+								<input type="submit" name="button" id="buttonsave" value=" 提 交 "
+								       style="width:60px; height:25px;display:none"/>
 							</div>
 							<!--王庆路 name更改-->
 							<input name="neturl" id="conurl" type="text" size="100/" style="display: inline-block;">
-							<label id="uploadLabel" class="uploadifyQueue" style="display: none;"></label>
 							<!--王庆路 name更改 end-->
+							<label id="uploadLabel" class="uploadifyQueue" style="display: none;"></label>
 							<!--上传组件-->
-							<input id="art_url_input" name="art_url_input" type="text" size="100/">
-							<input id="file_upload" name="file_upload" type="file" multiple="true">
-							<script src="../huo15template/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
-							<link rel="stylesheet" type="text/css" href="../huo15template/uploadify/uploadify/uploadify.css">
-							<script type="text/javascript">
-								<?php $timestamp = time();?>
-								$(function() {
-									$('#file_upload').uploadify({
-										'buttonText' : '文件上传',
-										'formData'     : {
-											'timestamp' : '<?php echo $timestamp;?>',
-											'_token'     : "{{csrf_token()}}"
-										},
-										'swf'      : "../huo15template/uploadify/uploadify.swf",
-										'uploader' : "upload.php",
-										'onUploadSuccess' : function(file, data, response) {
-											//$('input[name=user_avatar]').val(data);
-											$('#art_url_input').val(data);
-											var strOrg = $('#art_url_input').val();
-											$('#art_url_input').val(strOrg.slice(31));
-											//$('#art_url_input').attr('src','/'+data);
+							<div id="uploadComponent">
+								<input id="art_url_input" name="art_url_input" type="text" size="100"/>
+								<input id="file_upload" name="file_upload" type="file" multiple="true">
+								<script src="../huo15template/uploadify/jquery.uploadify.min.js"
+								        type="text/javascript"></script>
+								<link rel="stylesheet" type="text/css"
+								      href="../huo15template/uploadify/uploadify/uploadify.css">
+								<script type="text/javascript">
+									<?php $timestamp = time();?>
+									$(function () {
+										$('#file_upload').uploadify({
+											'buttonText': '文件上传',
+											'formData': {
+												'timestamp': '<?php echo $timestamp;?>',
+												'_token': "{{csrf_token()}}"
+											},
+											'swf': "../huo15template/uploadify/uploadify.swf",
+											'uploader': "upload.php",
+											'onUploadSuccess': function (file, data, response) {
+												//$('input[name=user_avatar]').val(data);
+												$('#art_url_input').val(data);
+												var strOrg = $('#art_url_input').val();
+												$('#art_url_input').val(strOrg.slice(31));
+												//$('#art_url_input').attr('src','/'+data);
 //
-										}
+											}
+										});
 									});
-								});
-							</script>
-							<style>
-								.uploadify{display:inline-block;}
-								.uploadify-button{border:none; border-radius:5px; margin-top:8px;background: #0B96D9;color:#fff;text-align: center}
-								table.add_tab tr td span.uploadify-button-text{color: #FFF; margin:0;}
-							</style>
-							<!--上传组件 end-->
+								</script>
+								<style>
+									.uploadify {
+										display: inline-block;
+									}
 
+									.uploadify-button {
+										border: none;
+										border-radius: 5px;
+										margin-top: 8px;
+										background: #0B96D9;
+										color: #fff;
+										text-align: center
+									}
+
+									table.add_tab tr td span.uploadify-button-text {
+										color: #FFF;
+										margin: 0;
+									}
+								</style>
+							</div>
+							<!--上传组件 end-->
 
 						</td>
 					</tr>
@@ -317,6 +355,28 @@ if ($ID <> "") {
 									?>
 									<LI style="CURSOR: pointer"
 									    onclick=mt_search1(<?php echo $rss["ID"]; ?>)><?php echo $rss["SmallClass"]; ?></LI>
+									<?php
+								} ?>
+							</UL>
+						</TD>
+					</TR>
+					<TR>
+						<TD style="PADDING-LEFT: 5px" bgColor=#f1f3f9>
+							<UL class=meitilist>
+								<LI style="CURSOR: pointer" onclick=mt_search3()>特价秒杀-》</LI>
+							</UL>
+						</TD>
+					</TR>
+					<TR>
+						<TD style="PADDING-LEFT: 5px" bgColor=#ffffff>
+							<UL class=meitilist>
+								<?php
+								$sql8 = "select * from media_small order by paixu desc";
+								$result8 = mysql_query($sql8);
+								while ($rs8 = mysql_fetch_array($result8)) {
+									?>
+									<LI style="CURSOR: pointer"
+									    onclick=mt_search8(<?php echo $rs8["ID"]; ?>)><?php echo $rs8["BigClass"]; ?></LI>
 									<?php
 								} ?>
 							</UL>
@@ -519,7 +579,7 @@ if ($ID <> "") {
 					<!--<input type="button" value=" 清 空 " onclick="clearall()" style="width:80px;height:30px; text-align:center;margin-top:3px;"/>-->
 					<!--input type="button" value="下一步 编辑内容" onclick="nextpage()" style="width:130px; height:30px;text-align:center;  margin-top:10px; "/-->
 					<input type="button" value="上一步 编辑内容" onclick="perpage()"
-					       style="width:130px;height:30px; text-align:center;margin-top:3px;"/>
+					       style="width:130px;height:30px; text-align:center;margin-top:3px;"/-->
 					<input type="button" value=" 提 交 " onclick="$('#buttonsave').click()"
 					       style="width:80px;height:30px; text-align:center;margin-top:3px;"/>
 				</div>
@@ -624,6 +684,11 @@ if ($ID <> "") {
 				$("#s_meti").html(data);
 			});
 	}
+	function mt_search8(id) {
+		$.get("search.php?a=mt_searchall", {"tejia": id}, function (data) {
+			$("#s_meti").html(data);
+		});
+	}
 
 	function meiturn() {
 		$("#searchtrun").slideToggle();
@@ -642,7 +707,7 @@ if ($ID <> "") {
 			return false;
 		}
 
-		if (ye >= ($("#totalmoney").val() * 1 + s7 * 1)) {
+		if (Number(ye) >= Number(($("#totalmoney").val() * 1 + s7 * 1))) {
 			var yx = $("#yixuanhidden").val();
 			$("#yixuan").show();
 			if (yx.indexOf(tr) == -1) {
@@ -771,7 +836,6 @@ if ($ID <> "") {
 		$("#flselect").hide();
 		$("#form1").show();
 	}
-
 
 	function clearall() {
 		var checkboxs = $(":checkbox");

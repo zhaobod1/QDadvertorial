@@ -242,6 +242,61 @@ html{_overflow-y:scroll}.background{display:block;width:100%;height:100%;opacity
 			<input type="button" value=" 提 交 " onclick="$('#buttonsave').click()"  style="width:80px;height:30px; text-align:center;margin-top:3px;"/></div>
       </form>
       <br />
+	    <style>
+		    .attention .tipbox {
+			    background: #e5f3ff;
+			    border: 1px solid #c0dffa;
+			    border-radius: 6px;
+			    padding: 15px;
+			    line-height: 26px;
+			    font-size: 13px;
+			    margin: 20px 60px;
+			    margin-bottom: 0;
+		    }
+		    .tipbox .glyph {
+			    float: left;
+			    margin-right: 20px;
+			    color: #1F7ED0;
+		    }
+		    .glyph .fs1 {
+			    font-size: 2em;
+		    }
+		    [data-icon]:before {
+			    font-family: 'ElegantIcons';
+			    content: attr(data-icon);
+			    speak: none;
+			    font-weight: normal;
+			    font-variant: normal;
+			    text-transform: none;
+			    line-height: 1;
+			    -webkit-font-smoothing: antialiased;
+			    -moz-osx-font-smoothing: grayscale;
+		    }
+		    .clearfix:after {
+			    content: "";
+			    display: block;
+			    clear: both;
+		    }
+	    </style>
+	    <div class="attention">
+		    <div class="tipbox clearfix">
+			    <div class="glyph">
+				    <div class="fs1" aria-hidden="true" data-icon=""></div>
+			    </div>
+			    <h4 style="font-size:15px; margin-bottom:10px;"><strong>注 意 事 项</strong></h4>
+			    <p>1、文章内容必须属于合法内容，如有负面、涉政、敏感等一律不予发布并停止账号使用。</p>
+			    <p>2、文章提交发布后不可修改、取消或删除，请在提交之前确认好文章内容。</p>
+			    <p>3、一篇文章的发布时间为1-36小时以内，平均大约花费6小时。</p>
+			    <p>4、审稿时间为：周一至周五 09:00-18:00，下午16点后提交的文章在隔天发布。</p>
+			    <p>5、所选媒体可能会因为审稿不达标，导致个别所选媒体不能发布，届时会建议您更换媒体或退款。</p>
+			    <p>6、不能带网址的一律不能带电话、QQ、微信等信息，百度新闻源根据文章质量不保证100%收录。</p>
+			    <p>7、文章标题22字以内，内容500~2500字内，图片0~3张内，图片宽度500像素内，媒体可能会对文章进行适当的调整。</p>
+			    <p>8、文章中包含的网址、电话、图片过大、图片过多等，媒体会根据内容规范进行调整或者删减，属于正常情况。</p>
+		    </div>
+	    </div>
+
+
+
       <div id="flselect" style="display:none">
         <table width="100%" border="0" cellpadding="0" style="border:1px solid #ccc;padding-bottom:5px;">
           <tr>

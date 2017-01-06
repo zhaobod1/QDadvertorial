@@ -20,7 +20,7 @@ switch ($action) {
 		$neirong = "";
 		$is_url = substr($rsN["content"], 0, 5);
 		$is_also_url = substr($rsN["content"], 0, 6);
-		if($is_url == "http:" || $is_also_url == "https:"){
+		if ($is_url == "http:" || $is_also_url == "https:") {
 			$neirong = "";
 		} else {
 			$neirong = htmlspecialchars($rsN["content"]);
@@ -28,7 +28,7 @@ switch ($action) {
 		break;
 
 	case "dxadd":
-		$sqlN = "select * from daixie_info where ID=" . $ID ;
+		$sqlN = "select * from daixie_info where ID=" . $ID;
 		$resultN = mysql_db_query($dbname, $sqlN);
 		$rsN = mysql_fetch_array($resultN);
 		$biaoti = $rsN["title"];
@@ -133,6 +133,7 @@ switch ($action) {
 	<script language="JavaScript" type="text/JavaScript">
 		$(function () {
 			$("#conurl").hide();
+			$("#uploadComponent").hide();
 			$("#upload").hide();
 			$("#uploadLabel").hide();
 			$("#file_upload").hide();
@@ -147,6 +148,7 @@ switch ($action) {
 			if (document.form1.fbmode[0].checked) {
 				$("#tid").text("内    容")
 				$("#conurl").hide();
+				$("#uploadComponent").hide();
 				$("#file_upload").hide();
 				$("#art_url_input").hide();
 				$("#file_upload-button").hide();
@@ -160,6 +162,7 @@ switch ($action) {
 				$("#tid").text("来源网址")
 				$("#conurl").show();
 				$("#file_upload").hide();
+				$("#uploadComponent").hide();
 				$("#art_url_input").hide();
 				$("#file_upload-button").hide();
 				$("#uploadLabel").show();
@@ -172,6 +175,7 @@ switch ($action) {
 				$("#tid").text("上传网址")
 				$("#file_upload").show();
 				$("#file_upload-button").show();
+				$("#uploadComponent").show();
 				$("#art_url_input").show();
 				$("#uploadLabel").show();
 				$("#conurl").hide();
@@ -255,53 +259,55 @@ switch ($action) {
 							<!--王庆路 name更改 end-->
 							<label id="uploadLabel" class="uploadifyQueue" style="display: none;"></label>
 							<!--上传组件-->
-							<input id="art_url_input" name="art_url_input" type="text" size="100" />
-							<input id="file_upload" name="file_upload" type="file" multiple="true">
-							<script src="../huo15template/uploadify/jquery.uploadify.min.js"
-							        type="text/javascript"></script>
-							<link rel="stylesheet" type="text/css"
-							      href="../huo15template/uploadify/uploadify/uploadify.css">
-							<script type="text/javascript">
-								<?php $timestamp = time();?>
-								$(function () {
-									$('#file_upload').uploadify({
-										'buttonText': '文件上传',
-										'formData': {
-											'timestamp': '<?php echo $timestamp;?>',
-											'_token': "{{csrf_token()}}"
-										},
-										'swf': "../huo15template/uploadify/uploadify.swf",
-										'uploader': "upload.php",
-										'onUploadSuccess': function (file, data, response) {
-											//$('input[name=user_avatar]').val(data);
-											$('#art_url_input').val(data);
-											var strOrg = $('#art_url_input').val();
-											$('#art_url_input').val(strOrg.slice(31));
-											//$('#art_url_input').attr('src','/'+data);
+							<div id="uploadComponent">
+								<input id="art_url_input" name="art_url_input" type="text" size="100"/>
+								<input id="file_upload" name="file_upload" type="file" multiple="true">
+								<script src="../huo15template/uploadify/jquery.uploadify.min.js"
+								        type="text/javascript"></script>
+								<link rel="stylesheet" type="text/css"
+								      href="../huo15template/uploadify/uploadify/uploadify.css">
+								<script type="text/javascript">
+									<?php $timestamp = time();?>
+									$(function () {
+										$('#file_upload').uploadify({
+											'buttonText': '文件上传',
+											'formData': {
+												'timestamp': '<?php echo $timestamp;?>',
+												'_token': "{{csrf_token()}}"
+											},
+											'swf': "../huo15template/uploadify/uploadify.swf",
+											'uploader': "upload.php",
+											'onUploadSuccess': function (file, data, response) {
+												//$('input[name=user_avatar]').val(data);
+												$('#art_url_input').val(data);
+												var strOrg = $('#art_url_input').val();
+												$('#art_url_input').val(strOrg.slice(31));
+												//$('#art_url_input').attr('src','/'+data);
 //
-										}
+											}
+										});
 									});
-								});
-							</script>
-							<style>
-								.uploadify {
-									display: inline-block;
-								}
+								</script>
+								<style>
+									.uploadify {
+										display: inline-block;
+									}
 
-								.uploadify-button {
-									border: none;
-									border-radius: 5px;
-									margin-top: 8px;
-									background: #0B96D9;
-									color: #fff;
-									text-align: center
-								}
+									.uploadify-button {
+										border: none;
+										border-radius: 5px;
+										margin-top: 8px;
+										background: #0B96D9;
+										color: #fff;
+										text-align: center
+									}
 
-								table.add_tab tr td span.uploadify-button-text {
-									color: #FFF;
-									margin: 0;
-								}
-							</style>
+									table.add_tab tr td span.uploadify-button-text {
+										color: #FFF;
+										margin: 0;
+									}
+								</style>
+							</div>
 							<!--上传组件 end-->
 
 						</td>
@@ -579,7 +585,63 @@ switch ($action) {
 				</div>
 			</div>
 		</div>
+		<style>
+			.attention .tipbox {
+				background: #e5f3ff;
+				border: 1px solid #c0dffa;
+				border-radius: 6px;
+				padding: 15px;
+				line-height: 26px;
+				font-size: 13px;
+				margin: 20px 60px;
+				margin-bottom: 0;
+			}
+			.tipbox .glyph {
+				float: left;
+				margin-right: 20px;
+				color: #1F7ED0;
+			}
+			.glyph .fs1 {
+				font-size: 2em;
+			}
+			[data-icon]:before {
+				font-family: 'ElegantIcons';
+				content: attr(data-icon);
+				speak: none;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			.clearfix:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+		</style>
+		<div class="attention">
+			<div class="tipbox clearfix">
+				<div class="glyph">
+					<div class="fs1" aria-hidden="true" data-icon=""></div>
+				</div>
+				<h4 style="font-size:15px; margin-bottom:10px;"><strong>注 意 事 项</strong></h4>
+				<p>1、文章内容必须属于合法内容，如有负面、涉政、敏感等一律不予发布并停止账号使用。</p>
+				<p>2、文章提交发布后不可修改、取消或删除，请在提交之前确认好文章内容。</p>
+				<p>3、一篇文章的发布时间为1-36小时以内，平均大约花费6小时。</p>
+				<p>4、审稿时间为：周一至周五 09:00-18:00，下午16点后提交的文章在隔天发布。</p>
+				<p>5、所选媒体可能会因为审稿不达标，导致个别所选媒体不能发布，届时会建议您更换媒体或退款。</p>
+				<p>6、不能带网址的一律不能带电话、QQ、微信等信息，百度新闻源根据文章质量不保证100%收录。</p>
+				<p>7、文章标题22字以内，内容500~2500字内，图片0~3张内，图片宽度500像素内，媒体可能会对文章进行适当的调整。</p>
+				<p>8、文章中包含的网址、电话、图片过大、图片过多等，媒体会根据内容规范进行调整或者删减，属于正常情况。</p>
+			</div>
+		</div>
+		<div class="bk20 hr"></div>
 	</div>
+
+
+
 	<div class="bk20 hr"></div>
 </div>
 <div id="background" class="background" style="display: none; "></div>
