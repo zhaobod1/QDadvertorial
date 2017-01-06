@@ -161,7 +161,7 @@ $rsN = mysql_fetch_array($resultN);
 									}
 								</style>
 								<div class="button-file">
-									<a class="btn btn-primary" href="<?php echo $rsN["content"]; ?>">稿件下载</a>
+									<a class="btn btn-primary" href="/<?php echo $rsN["content"]; ?>">稿件下载</a>
 								</div>
 							<?php } ?>
 

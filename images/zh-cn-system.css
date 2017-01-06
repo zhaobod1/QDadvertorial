@@ -215,6 +215,9 @@ BODY FIELDSET.blue LEGEND {
 .header .nav LI {
 	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
 }
+.header .nav LI#_M1 {
+		margin-left: 15px;
+}
 .header .nav LI A {
 	PADDING-BOTTOM: 0px; PADDING-LEFT: 7px; PADDING-RIGHT: 15px; BACKGROUND-POSITION: right top; PADDING-TOP: 0px
 }

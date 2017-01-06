@@ -90,7 +90,7 @@ $result=mysql_query($sql);
 	{
 ?>
   <TR>
-    <TD><IMG src="<?php echo $rs["propic"];?>"></TD>
+    <TD><IMG src="<?php echo $rs["propic"];?>" style="max-height: 60px"></TD>
     <TD><?php echo $rs["name"];?></TD>
     <TD><?php echo $rs["accnumber"];?></TD>
     <TD><?php echo $rs["bankname"];?></TD></TR>
