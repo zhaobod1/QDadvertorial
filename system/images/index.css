@@ -1,0 +1,312 @@
+HTML BODY {
+	FONT-FAMILY: "Î¢ÈíÑÅºÚ"; FONT-SIZE: 14px
+}
+A {
+	COLOR: #000000; CURSOR: pointer; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #39c; TEXT-DECORATION: underline
+}
+.clear {
+	HEIGHT: 0px; CLEAR: both; FONT-SIZE: 0px; OVERFLOW: hidden
+}
+.clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: "."
+}
+.clearfix {
+	
+}
+.btlogin {
+	WIDTH: 120px; BACKGROUND: url(images/denglu.gif) no-repeat; HEIGHT: 44px
+}
+.main {
+	MARGIN: 0px auto; WIDTH: 100%; ZOOM: 1; OVERFLOW: hidden
+}
+.top {
+	BORDER-BOTTOM: #808080 1px solid; WIDTH: 100%; BACKGROUND: url(images/head_bg.gif) repeat-x; HEIGHT: 75px
+}
+.head {
+	MARGIN: 0px auto; WIDTH: 980px; HEIGHT: 75px
+}
+.head H1 {
+	TEXT-INDENT: 500px; WIDTH: 316px; DISPLAY: block; WHITE-SPACE: nowrap; BACKGROUND: url(images/logo.png) no-repeat; FLOAT: left; HEIGHT: 75px; OVERFLOW: hidden
+}
+.daohang {
+	LINE-HEIGHT: 38px; FLOAT: right; HEIGHT: 50px; PADDING-TOP: 25px
+}
+.daohang LI {
+	MARGIN: 0px 10px; FLOAT: left
+}
+.ban {
+	POSITION: relative; WIDTH: 100%; BACKGROUND: url(images/banner_bg.gif) repeat-x; HEIGHT: 340px; _margin-top: -25px
+}
+.banner {
+	MARGIN: 0px auto; WIDTH: 980px; BACKGROUND: url(images/ban_bg1.png); HEIGHT: 340px
+}
+.denglu {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 355px; PADDING-RIGHT: 0px; BACKGROUND: url(images/denglu_bg.png) no-repeat; FLOAT: right; HEIGHT: 340px; PADDING-TOP: 0px
+}
+.denglu UL {
+	MARGIN: 20px 40px 0px; DISPLAY: block
+}
+.denglu LI {
+	TEXT-ALIGN: center; LINE-HEIGHT: 40px
+}
+.wang {
+	TEXT-ALIGN: right; PADDING-RIGHT: 30px
+}
+.m_t_10 {
+	MARGIN-TOP: 10px
+}
+.an_a1 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 120px; BACKGROUND: url(images/denglu.png) no-repeat; HEIGHT: 44px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.an_a2 {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 120px; BACKGROUND: url(images/zhuce.png) no-repeat; HEIGHT: 44px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.fenxiang {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; MARGIN: 0px auto 40px; PADDING-LEFT: 10px; WIDTH: 960px; PADDING-RIGHT: 10px; HEIGHT: 30px; PADDING-TOP: 0px
+}
+.main {
+	MARGIN: 0px auto; WIDTH: 980px
+}
+.main_l {
+	PADDING-LEFT: 18px; WIDTH: 580px; PADDING-RIGHT: 37px; FLOAT: left; _padding-right: 27px
+}
+.m_l_div {
+	PADDING-BOTTOM: 6px; WIDTH: 580px; MARGIN-BOTTOM: 14px; HEIGHT: 140px
+}
+.m_l_div H2 {
+	LINE-HEIGHT: 40px; FONT-FAMILY: "Microsoft YaHei", "Microsoft JhengHei", STHeiti, Georgia, "Times New Roman", Times, serif; MARGIN-BOTTOM: 6px; MARGIN-LEFT: 70px; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.m_l_div P {
+	MARGIN-LEFT: 70px
+}
+.m_l_div .liulan {
+	MARGIN-TOP: 8px; TEXT-INDENT: 26px; BACKGROUND: url(images/liulan.gif) no-repeat
+}
+.m_l_one {
+	BACKGROUND: url(images/m_l_1.gif) no-repeat left top
+}
+.m_l_two {
+	BACKGROUND: url(images/m_l_2.gif) no-repeat left top
+}
+.m_l_three {
+	BACKGROUND: url(images/m_l_3.gif) no-repeat left top
+}
+.m_l_four {
+	BACKGROUND: url(images/m_l_4.gif) no-repeat left top
+}
+.ting {
+	BORDER-BOTTOM: #808080 1px solid; LINE-HEIGHT: 40px; TEXT-INDENT: 12px; WIDTH: 580px; FONT-FAMILY: "Microsoft YaHei", "Microsoft JhengHei", STHeiti, Georgia, "Times New Roman", Times, serif; MARGIN-BOTTOM: 20px; HEIGHT: 40px; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.m_l_ting {
+	WIDTH: 580px; HEIGHT: 140px
+}
+.m_l_ting P {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 40px; WIDTH: 442px; PADDING-RIGHT: 14px; BACKGROUND: url(images/ting_bg.gif) no-repeat 50% top; HEIGHT: 100px; MARGIN-LEFT: 60px; PADDING-TOP: 10px
+}
+.m_t_one {
+	BACKGROUND: url(images/m_ting_kemei.gif) no-repeat left top
+}
+.m_t_two {
+	BACKGROUND: url(images/m_ting_wen.gif) no-repeat left top
+}
+.m_t_three {
+	BACKGROUND: url(images/m_ting_oz.gif) no-repeat left top
+}
+.main_r {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 310px; PADDING-RIGHT: 20px; FLOAT: right; PADDING-TOP: 0px
+}
+.main_r H3 {
+	LINE-HEIGHT: 40px; TEXT-INDENT: 12px; WIDTH: 308px; BACKGROUND: url(images/m_r_h.gif) no-repeat left bottom; HEIGHT: 40px
+}
+.main_r UL {
+	MARGIN: 0px 0px 0px 12px
+}
+.link LI {
+	MARGIN-BOTTOM: 4px
+}
+.wd-feedback LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; HEIGHT: 18px; PADDING-TOP: 0px
+}
+.wd-primary {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 55px; PADDING-RIGHT: 0px; DISPLAY: block; COLOR: black; FONT-SIZE: 12px; CURSOR: pointer; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+.wd-secondary {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 55px; PADDING-RIGHT: 0px; DISPLAY: block; COLOR: gray; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+.foot {
+	TEXT-ALIGN: center; LINE-HEIGHT: 30px; WIDTH: 100%; BACKGROUND: url(images/footBgNew.png) repeat-x; HEIGHT: 100px; FONT-SIZE: 14px; PADDING-TOP: 30px
+}
+.wd-section {
+	BORDER-BOTTOM: #b9b9b9 1px solid; BORDER-LEFT: #b9b9b9 1px solid; WIDTH: 280px; MARGIN-BOTTOM: 16px; BORDER-TOP: #b9b9b9 1px solid; BORDER-RIGHT: #b9b9b9 1px solid
+}
+.wd-section2 {
+	HEIGHT: 400px
+}
+.fudaohang {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; PADDING-LEFT: 5px; WIDTH: 970px; PADDING-RIGHT: 5px; HEIGHT: 30px; PADDING-TOP: 0px
+}
+.common {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 4px; WIDTH: 972px; PADDING-RIGHT: 4px; PADDING-TOP: 4px
+}
+.common_ll {
+	PADDING-BOTTOM: 20px; WIDTH: 181px; FLOAT: left
+}
+.common_ll H2 {
+	TEXT-ALIGN: center; LINE-HEIGHT: 28px; WIDTH: 181px; BACKGROUND: url(images/leftm_t.gif) no-repeat; HEIGHT: 28px
+}
+.common_ll H3 {
+	LINE-HEIGHT: 28px; PADDING-LEFT: 20px; WIDTH: 178px; BACKGROUND: url(images/com_l_h3.gif) repeat-x; HEIGHT: 28px
+}
+.bor_trbl {
+	BORDER-BOTTOM: #afcfdd 1px solid; BORDER-LEFT: #afcfdd 1px solid; BORDER-TOP: #afcfdd 1px solid; BORDER-RIGHT: #afcfdd 1px solid
+}
+.bor_trl {
+	BORDER-LEFT: #afcfdd 1px solid; BORDER-TOP: #afcfdd 1px solid; BORDER-RIGHT: #afcfdd 1px solid
+}
+.bor_rbl {
+	BORDER-BOTTOM: #afcfdd 1px solid; BORDER-LEFT: #afcfdd 1px solid; BORDER-TOP: #afcfdd 1px solid; BORDER-RIGHT: #afcfdd 1px solid
+}
+.common_llul {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; WIDTH: 181px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: #fff; PADDING-TOP: 0px
+}
+.common_llul LI {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; LINE-HEIGHT: 32px; TEXT-INDENT: 24px; HEIGHT: 32px; BORDER-RIGHT: #ccc 1px solid
+}
+.common_llul LI A:hover {
+	LINE-HEIGHT: 32px; TEXT-INDENT: 24px; DISPLAY: block; BACKGROUND: #dfe8ee; HEIGHT: 32px
+}
+.common_llulccc {
+	LINE-HEIGHT: 32px; TEXT-INDENT: 24px; DISPLAY: block; BACKGROUND: #dfe8ee; HEIGHT: 32px
+}
+.com_l_b {
+	BORDER-BOTTOM: #cfcfcf 1px solid; BORDER-LEFT: #cfcfcf 1px solid; MARGIN-TOP: 10px; WIDTH: 198px; BACKGROUND: url(images/com_l_b.gif) repeat-x; HEIGHT: 158px; BORDER-TOP: #cfcfcf 1px solid; BORDER-RIGHT: #cfcfcf 1px solid
+}
+.com_l_b UL {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 20px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+.com_l_b LI {
+	LINE-HEIGHT: 24px
+}
+.common_rr {
+	PADDING-BOTTOM: 20px; WIDTH: 780px; FLOAT: right
+}
+.sitee {
+	LINE-HEIGHT: 40px; WIDTH: 780px; HEIGHT: 40px
+}
+.common_rr .title {
+	LINE-HEIGHT: 30px; MARGIN: 0px auto; WIDTH: 780px; BACKGROUND: url(newimage/maino.gif) no-repeat; HEIGHT: 30px
+}
+.common_rr .title .ttle {
+	LINE-HEIGHT: 30px; TEXT-INDENT: 20px; FONT-WEIGHT: bold
+}
+.common_rr .title .ttlee {
+	PADDING-RIGHT: 20px
+}
+.common_rr .title .cent {
+	TEXT-ALIGN: center
+}
+.common_ad {
+	MARGIN: 10px auto 0px; WIDTH: 780px; HEIGHT: 91px; OVERFLOW: hidden
+}
+.zonghecanshu {
+	BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #ccc 1px solid; MARGIN: 0px auto; WIDTH: 778px; BACKGROUND: url(newimage/ma_bg.gif) repeat-x 50% bottom; HEIGHT: 450px; BORDER-RIGHT: #ccc 1px solid
+}
+.key_1_m {
+	MARGIN: 0px auto; WIDTH: 778px
+}
+.com_shijianduan {
+	FLOAT: left
+}
+.com_shijianduan LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 6px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FLOAT: left; PADDING-TOP: 0px
+}
+.com_shijianduan LI A {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 6px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FLOAT: left; PADDING-TOP: 0px
+}
+.com_shijianduan LI A:hover {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 6px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; BACKGROUND: #ccc; FLOAT: left; PADDING-TOP: 0px
+}
+.dntable {
+	BORDER-RIGHT-WIDTH: 0px; WIDTH: 740px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+.dntable TR TD {
+	TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+.th1 {
+	BORDER-BOTTOM: #cedced 2px solid; BACKGROUND-COLOR: #fff; COLOR: #333333; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.num1 {
+	COLOR: #ff3333; FONT-SIZE: 14px
+}
+.num2 {
+	COLOR: #000000; FONT-SIZE: 14px
+}
+.dntable_zi {
+	BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ccc; WIDTH: 740px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+.common_foot {
+	TEXT-ALIGN: center; MARGIN: 0px auto; WIDTH: 100%; HEIGHT: 80px; BORDER-TOP: #ccc 1px solid; PADDING-TOP: 20px
+}
+.dgMain {
+	BACKGROUND-COLOR: white; WIDTH: 100%; COLOR: #014f8a
+}
+.dgMain TD {
+	BORDER-BOTTOM: #9fd6ff 1px solid; BORDER-LEFT: #9fd6ff 1px solid; BORDER-TOP: #9fd6ff 1px solid; BORDER-RIGHT: #9fd6ff 1px solid
+}
+.dgHeader {
+	BACKGROUND-IMAGE: url(images/title_04.gif); BACKGROUND-COLOR: #f2f9ff; COLOR: #014f8a
+}
+.dgFooter {
+	BACKGROUND-COLOR: #f2f9ff; COLOR: #014f8a
+}
+.dgAlternatingItem {
+	BACKGROUND-COLOR: #f2f9ff; COLOR: #014f8a
+}
+.key_3_top {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BACKGROUND: url(images/key_3_bg.gif) repeat-x 50% top; BORDER-TOP: medium none; BORDER-RIGHT: #ccc 1px solid
+}
+.daneishuoming {
+	MARGIN: 0px auto; BACKGROUND: url(images/banner_bg.gif) repeat-x 50% top
+}
+.daneishuoming H1 {
+	LINE-HEIGHT: 60px; MARGIN: 0px auto; WIDTH: 100%; HEIGHT: 60px; COLOR: #ffffff; FONT-SIZE: 24px
+}
+.houtai {
+	POSITION: relative; WIDTH: 100%; BACKGROUND: url(images/banner_bg.gif) repeat-x; HEIGHT: 340px; _margin-top: -25px
+}
+.houtai_banner {
+	MARGIN: 0px auto; WIDTH: 100%; HEIGHT: 340px
+}
+.houtai_denglu {
+	WIDTH: 355px; BACKGROUND: url(images/denglu_bg.png) no-repeat; HEIGHT: 340px
+}
+.houtai_denglu UL {
+	MARGIN: 20px 40px 0px; DISPLAY: block
+}
+.houtai_denglu LI {
+	TEXT-ALIGN: center; LINE-HEIGHT: 40px
+}
+.houtai_clear {
+	HEIGHT: 50px; CLEAR: both; OVERFLOW: hidden
+}
+#news LI {
+	HEIGHT: 18px; CLEAR: both
+}
+#news LI EM {
+	FONT-STYLE: normal
+}
+#news {
+	MARGIN-BOTTOM: 20px; HEIGHT: auto
+}
+.imgborder A {
+	MARGIN: 5px 15px; WIDTH: 103px; DISPLAY: block; BACKGROUND: url(images/12.jpg) no-repeat; FLOAT: left; HEIGHT: 57px; OVERFLOW: hidden
+}
+.imgborder IMG {
+	MARGIN: 3px 6px 13px 4px; WIDTH: 95px; HEIGHT: 40px
+}
+.wd-section-title2 {
+	MARGIN-BOTTOM: 15px
+}

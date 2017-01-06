@@ -1,0 +1,261 @@
+* {
+	PADDING-BOTTOM: 0px; MARGIN: 0px auto; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	FONT-SIZE: 14px
+}
+H2 {
+	FONT-SIZE: 14px
+}
+H3 {
+	FONT-SIZE: 14px
+}
+H4 {
+	FONT-SIZE: 14px
+}
+H5 {
+	FONT-SIZE: 14px
+}
+H6 {
+	FONT-SIZE: 14px
+}
+UL LI {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+INPUT {
+	VERTICAL-ALIGN: middle
+}
+IMG {
+	VERTICAL-ALIGN: middle
+}
+.logo_zhuce {
+	WIDTH: 120px; FLOAT: left; HEIGHT: 75px
+}
+.logo_zhuce H1 {
+	TEXT-INDENT: 500px; WIDTH: 120px; DISPLAY: block; WHITE-SPACE: nowrap; BACKGROUND: url(../images/logo.png) no-repeat; FLOAT: left; HEIGHT: 75px; OVERFLOW: hidden
+}
+.red {
+	COLOR: #ff0000
+}
+.white {
+	COLOR: #ffffff
+}
+.white A {
+	COLOR: #ffffff
+}
+.white A:link {
+	COLOR: #ffffff
+}
+.white A:visited {
+	COLOR: #ffffff
+}
+.white A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.white A:active {
+	COLOR: #ffffff
+}
+.lan {
+	COLOR: #063a91
+}
+.lan A {
+	COLOR: #063a91
+}
+.lan A:link {
+	COLOR: #063a91
+}
+.lan A:visited {
+	COLOR: #063a91
+}
+.lan A:hover {
+	COLOR: #063a91; TEXT-DECORATION: underline
+}
+.lan A:active {
+	COLOR: #063a91
+}
+.hong {
+	COLOR: #ff0012
+}
+.hong A {
+	COLOR: #ff0012
+}
+.hong A:link {
+	COLOR: #ff0012
+}
+.hong A:visited {
+	COLOR: #ff0012
+}
+.hong A:hover {
+	COLOR: #ff0012; TEXT-DECORATION: underline
+}
+.hong A:active {
+	COLOR: #ff0012
+}
+.clear {
+	HEIGHT: 0px; CLEAR: both; OVERFLOW: hidden
+}
+.left {
+	FLOAT: left
+}
+.right {
+	FLOAT: right
+}
+.small {
+	FONT-SIZE: 12px
+}
+.small A {
+	FONT-SIZE: 12px
+}
+.small A:link {
+	FONT-SIZE: 12px
+}
+.small A:visited {
+	FONT-SIZE: 12px
+}
+.small A:hover {
+	FONT-SIZE: 12px; TEXT-DECORATION: underline
+}
+.small A:active {
+	FONT-SIZE: 12px
+}
+.dao_f A {
+	COLOR: #404040; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.dao_f A:hover {
+	COLOR: #ff5d08; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: underline
+}
+.ttel {
+	COLOR: #ff5d08; FONT-SIZE: 24px
+}
+.shu {
+	FONT-SIZE: 16px
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+A IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+A {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #333333
+}
+A:visited {
+	COLOR: #333333
+}
+A:hover {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #333333
+}
+#someNode {
+	POSITION: fixed; _position: fixed
+}
+.head {
+	WIDTH: 980px; HEIGHT: 98px
+}
+BODY {
+	LINE-HEIGHT: 25px; LIST-STYLE-TYPE: none; BACKGROUND-ATTACHMENT: fixed; BACKGROUND-REPEAT: repeat-y; FONT-FAMILY: "ËÎÌו"; BACKGROUND-POSITION: 50% top; HEIGHT: 100%; COLOR: #303030; FONT-SIZE: 12px; LIST-STYLE-IMAGE: none
+}
+.common_l {
+	BORDER-LEFT: #d1dcd6 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 6px; WIDTH: 186px; PADDING-RIGHT: 6px; BACKGROUND: #d5f6d7; BORDER-RIGHT: #d1dcd6 1px solid; PADDING-TOP: 10px
+}
+.common_r {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; WIDTH: 760px; PADDING-RIGHT: 10px; OVERFLOW: hidden; PADDING-TOP: 10px
+}
+.cebian {
+	BORDER-BOTTOM: #d1dcd6 1px solid; BORDER-LEFT: #d1dcd6 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; WIDTH: 182px; PADDING-RIGHT: 1px; MARGIN-BOTTOM: 10px; BACKGROUND: #fff; BORDER-TOP: #d1dcd6 1px solid; BORDER-RIGHT: #d1dcd6 1px solid; PADDING-TOP: 1px
+}
+.cebian H2 {
+	TEXT-ALIGN: center; LINE-HEIGHT: 24px; WIDTH: 182px; BACKGROUND: url(../images/cebian_h2.gif); HEIGHT: 24px
+}
+.cebian UL {
+	WIDTH: 182px
+}
+.cebian UL LI {
+	BORDER-BOTTOM: #d1dcd6 1px solid; LINE-HEIGHT: 40px; TEXT-INDENT: 30px; WIDTH: 182px; HEIGHT: 40px
+}
+.site {
+	LINE-HEIGHT: 25px; TEXT-INDENT: 10px; WIDTH: 760px; HEIGHT: 25px
+}
+.common_r H3 {
+	LINE-HEIGHT: 40px; TEXT-INDENT: 10px; WIDTH: 760px; HEIGHT: 40px
+}
+.xinxi {
+	BORDER-BOTTOM: #d1dcd6 1px solid; BORDER-LEFT: #d1dcd6 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 30px; PADDING-LEFT: 10px; WIDTH: 740px; PADDING-RIGHT: 10px; HEIGHT: 30px; BORDER-TOP: #d1dcd6 1px solid; BORDER-RIGHT: #d1dcd6 1px solid; PADDING-TOP: 0px
+}
+.shijian {
+	BORDER-BOTTOM: #d1dcd6 1px solid; BORDER-LEFT: #d1dcd6 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 39px; MARGIN: 10px 0px; PADDING-LEFT: 10px; WIDTH: 740px; PADDING-RIGHT: 10px; BACKGROUND: url(../images/shijian_bg.gif) repeat-x; HEIGHT: 39px; BORDER-TOP: #d1dcd6 1px solid; BORDER-RIGHT: #d1dcd6 1px solid; PADDING-TOP: 0px
+}
+.shijian SPAN {
+	FONT-WEIGHT: bold; MARGIN-RIGHT: 20px
+}
+.shijian SPAN A:hover {
+	BACKGROUND: #999
+}
+.common_r UL {
+	MARGIN: 6px 0px; WIDTH: 760px
+}
+.common_r LI {
+	WIDTH: 760px; MARGIN-BOTTOM: 2px
+}
+.reg_tab_t {
+	BORDER-LEFT: #b9b9b9 1px solid; LINE-HEIGHT: 30px; PADDING-LEFT: 10px; WIDTH: 838px; PADDING-RIGHT: 10px; BACKGROUND: #f2f2f2; HEIGHT: 30px; BORDER-TOP: #b9b9b9 1px solid; BORDER-RIGHT: #b9b9b9 1px solid
+}
+.reg_tab_b {
+	BORDER-BOTTOM: #b9b9b9 1px solid; BORDER-LEFT: #b9b9b9 1px solid; PADDING-BOTTOM: 25px; PADDING-LEFT: 0px; WIDTH: 858px; PADDING-RIGHT: 0px; HEIGHT: auto; BORDER-TOP: #b9b9b9 1px solid; BORDER-RIGHT: #b9b9b9 1px solid; PADDING-TOP: 35px
+}
+.reg_tab_b UL {
+	MARGIN: 0px auto; WIDTH: 720px; DISPLAY: block; HEIGHT: auto
+}
+.reg_tab_b UL LI {
+	BORDER-BOTTOM: #e9e9e9 1px solid; LINE-HEIGHT: 42px; WIDTH: 720px; HEIGHT: 42px
+}
+.ming {
+	TEXT-ALIGN: right; WIDTH: 100px; PADDING-RIGHT: 20px; FLOAT: left
+}
+.tian {
+	PADDING-LEFT: 15px
+}
+HTML {
+	-webkit-text-size-adjust: none
+}
+.lrkf {
+	TEXT-ALIGN: center; WIDTH: 124px
+}
+.lrkfshow {
+	RIGHT: 0px
+}
+.lrkf .lrkf A {
+	
+}
+.lrkf A:hover {
+	COLOR: #b50708
+}
+.lrkf .lrkf_box {
+	PADDING-BOTTOM: 6px; BACKGROUND-COLOR: #009ee8; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 6px; border-radius: 4px
+}
+.lrkf .lrkf_header {
+	BACKGROUND-COLOR: #fff; MARGIN-TOP: 4px; border-radius: 4px
+}
+.lrkf .lrkf_con {
+	BACKGROUND-COLOR: #fff; MARGIN-TOP: 4px; border-radius: 4px
+}
+.lrkf .lrkf_tool A {
+	BACKGROUND-COLOR: #fff; MARGIN-TOP: 4px; border-radius: 4px
+}
+.lrkf .lrkf_header {
+	MARGIN-TOP: 0px
+}
+.lrkf .lrkf_con {
+	MARGIN-TOP: 0px
+}
+.lrkf .lrkf_btn {
+	BACKGROUND-COLOR: #009ee8; COLOR: #fff; border-radius: 4px 0 0 4px
+}
+.lrkf .lrkf_btn:hover {
+	BACKGROUND-COLOR: #009ee8; COLOR: #fff
+}

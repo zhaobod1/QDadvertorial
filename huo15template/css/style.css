@@ -1,0 +1,2380 @@
+/**
+ * Created by 火一五信息科技有限公司.
+ * Tel :15288986891
+ * QQ  :3186355915
+ * web :http://host.huo15.com
+ * User: apple
+ * Date: 2016/11/1
+ * Time: 上午8:07
+ */
+a {
+    color: #333;
+}
+a:hover, a:active, a:focus {
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #06c;
+}
+.header {
+    /*赵博 修改*/
+    width: 100%;
+    /*赵博 修改 end*/
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+.wrapper {
+    width: 1040px;
+    margin: 0px auto;
+    position: relative;
+}
+.header .wrapper {
+    position: relative;
+}
+/*王庆路   主页logo增大*/
+.logo {
+    width: 280px;
+    height: 90px;
+    float: left;
+    padding: 0px 7px;
+}
+.logo img {
+    width: 280px;
+    height: 90px;
+}
+/*王庆路   主页logo增大 end*/
+.header .txt {
+    position: absolute;
+    left: 300px;
+    padding: 10px 0 0 0;
+    margin: 10px 0 0 50px;
+    font-size:16px;
+}
+.header .txt strong {
+    font-size: 22px;
+    color: #08A5E0;
+    letter-spacing: 5px;
+    display: block;
+}
+.header .txt span {
+    display: block;
+    font-size: 16px;
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*王庆路*/
+.header .tel {
+    position: absolute;
+    left: 880px;
+    width:500px;
+    top: 25px;
+}
+/*王庆路end*/
+.header .tel p {
+    font-size: 14px;
+}
+.header .tel p span {
+    font-size: 14px;
+    border: 2px solid #08A5E0;
+    color: #999;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+/*王庆路*/
+.header .tel strong {
+    font-size: 20px;
+    display: block;
+    color: #FF0000;
+}
+/*王庆路end*/
+.naver {
+    height: 45px;
+    line-height: 45px;
+    background: #08A5E0;
+}
+.naver ul li {
+    float: left;
+}
+.naver ul li.cur a, .naver ul li a:hover, .naver ul li a.cur {
+    background: #FFBF4B;
+    color: #FFF;
+    text-decoration: none;
+}
+.naver ul li a {
+    display: block;
+    float: left;
+    width: 115.5px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+.banner {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    height: 432px;
+    overflow: hidden;
+}
+.focusBox {
+    position: relative;
+    height: 432px;
+    overflow: hidden;
+    width: 100% !important;
+}
+.focusBox .pic {
+    position: relative;
+    z-index: 0;
+    width: 100% !important;
+    height: 432px;
+}
+
+.focusBox .pic li {
+    width: 100% !important;
+    height: 432px;
+}
+.row_01 .head {
+    text-align: center;
+}
+.row_01 .head h2 {
+    height: 66px;
+    line-height: 60px;
+    font-size: 38px;
+    color: #454545;
+}
+.row_01 .head h3 {
+    font-size: 18px;
+}
+.row_01 .head p {
+    height: 22px;
+    line-height: 22px;
+    color: #454545;
+}
+.row_01 .body ul li {
+    width: 204px;
+    float: left;
+    margin: 0px 22px;
+}
+.row_01 .body .thumb {
+    width: 142px;
+    height: 142px;
+    padding: 10px 31px;
+}
+.row_01 .body li a:hover {
+    text-decoration: none;
+    color: #08A5E0;
+}
+.row_01 .body li.i1 a {
+    background: url(../img/icon_01.png) no-repeat;
+}
+.row_01 .body li.i4 a {
+    background: url(../img/icon_041.png) no-repeat;
+}
+.row_01 .body li.i3 a {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_03.png) no-repeat;
+}
+.row_01 .body li.i2 a {
+    background: url(http://www.ruanwen.la/images/icon_04.png) no-repeat;
+}
+.row_01 .body .thumb a {
+    display: block;
+    width: 142px;
+    height: 142px;
+}
+.row_01 .body .desc {
+    padding: 20px 0px;
+}
+.row_01 .body .desc h3 {
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #454545;
+    text-align: center;
+}
+.row_01 .body .desc p {
+    line-height: 22px;
+    color: #6d6d6d;
+    text-indent: 2em;
+}
+.com_bg {
+    background: #f8f8f8;
+}
+.row_02 {
+    position: relative;
+}
+/*王庆路 价格背景图片替换*/
+.row_02 .icon {
+    width: 344px;
+    height: 427px;
+    background: url(/huo15template/img/child.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+/*王庆路 价格背景图片替换 end*/
+.row_02 .head {
+    height: 40px;
+    line-height: 40px;
+}
+.row_02 .head h2 {
+    font-size: 30px;
+    color: #0d5ba8;
+    font-weight: bold;
+}
+.row_02 .body {
+    padding: 25px 0px;
+}
+.row_02 .body p {
+    height: 48px;
+    line-height: 32px;
+    padding: 8px 0px;
+    font-size: 15px;
+    color: #454545;
+}
+.row_02 .body p em {
+    display: inline-block;
+    width: 93px;
+    height: 32px;
+    background: url(http://www.ruanwen.la/new_images/background/bg_10.png) no-repeat;
+    margin: 0px 10px 0px 0px;
+    text-align: center;
+    color: #f8f8f8;
+}
+.row_02 .foot table {
+    text-align: center;
+    font-size: 14px;
+    color: #454545;
+}
+.row_02 .foot table {
+    text-align: center;
+    font-size: 14px;
+    color: #454545;
+}
+.row_02 .foot tr {
+    background: #FFF;
+    border-bottom: 2px solid #fcfcfc;
+    height: 39px;
+}
+.row_02 .foot tr {
+    background: #FFF;
+    border-bottom: 2px solid #fcfcfc;
+    height: 39px;
+}
+.row_02 .foot tr.first {
+    background: #e6edf4;
+    border: none;
+}
+.row_03 {
+    padding: 60px 0px;
+}
+.row_03 .head {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.row_03 .head h2 {
+    font-size: 38px;
+    color: #454545;
+}
+.row_03 .body {
+    padding: 10px 0px;
+}
+.row_03 .body ul li {
+    margin: 30px 0px 30px 90px;
+    width: 250px;
+    height: 66px;
+    float: left;
+}
+.row_03 .body ul li.i1 {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_05.png) no-repeat 0px center;
+}
+.row_03 .body ul li.i2 {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_06.png) no-repeat 0px center;
+}
+.row_03 .body ul li.i3 {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_07.png) no-repeat 0px center;
+}
+.row_03 .body ul li.i4 {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_08.png) no-repeat 0px center;
+}
+.row_03 .body ul li.i5 {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_09.png) no-repeat 0px center;
+}
+.row_03 .body ul li.i6 {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_10.png) no-repeat 0px center;
+}
+.row_03 .body ul li h3 {
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    color: #56B0F6;
+    overflow: hidden;
+    text-indent: 90px;
+}
+/*王庆路 显示全部文字*/
+.row_03 .body ul li p {
+    height: 32px;
+    line-height: 32px;
+    color: #454545;
+    /*overflow: hidden;*/
+    text-indent: 90px;
+    width: auto;
+}
+/*王庆路 显示全部文字 end*/
+.clear {
+    clear: both;
+    width: 0;
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+    font-size: 0px;
+}
+.row_04 {
+    padding: 40px 0px;
+}
+.row_04 .head {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+.row_04 .head h2 {
+    font-size: 38px;
+    color: #454545;
+}
+.picScroll {
+    width: 1040px;
+}
+.picScroll .bd {
+    position: relative;
+}
+.picScroll .scrollWrap {
+    overflow: hidden;
+    width: 1040px;
+}
+.picScroll ul {
+    overflow: hidden;
+    zoom: 1;
+}
+.row_04 .body ul li {
+    width: 172px;
+    height: 245px;
+    float: left;
+    margin: 0px 18px;
+    border: 1px solid #DDD;
+    position: relative;
+}
+.row_04 .body .thumb {
+    width: 170px;
+    height: 185px;
+    padding: 45px 10px 15px 10px;
+    background: #FFF;
+}
+.row_04 .body .thumb img {
+    width: 150px;
+    height: 125px;
+}
+.row_04 .body .desc {
+    height: 58px;
+    line-height: 22px;
+    padding: 7px 0px;
+    text-align: center;
+    background: #eee;
+    overflow: hidden;
+}
+.row_04 .body ul li .icon {
+    width: 60px;
+    height: 42px;
+    background: url(http://www.ruanwen.la/new_images/icon/icon_11.png) no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.row_05 {
+    padding: 60px 0px;
+}
+.row_05 .head {
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
+.row_05 .head h2 {
+    font-size: 38px;
+    color: #454545;
+}
+.row_05 .body {
+    position: relative;
+    padding: 0px 86px;
+}
+.row_05 .body .icon_01, .row_05 .body .icon_02 {
+    width: 47px;
+    height: 40px;
+    position: absolute;
+    background: url(http://www.ruanwen.la/new_images/icon/icon_12.png) no-repeat;
+}
+.row_05 .body .icon_01 {
+    left: 25px;
+    top: 0px;
+}
+.row_05 .body .icon_02 {
+    right: 25px;
+    bottom: 0px;
+    background-position: 0px -40px;
+}
+.row_05 .body p {
+    line-height: 24px;
+    font-size: 14px;
+    color: #454545;
+}
+.row_05 .foot ul {
+    text-align: center;
+}
+.row_05 .foot ul li {
+    display: inline-block;
+    zoom: 1;
+    *display:inline;
+    width: 235px;
+    height: 110px;
+}
+.row_05 .foot .thumb {
+    float: left;
+    width: 110px;
+    height: 110px;
+}
+.row_05 .foot .thumb img {
+    width: 110px;
+    height: 110px;
+}
+.row_05 .foot .desc {
+    width: 108px;
+    height: 50px;
+    line-height: 25px;
+    float: right;
+    padding: 30px 0px;
+    text-align: left;
+}
+.row_05 .foot .desc h4 {
+    font-size: 14px;
+    color: #454545;
+}
+.row_05 .foot .desc h4 a {
+    color: #454545;
+}
+.row_05 .foot .desc p {
+    font-size: 14px;
+    color: #454545;
+}
+.row_06 {
+    padding: 40px 0px;
+}
+.row_06 .head {
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.row_06 .head h2 {
+    font-size: 38px;
+    color: #454545;
+}
+.row_06 .slideBox {
+    overflow: hidden;
+    position: relative;
+}
+.row_06 .slideBox .hd {
+    height: 25px;
+    overflow: hidden;
+    padding: 25px 0px 0px 0px;
+}
+.row_06 .slideBox .hd ul {
+    text-align: right;
+    zoom: 1;
+}
+.row_06 .slideBox .hd ul li {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    zoom: 1;
+    *display:inline;
+    margin: 0px 3px;
+    background: #959595;
+    color: #FFF;
+    text-align: center;
+    cursor: pointer;
+}
+.row_06 .slideBox .hd ul li.on {
+    background: #000;
+}
+.row_06 .slideBox .bd .desc {
+    width: 706px;
+    float: left;
+}
+.row_06 .slideBox .bd .desc .intro h3 {
+    height: 42px;
+    line-height: 42px;
+    font-size: 20px;
+    color: #C8412C;
+    font-weight: bold;
+}
+.row_06 .slideBox .bd .desc .intro h3 a {
+    color: #C8412C;
+}
+.row_06 .slideBox .bd .desc .intro p {
+    line-height: 24px;
+    font-size: 14px;
+    color: #454545;
+    text-indent: 2em;
+}
+.row_06 .slideBox .bd .desc .report h4 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+}
+.row_06 .slideBox .bd .desc .report p {
+    text-indent: 2em;
+    line-height: 24px;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #454545;
+}
+.row_06 .slideBox .bd .desc .report p a {
+    color: #454545;
+}
+.row_06 .slideBox .bd .thumb {
+    width: 280px;
+    height: 180px;
+    border: 1px solid #D7D7D7;
+    float: right;
+    margin: 65px 0px 0px 0px;
+    *display:inline;
+}
+.row_07 .head {
+    height: 238px;
+    overflow: hidden;
+}
+.row_07 .head .box {
+    width: 280px;
+    height: 238px;
+    background: #f8f8f8;
+    padding: 0px 12px 0px 12px;
+}
+.row_07 .head .box .hd {
+    height: 55px;
+    line-height: 55px;
+    background: url(http://www.ruanwen.la/new_images/icon/line_01.png) repeat-x 0px bottom;
+}
+.row_07 .head .box .hd h3 {
+    font-size: 18px;
+    line-height:55px;
+    color: #454545;
+}
+.row_07 .head .box .hd span {
+    float: right;
+}
+.row_07 .head .box .hd span img {
+    width: 47px;
+    height: 19px;
+}
+.row_07 .head .box .hd span a:hover {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+.row_07 .head .box .bd {
+    height: 183px;
+    padding: 16px 0px;
+    overflow: hidden;
+}
+.row_07 .head .box .bd ul li {
+    height: 30px;
+    line-height: 30px;
+    background: url(http://www.ruanwen.la/new_images/icon/arrow_01.png) no-repeat 0px center;
+    padding: 0px 0px 0px 10px;
+    font-size: 14px;
+    color: #454545;
+}
+.row_07 .head .box .bd ul li a {
+    color: #454545;
+}
+.row_07 .head .box .bd ul li a:hover {
+    color: #a2000b;
+    text-decoration: none;
+}
+.row_07 .head .left {
+    float: left;
+    margin-right: 64px;
+    *display:inline;
+}
+.row_07 .head .center {
+    float: left;
+}
+.row_07 .head .right {
+    float: right;
+}
+.row_07 .body {
+    border: 1px solid #E0E0E0;
+    background: #f8f8f8;
+    overflow: hidden;
+    padding: 20px 0px;
+    _height: 140px;
+}
+.row_07 .body ul li {
+    width: 128px;
+    height: 70px;
+    float: left;
+    margin: 0px 10px;
+    *display:inline;
+}
+.row_07 .body ul li img {
+    width: 128px;
+    height: 70px;
+}
+.links {
+    width: 1040px;
+    height: 279px;
+    background: url(http://www.ruanwen.la/new_images/links_bg.jpg) no-repeat;
+}
+.links_top {
+    height: 56px;
+}
+.links_top span {
+    height: 56px;
+    line-height: 56px;
+    display: block;
+    width: 248px;
+    text-align: center;
+    background: #FFFFFF;
+    font-size: 36px;
+    color: #686868;
+    margin: 0 auto;
+}
+
+.ul_links {
+}
+.ul_links li {
+    float: left;
+    margin-left: 40px;
+    display: inline;
+    margin-top: 20px;
+}
+.ul_links li img {
+    display: block;
+    border: 1px solid #eeeeee;
+}
+.btm_bg {
+    height: 65px;
+    background: #08a5e0;
+}
+.btm {
+    width: 1040px;
+    height: 65px;
+    margin: 0 auto;
+}
+.btm span {
+    display: block;
+    float: left;
+    line-height: 65px;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+.footer {
+    border-top: 4px solid #C3C3C3;
+}
+.row_08 {
+    padding: 20px;
+    border-bottom: 1px solid #EBEBEB;
+}
+.row_08 .head {
+    height: 40px;
+    line-height: 40px;
+}
+.row_08 .head h3 {
+    font-size: 15px;
+    color: #000;
+}
+.row_08 .body {
+    padding: 10px 0px;
+}
+.row_08 .body ul li {
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    color: #666;
+}
+.row_08 .box1 {
+    width: 260px;
+    float: left;
+}
+.row_08 .box2 {
+    width: 270px;
+    float: left;
+}
+.row_08 .box3 {
+    width: 285px;
+    float: left;
+}
+.row_08 .box3 .body a {
+    padding: 0px 5px;
+    color: #666;
+}
+.row_08 .box3 .body a:hover {
+    opacity: .7;
+    filter: alpha(opacity=70);
+    text-decoration: none;
+}
+.row_08 .box3 .body img {
+}
+.row_08 .box4 {
+    width: 95px;
+    float: right;
+}
+.row_08 .box4 .body img {
+    width: 90px;
+    height: 90px;
+}
+.copyright {
+    padding: 15px 0 0 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+.copyright .thumb ul li {
+    display: inline;
+    margin: 0 10px;
+}
+.copyright .thumb img {
+    width: 100px;
+    height: 36px;
+}
+.copyright .thumb {
+    margin-bottom: 15px;
+}
+.copyright .foot_txt {
+    line-height: 20px
+}
+
+
+
+/*软文推广*/
+.row_01 .body1 .hd {
+    height: 72px;
+}
+.row_01 .body1 .hd ul li {
+    float: left;
+}
+.row_01 .body1 .bd .left {
+    width: 148px;
+    float: left;
+}
+.row_01 .body1 .bd .center {
+    width: 670px;
+    height: 96px;
+    padding: 23px 34px;
+    float: left;
+    background: #fff;
+    border: 1px solid #fff;
+}
+.row_01 .body1 .bd .center p {
+    line-height: 24px;
+    font-size: 36px;
+    color: #333;
+    padding: 25px 40px;
+}
+.row_01 .body1 .bd .right {
+    width: 148px;
+    float: left;
+}
+/*王庆路 首页添加发稿流程头部样式更改*/
+.row_09 .head {
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+
+.row_09 .head h3 {
+    font-size: 38px;
+    color: #454545;
+    padding-top: 15px;
+}
+/*王庆路 首页添加发稿流程头部样式更改 end*/
+.row_09 .body {
+    margin: 0px 8px;
+    background: #FFF;
+}
+.row_09 .box1 .body {
+    padding: 10px 120px 10px 80px;
+}
+.row_09 .box1 .body ul li {
+    height: 84px;
+    line-height: 84px;
+    border-bottom: 1px dashed #e6e6e6;
+    font-size: 26px;
+    color: #555;
+    overflow: hidden;
+}
+.row_09 .box1 .body ul li.last {
+    border: none;
+}
+.row_09 .box1 .body ul li i {
+    display: inline-block;
+    zoom: 1;
+    background: url(http://www.ruanwen.la/new_images/background/bg_11.png) no-repeat 0px center;
+    width: 55px;
+    height: 84px;
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    margin: 0px 10px;
+}
+.row_09 .box1 .body ul li em {
+    font-size: 30px;
+    color: #56B3D2;
+}
+.row_09 .box2 .body {
+    padding: 45px 10px;
+    height: 78px;
+}
+.row_09 .box2 .body ul {
+    text-align: center;
+}
+.row_09 .box2 .body ul li {
+    width: 193px;
+    height: 78px;
+    float: left;
+    margin: 0px 29px;
+    *display:inline;
+}
+.row_09 .box2 .body ul li img {
+    width: 193px;
+    height: 78px;
+}
+.row_09 .box3 .body {
+    padding: 30px 0px;
+}
+.row_09 .box3 .body ul {
+    text-align: center;
+}
+.row_09 .box3 .body ul li {
+    width: 210px;
+    display: inline-block;
+    zoom: 1;
+    *display:inline;
+    padding: 0px 0px 0px 64px;
+    text-align: left;
+    margin: 0px 10px;
+}
+.row_09 .box3 .body ul li h3 {
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.row_09 .box3 .body ul li p {
+    line-height: 20px;
+    font-size: 12px;
+    color: #555;
+}
+.row_09 .box3 .body ul li.i1 {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_23.png) no-repeat 0px center;
+}
+.row_09 .box3 .body ul li.i1 h3 {
+    color: #EC482F;
+}
+.row_09 .box3 .body ul li.i2 {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_24.png) no-repeat 0px center;
+}
+.row_09 .box3 .body ul li.i2 h3 {
+    color: #0B96D9;
+}
+.row_09 .box3 .body ul li.i3 {
+    background: url(http://www.ruanwen.la/new_images/icon/icon_25.png) no-repeat 0px center;
+}
+.row_09 .box3 .body ul li.i3 h3 {
+    color: #87B200;
+}
+
+.ul_rw {
+    padding: 30px 0 30px 10px;
+    overflow: hidden;
+    background: #fff;
+}
+/*王庆路 发稿流程上三下三*/
+.ul_rw li {
+    float: left;
+    margin-top: 20px;
+    margin-left: 80px;
+    display: inline;
+}
+/*王庆路 发稿流程上三下三 end*/
+.ul_rw li span {
+    display: block;
+    line-height: 50px;
+    font-size: 46px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.ul_rw li p {
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.ul_rw li img {
+    display: block;
+    margin-top: 45px;
+}
+
+.rw_li1 {
+    background: url(http://www.ruanwen.la/new_images/rw_bg1.jpg) no-repeat;
+    width: 128px;
+    height: 110px;
+    padding-top: 18px;
+}
+.rw_li2 {
+    background: url(http://www.ruanwen.la/new_images/rw_bg2.jpg) no-repeat;
+    width: 128px;
+    height: 110px;
+    padding-top: 18px;
+}
+.rw_li3 {
+    background: url(http://www.ruanwen.la/new_images/rw_bg3.jpg) no-repeat;
+    width: 128px;
+    height: 110px;
+    padding-top: 18px;
+}
+.rw_li4 {
+    background: url(http://www.ruanwen.la/new_images/rw_bg4.jpg) no-repeat;
+    width: 128px;
+    height: 110px;
+    padding-top: 18px;
+}
+.rw_li {
+    width: 128px;
+    height: 128px;
+    padding-top: 18px;
+}
+
+.row_01 .body2 .hd h3 {
+    font-size: 24px;
+    color: #FFF;
+}
+.row_01 .body2 .box1 .hd {
+    background: url(http://www.ruanwen.la/new_images/background/bg_13.png) no-repeat;
+}
+.row_01 .body2 .box2 .hd {
+    background: url(http://www.ruanwen.la/new_images/background/bg_14.png) no-repeat right 0px;
+    text-align: right;
+}
+.row_01 .body2 .box1 .bd {
+    padding: 40px 0px 40px 240px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #454545;
+    background: url(http://www.ruanwen.la/new_images/background/bg_15.png) no-repeat left top;
+}
+.row_01 .body2 .box2 .bd {
+    padding: 40px 310px 40px 0px;
+    line-height: 30px;
+    font-size: 15px;
+    color: #454545;
+    background: url(http://www.ruanwen.la/new_images/background/bg_16.png) no-repeat right 40px;
+}
+.row_10 .head {
+    text-align: center;
+}
+.row_10 .head h2 {
+    height: 66px;
+    line-height: 60px;
+    font-size: 38px;
+    color: #454545;
+}
+.row_10 .body .hd {
+    height: 109px;
+    line-height: 41px;
+    padding: 37px 0px 31px 86px;
+    background: url(http://www.ruanwen.la/new_images/background/bg_17.png) no-repeat;
+}
+.row_10 .body .hd h3 {
+    font-size: 21px;
+    color: #FFF;
+}
+.row_10 .body .bd {
+    padding: 0px 22px 30px 80px;
+    position: relative;
+}
+.row_10 .body .bd .left {
+    width: 470px;
+    float: left;
+    padding: 12px 0px;
+}
+.row_10 .body .bd .left ul li {
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    color: #454545;
+    background: url(http://www.ruanwen.la/new_images/icon/arrow_02.png) no-repeat 0px center;
+    padding: 0px 20px;
+}
+.row_10 .body .bd .right {
+    width: 383px;
+    float: right;
+}
+.row_10 .body .bd .right h4 {
+    height: 46px;
+    line-height: 46px;
+    font-size: 18px;
+    color: #454545;
+}
+.row_10 .body .bd .right .desc {
+    width: 359px;
+    height: 136px;
+    overflow: hidden;
+    background: url(http://www.ruanwen.la/new_images/background/bg_18.png) no-repeat;
+    padding: 14px 12px;
+}
+.row_10 .body .bd .right .desc p {
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    color: #e3012b;
+}
+.row_10 .body .bd .icon {
+    width: 42px;
+    height: 30px;
+    background: url(http://www.ruanwen.la/new_images/icon/arrow_03.png) no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 50%;
+    margin-left: 30px;
+}
+.row_01 .body3 ul li {
+    width: 226px;
+    float: left;
+    margin: 0px 16px;
+    *display:inline;
+}
+.row_01 .body3 .thumb {
+    width: 154px;
+    height: 154px;
+    line-height: 154px;
+    background: url(http://www.ruanwen.la/new_images/background/bg_19.png) no-repeat center center;
+    padding: 0px 36px;
+    font-size: 27px;
+    color: #FFF;
+    text-align: center;
+}
+.row_01 .body3 .thumb.last {
+    line-height: 46px;
+    padding: 31px 36px;
+    height: 92px;
+}
+.row_01 .body3 .desc {
+    padding: 30px 0px 0px 0px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #454545;
+}
+.row_10 .body1_h {
+    padding: 0px 25px;
+}
+.row_10 .body1_h .hd {
+    line-height: 32px;
+    font-size: 18px;
+    color: #454545;
+}
+.row_10 .body1_h .bd {
+    padding: 40px 0px;
+}
+.row_10 .body1_h .bd .left {
+    width: 688px;
+    float: left;
+}
+.row_10 .body1_h .bd .left ul li {
+    line-height: 30px;
+    font-size: 14px;
+    color: #454545;
+}
+.row_10 .body1_h .bd .right {
+    width: 268px;
+    float: right;
+    position: relative;
+}
+.row_10 .body1_h .bd .right p {
+    width: 209px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: bold;
+    position: absolute;
+}
+.row_10 .body1_h .bd .right p.p1 {
+    background: url(http://www.ruanwen.la/new_images/background/bg_20.png) no-repeat;
+    top: -30px;
+    right: 0px;
+}
+.row_10 .body1_h .bd .right p.p2 {
+    background: url(http://www.ruanwen.la/new_images/background/bg_21.png) no-repeat;
+    top: 23px;
+    left: 0px;
+}
+.row_10 .body1_h .bd .right p.p3 {
+    background: url(http://www.ruanwen.la/new_images/background/bg_22.png) no-repeat;
+    top: 75px;
+    right: 0px;
+}
+.row_10 .body1_h .bd .right p.p4 {
+    background: url(http://www.ruanwen.la/new_images/background/bg_23.png) no-repeat;
+    top: 127px;
+    left: 0px;
+}
+.row_11 .head {
+    height: 70px;
+    line-height: 70px;
+}
+.row_11 .head h2 {
+    font-size: 24px;
+    color: #454545;
+}
+.row_11 .body {
+    border: 1px solid #E0E0E0;
+}
+.row_11 .body ul li a:hover {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+.row_11 .box1 .body {
+    padding: 24px 22px 0px 22px;
+    overflow: hidden;
+}
+.row_11 .box1 .body ul {
+    width: 1000px;
+}
+.row_11 .box1 .body ul li {
+    width: 158px;
+    height: 77px;
+    border: 1px solid #E9E9E9;
+    border-right: 2px solid #E9E9E9;
+    float: left;
+    margin: 8px 18px;
+    *display:inline;
+    position: relative;
+}
+.row_11 .box1 .body ul li img {
+    width: 158px;
+    height: 77px;
+}
+.row_11 .box1 .body ul li .icon {
+    width: 15px;
+    height: 36px;
+    background: url(http://www.ruanwen.la/new_images/background/bg_24.png) no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: -17px;
+}
+.row_11 .box1 .body p {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #F00;
+}
+.row_11 .box2 .body {
+    padding: 20px 25px;
+    min-height: 254px;
+    _height: 254px;
+}
+.row_11 .box2 .body ul li {
+    width: 128px;
+    height: 60px;
+    border: 2px solid #F7F5F0;
+    border-radius: 5px;
+    float: left;
+    margin: 10px 15px;
+    *display:inline;
+}
+.row_11 .box2 .body ul li img {
+    width: 128px;
+    height: 60px;
+}
+.price {
+    width: 1040px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.large-search-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.large-search-tabs {
+}
+.large-search-tabs ul li {
+    float: left;
+    width: 92px;
+    font: normal 14px/38px Microsoft YaHei;
+    text-align: center;
+    display: inline-block
+}
+.large-search-tabs ul li a:link, .large-search-tabs ul li a:visited, .large-search-tabs ul li a:hover, .large-search-tabs ul li.active {
+    width: 92px;
+    height: 38px;
+    color: #333;
+    display: block
+}
+.large-search-tabs ul li a:hover, .large-search-tabs ul li.active, .large-search-tabs ul li.active a:link, .large-search-tabs ul li.active a:visited, .large-search-tabs ul li.active a:hover {
+    color: #fff;
+    background: #088FC8;
+    text-decoration: none
+}
+.large-search-con {
+}
+.input-large-search {
+    float: left;
+    width: 855px;
+    border: 4px solid #088FC8;
+    border-right: none;
+    padding: 6px 10px 4px 10px;
+    height: 38px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999
+}
+.btn-large-search {
+    float: left;
+    width: 160px;
+    height: 38px;
+    background: url(http://www.ruanwen.la/new_images/bg_btn_search.jpg) repeat-x;
+    color: #fff;
+    font: normal 16px/30px Microsoft YaHei;
+    border: none;
+    cursor: pointer
+}
+.search-condition {
+    float: left;
+    border-top: 1px solid #d2d2d2;
+    margin-bottom: 30px;
+    padding-bottom: 26px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.search-condition ul li, .search-streamline p {
+    padding: 10px 17px;
+    padding-right: 0;
+    border: 1px solid #d2d2d2;
+    border-top: none;
+    background: #F9F9F9;
+}
+.search-condition ul li .list-left {
+    float: left;
+    width: 85px;
+    line-height: 20px;
+    padding: 5px 10px 0 13px;
+    font-size: 12px;
+    background: url(http://www.ruanwen.la/new_images/icon3.gif) 0 7px no-repeat;
+    text-align: right;
+}
+.search-condition ul li .list-right {
+    float: left;
+    width: 935px;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    position: relative;
+}
+.search-condition ul li .list-right .beginning {
+    float: left;
+    width: 53px;
+    height: 25px;
+    margin-top: 5px;
+    display: inline-block;
+    *display:inline;
+    *zomm:1;
+    text-align: left;
+}
+.search-condition ul li .list-right .text-block {
+    float: left;
+    width: 800px;
+    margin-top: 5px;
+}
+.search-condition ul li .list-right p {
+    float: left;
+    width: 800px;
+    maring: 5px 0;
+    white-space: nowrap;
+}
+.search-condition ul li .list-right .active {
+    float: left;
+    padding: 0 9px;
+    height: 20px;
+    color: #fff;
+    background: #088FC8;
+    margin-right: 7px;
+    display: inline-block;
+    *display:inline;
+    *zomm:1
+}
+.search-condition ul li .list-right a:link, .search-condition ul li .list-right a:visited, .search-condition ul li .list-right a:hover {
+    float: left;
+    padding: 0 9px;
+    margin: 0 5px;
+    height: 20px;
+    color: #1094CC;
+    display: inline-block;
+    *display:inline;
+    *zomm:1
+}
+.search-condition ul li .list-right a.active:link, .search-condition ul li .list-right a.active:visited, .search-condition ul li .list-right a.active:hover {
+    color: #fff;
+    padding: 0 9px;
+    height: 20px;
+    color: #fff;
+    background: #088FC8;
+}
+.search-condition ul li .list-right a:hover {
+    color: #fff;
+    background: #088FC8;
+    text-decoration: none
+}
+.search-condition ul li .list-right span {
+    float: left;
+    color: #ccc;
+    margin: 0 5px
+}
+.search-condition ul li .list-right .form {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.search-condition ul li .list-right .form input {
+    width: 30px;
+    height: 14px;
+    margin: 0 6px;
+}
+.search-condition ul li .list-right .form .btn_submt {
+    width: 40px;
+    height: 22px;
+}
+.search-condition ul li .list-right a.orange-link:link, .search-condition ul li .list-right a.orange-link:visited {
+    color: #DE6412;
+    text-decoration: underline;
+}
+.search-condition ul li .list-right a.orange-link:hover {
+    color: #DE6412;
+    text-decoration: none;
+    background: none
+}
+.advanced-search {
+    width: 134px;
+    height: 24px;
+    padding-top: 2px;
+    border: 1px solid #d2d2d2;
+    border-top: none;
+    background: #F9F9F9;
+    position: absolute;
+    bottom: 0;
+    z-index: 11;
+    left: 50%;
+    margin-left: -67px;
+}
+.sequence {
+    margin-bottom: 8px
+}
+.sequence h2 {
+    font: normal 14px/28px Microsoft YaHei;
+}
+.sequence h2 strong {
+    color: #f00
+}
+.sequence-list {
+}
+.sequence-list p {
+    font: normal 12px/54px Microsoft YaHei;
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+    margin-right: 15px;
+    color: #f00
+}
+.sequence-list strong {
+    font-size: 13px;
+    color: #333;
+    display: inline-block;
+    *display:inline;
+    *zoom:1;
+    font-weight: normal
+}
+.sequence-list i {
+    margin-top: 6px;
+}
+.sequence-list a:link, .sequence-list a:visited, .sequence-list a:hover, .sequence-list a.active:link, .sequence-list a.active:visited, .sequence-list a.active:hover {
+    border: 1px solid #CBCBCB;
+    font-size: 12px;
+    padding: 0 4px 0 7px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(http://www.ruanwen.la/new_images/bg_publicinfo.jpg) bottom left repeat-x;
+}
+.sequence-list a.active:link, .sequence-list a.active:visited, .sequence-list a.active:hover {
+    border: 1px solid #FF9966;
+    background: url(http://www.ruanwen.la/new_images/bg_publicinfo2.jpg) bottom left repeat-x;
+}
+.sequence-list span {
+    float: left;
+    padding: 7px 0 4px 0;
+}
+.sequence-list select {
+    width: 170px;
+    padding: 5px;
+    border: 1px solid #D2D2D2;
+    color: #A0A0A0;
+    margin: 10px 10px 0 0;
+}
+.tablebox {
+    margin-bottom: 20px;
+    width: 100%
+}
+.tablebox.nomargin {
+    margin-bottom: 0;
+}
+.table-border {
+    border: 1px solid #D2D2D2
+}
+.strong-table {
+    font-size: 16px;
+}
+.billing-table thead, .strong-table thead {
+    color: #fff;
+    background: #2693C1;
+    text-align: center
+}
+.billing-table.font14 thead, .billing-table.font14 tbody td {
+    font-size: 14px;
+}
+.billing-table thead {
+    font-size: 12px;
+}
+.strong-table thead {
+    font-weight: bold;
+}
+.billing-table thead a:link, .billing-table thead a:visited, .strong-table thead a:link, .strong-table thead a:visited {
+    font-size: 12px;
+    text-decoration: underline;
+    font-weight: normal;
+    color: #ff0;
+    text-decoration: none
+}
+.billing-table thead a:hover, .strong-table thead a:hover {
+    color: #ff0;
+    text-decoration: underline;
+}
+.billing-table thead td, .strong-table thead td {
+    height: 43px;
+    vertical-align: middle;
+    border-bottom: 2px solid #B4B4B4;
+}
+.billing-table tbody td, .strong-table tbody td {
+    padding: 12px 0;
+    border-bottom: 1px dashed #DEDEDE;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4B4B4B;
+    text-align: center
+}
+.strong-table tbody td {
+    background: #F9F9F9;
+    border-bottom: 1px solid #DEDEDE;
+    font-size: 16px;
+}
+.billing-table tbody td.noborder {
+    border-bottom: none;
+}
+.billing-table tbody td.text-left {
+    text-align: left
+}
+.billing-table tbody td strong {
+    font-weight: normal;
+    color: #f00;
+}
+.billing-table tbody td strong.underline {
+    text-decoration: underline
+}
+.billing-table tbody td em {
+    font-style: normal;
+    text-decoration: underline;
+}
+.tr-background {
+    background: #F9F9F9
+}
+.tr-background-noclick {
+    background: #eaeaea
+}
+.information-table, .pop-table {
+    border-left: 1px solid #E7E7E7;
+}
+.information-table td, .pop-table td {
+    vertical-align: middle;
+    border-bottom: 1px solid #E7E7E7;
+    font-size: 13px;
+}
+.information-table td {
+    height: 43px;
+}
+.pop-table td {
+    height: 30px;
+}
+.information-td, .pop-table .information-td {
+    background: #F7F7F7;
+    color: #666;
+    border-right: 1px solid #E7E7E7;
+}
+.information-td {
+    padding-left: 60px;
+}
+.pop-table .information-td {
+    padding: 0 10px 0 0;
+    text-align: right
+}
+.information-td2 {
+    padding-left: 30px;
+    border-right: 1px solid #E7E7E7;
+}
+.information-table.font14 td {
+    font-size: 14px;
+    font-family: Verdana, Geneva, sans-serif
+}
+.information-table.font14 .information-td {
+    border-left: 1px solid #E7E7E7;
+}
+.information-table strong {
+    font-weight: normal;
+    color: #1094CC
+}
+.information-table a {
+    color: #018bc5;
+    text-decoration: underline;
+}
+.pop-table .information-td2 {
+    padding-left: 10px;
+    border-right: 1px solid #E7E7E7;
+}
+.pop-table .tdstyle {
+    padding: 25px 0 25px 10px;
+    color: #666;
+}
+.pop-table strong {
+    font-weight: normal;
+    color: #FF6F09
+}
+.border-top {
+    border-top: 1px solid #E7E7E7;
+}
+.text-padding30 {
+    padding: 30px;
+}
+.text-line-height22 {
+    line-height: 22px
+}
+.information-text {
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 40px;
+    border-left: 1px solid #E7E7E7;
+    border-right: 1px solid #E7E7E7;
+}
+.information-text strong {
+    color: #f00
+}
+.information-text em {
+    font-style: normal;
+    font-weight: bold;
+    color: #1094CC
+}
+.information-select {
+    border: 1px solid #E7E7E7;
+    border-bottom: none;
+    padding: 10px
+}
+.information-select span {
+    font-size: 12px;
+    padding-right: 65px;
+}
+.information-select select {
+    width: 170px;
+    margin-left: 8px;
+    padding: 2px 0 2px 5px;
+    border: 1px solid #D2D2D2;
+    color: #A0A0A0;
+    font-size: 12px;
+    color: #999;
+    vertical-align: middle
+}
+.tablebox .tip-a {
+    position: relative;
+    text-align: left;
+}
+.tablebox .tip-a img {
+    position: relative;
+    top: -3px;
+}
+.tablebox .tip-a span.outer {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ddd;
+    display: block;
+    color: #333;
+    width: 200px;
+    top: 30px;
+    left: -100px;
+    border-radius: 6px;
+    box-shadow: 0 5px 5px #999;
+    display: none;
+}
+.tablebox .tip-a:hover span.outer {
+    display: block;
+}
+.tablebox .tip-a span.inner {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+.tablebox .tip-a span.inner i {
+    position: absolute;
+    left: 94px;
+    top: -9px;
+    display: block;
+    background: url(http://www.ruanwen.la/new_images/arrow-up.png) no-repeat;
+    width: 19px;
+    height: 10px;
+}
+.tablebox .tip-a span.inner em {
+    display: block;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 10px;
+    background: #f5f5f5;
+    color: #2693C1;
+    font-size: 14px;
+}
+.tablebox .tip-a span.inner p {
+    color: #333;
+    height: auto;
+    padding: 10px;
+}
+
+.writes .banner {
+    background: url(../img/img102.jpg) no-repeat center center;
+    height: 604px;
+    width: 100%;
+}
+.banner {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    height: 432px;
+    overflow: hidden;
+}
+.writes .part01 {
+    background: #F6F6F6;
+    padding: 30px 0;
+}
+.writes .part01 h3 {
+    font-size: 34px;
+    color: #fcff00;
+    background: #045E9C;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+.writes .part01 .thumb {
+    float: left;
+    width: 500px;
+    height: 463px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+.writes .part01 .thumb img {
+    width: 352px;
+    height: 463px;
+}
+.writes .part01 .desc {
+    float: right;
+    width: 508px;
+    margin-top: 20px;
+}
+.writes .part01 .desc ul li {
+    background: url(http://www.ruanwen.la/new_images/img104.png) no-repeat left 5px;
+    padding-left: 34px;
+    margin-bottom: 60px;
+}
+.writes .part01 .desc p {
+    font-size: 18px;
+    line-height: 30px;
+}
+.writes .part01 .desc h4 {
+    font-size: 24px;
+    color: #c40000;
+    margin-bottom: 15px;
+}
+.writes .part02 {
+    padding: 30px 0;
+}
+.writes .part02 h3 {
+    font-size: 36px;
+    color: #c40000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.writes .part02 .hd table th {
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    color: #FFF;
+    background: #C7002D;
+    font-size: 22px;
+    font-weight: normal;
+    border-right: 1px solid #fff;
+}
+.writes .part02 .hd table td {
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #fff;
+}
+.writes .part02 .hd table .grace {
+    background: #D5D5D5;
+}
+.writes .part02 .hd {
+    margin-bottom: 30px;
+}
+.writes .part02 .bd {
+    margin-bottom: 50px;
+}
+.writes .part02 .bd p {
+    line-height: 26px;
+    font-size: 15px;
+}
+.writes .part02 .fd04 {
+    color: #FFF;
+    font-size: 20px;
+    width: 100%;
+    background: #003E7B;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.package {
+    border-top: 8px solid #1FAAD9;
+}
+.package .hd {
+    margin-bottom: 5px;
+}
+.package .hd h3 {
+    font-size: 18px;
+    background: url(http://www.ruanwen.la/new_images/img67.png) no-repeat left center;
+    padding-left: 25px;
+}
+.package .hd h3 a {
+    color: #35b5e6;
+}
+.package .hd h3 a:hover {
+    text-decoration: none;
+}
+.package .hd h3 span {
+    color: #f2762d;
+    margin-left: 50px;
+}
+.package .thumb img {
+    width: 144px;
+    height: 126px;
+    border: 3px solid #fff;
+}
+.package .desc {
+    margin-bottom: 5px;
+}
+.package .thumb {
+    height: 125px;
+    overflow: hidden;
+}
+.package .desc ul li {
+    margin-bottom: 7px;
+}
+.package .img02 {
+    margin-bottom: 1px;
+}
+.package dl dd {
+    margin-bottom: 20px;
+}
+.package dl {
+    padding: 30px 0 70px 0;
+}
+.tab-fd {
+    background: #38B5E6;
+}
+.tab-fd .thumb {
+    float: left;
+    margin: 15px;
+}
+.tab-fd .thum img {
+    width: 150px;
+    height: 126px;
+}
+.tab-fd .desc {
+    background: #FFF;
+    float: right;
+    width: 800px;
+    padding: 7px 26px;
+    margin-top: 5px;
+    margin-right: 5px;
+    *display:inline;
+    overflow: hidden;
+}
+.tab-fd .desc ul li {
+    height: 32px;
+    line-height: 32px;
+    float: left;
+    width: 170px;
+    border-bottom: 1px dashed #38B5E6;
+    margin-right: 40px;
+    margin-bottom: 11px;
+}
+.tab-fd .desc ul li a {
+    font-size: 14px;
+    background: url(http://www.ruanwen.la/new_images/img62.png) no-repeat left center;
+    padding-left: 23px;
+}
+.tab-fd .desc ul {
+    width: 1000px;
+}
+.span_bxmt {
+    line-height: 32px;
+    font-size: 14px;
+    display: block;
+    float: left;
+}
+.medias .g-down {
+    padding: 20px 0;
+    background: url(http://www.ruanwen.la/new_images/img56.png) no-repeat center center;
+    width: 443px;
+    margin: 0 auto;
+    height: 77px;
+    text-align: center;
+    line-height: 37px;
+    color: #FFF;
+}
+.medias .g-down a {
+    color: #FFF;
+    font-size: 24px;
+    display: block;
+    width: 443px;
+    height: 37px;
+    background: url(http://www.ruanwen.la/new_images/img57.png) no-repeat 60px center;
+    height: 37px;
+    padding-left: 30px;
+}
+.medias .g-down a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+.medias .hd {
+    margin-bottom: 10px;
+    background: url(http://www.ruanwen.la/new_images/img59.gif) repeat-x center bottom;
+    height: 49px;
+}
+.medias .hd h2 {
+    background: url(http://www.ruanwen.la/new_images/img58.png) no-repeat center center;
+    width: 413px;
+    height: 49px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 49px;
+    color: #FFF;
+    font-size: 24px;
+}
+.medias .bd {
+    width: 1040px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.medias .bd dl dd {
+    border: 1px solid #ddd;
+    width: 170px;
+    height: 26px;
+    line-height: 26px;
+    float: left;
+    margin: 0 2px 2px 0;
+}
+.medias .bd dl dd img {
+    margin-left: 15px;
+    margin-right: 5px;
+    vertical-align: middle
+}
+.medias .bd dl dd b {
+    background: url(http://www.ruanwen.la/new_images/nav-type.gif) no-repeat;
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+.medias .bd dl dd a {
+    line-height: 26px;
+    display: block;
+    width: 149px;
+    height: 26px;
+    padding-left: 20px;
+}
+.medias .bd dl dd a:hover {
+    text-decoration: none;
+}
+.medias .bd dl {
+    width: 1100px;
+}
+.medias ul li {
+    margin-bottom: 20px;
+}
+.case {
+    padding-bottom: 50px;
+}
+.case .part01 {
+}
+.case .part01 .hd {
+    background: #48C0EF;
+}
+.case .part01 .hd h3 {
+    font-size: 14px;
+    color: #FFF;
+    padding: 2px 0;
+    background: url(http://www.ruanwen.la/new_images/img60.png) no-repeat 15px center;
+    padding-left: 35px;
+}
+.case .part01 .bd {
+    background: #FAFAFA;
+    padding: 10px 20px;
+}
+.case .part01 .bd p {
+    text-indent: 2em;
+    line-height: 24px;
+}
+.case .part01 ul li {
+    padding-bottom: 15px;
+}
+.anli_left {
+    width: 228px;
+    overflow: hidden;
+    float: left;
+}
+.cgal {
+    width: 226px;
+    overflow: hidden;
+    border: 1px solid #e3e3e3;
+    background: #FFFFFF;
+}
+.cgal_top {
+    height: 47px;
+    background: url(http://www.ruanwen.la/new_images/cgal_top_bg.jpg) repeat-x;
+    line-height: 47px;
+    text-align: center;
+}
+.cgal_top span {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.ul_cgal {
+    padding: 10px;
+    overflow: hidden;
+}
+.ul_cgal li {
+    line-height: 45px;
+    background: url(http://www.ruanwen.la/new_images/cgal_li_bg.jpg) repeat-x;
+    border: 1px solid #dfdfdf;
+    margin-top: 5px;
+}
+#on_al {
+    background: #ffbf4b url(http://www.ruanwen.la/new_images/cgal_tb2.jpg) 16px center no-repeat;
+    color: #FFFFFF;
+}
+.ul_cgal li a, .ul_cgal li a:visited {
+    display: block;
+    background: url(http://www.ruanwen.la/new_images/cgal_tb1.jpg) 16px center no-repeat;
+    padding-left: 40px;
+    font-size: 14px;
+    color: #666666;
+}
+.anli_right {
+    width: 796px;
+    overflow: hidden;
+    float: right;
+}
+.ul_anli_right li {
+    float: left;
+    margin-left: 23px;
+    display: inline;
+}
+.ul_anli_right li span {
+    display: block;
+    width: 132px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+    color: #666666;
+}
+.anli_nr {
+    margin-top: 15px;
+    width: 796px;
+    overflow: hidden;
+}
+.on4 {
+    background: url(http://www.ruanwen.la/new_images/bt_bg.jpg) left bottom no-repeat!important;
+    overflow: hidden;
+}
+.on4 span {
+    color: #FF0000!important;
+}
+.page_right {
+    width: 794px;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #e3e3e3;
+    min-height: 520px;
+    _height: 520px;
+    padding-bottom: 10px
+}
+.path {
+    height: 38px;
+    background: url(http://www.ruanwen.la/new_images/right_top_bg.jpg) repeat-x;
+    line-height: 38px;
+    border-bottom: 1px solid #c8d1d8;
+    padding: 0 10px;
+}
+.path h3 {
+    float: left;
+    background: url(http://www.ruanwen.la/new_images/right_bt.jpg) no-repeat left center;
+    padding-left: 30px;
+    color: #48c0ef;
+    font-size: 18px;
+    display: block;
+    line-height: 38px;
+}
+.path span {
+    display: block;
+    float: right;
+    color: #999999;
+}
+.pro_about {
+    width: 764px;
+    padding: 0 15px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.pro_about_top {
+    height: 33px;
+    line-height: 33px;
+    background: #f0f0f0;
+}
+.pro_about_top span {
+    display: block;
+    width: 120px;
+    text-align: center;
+    background: #48c0ef;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.pro_about_nr {
+    padding: 15px;
+    overflow: hidden;
+}
+.pro_about_nr p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+}
+
+
+#wrapmain {
+    WIDTH: 1020px;
+    PADDING-TOP: 20px;
+    margin: 20px auto 20px;
+    /*background: url(/images/bga.jpg);*/
+}
+.maincont {
+    Z-INDEX: 2000;
+    PADDING-BOTTOM: 1px;
+    MARGIN: 0px auto;
+    PADDING-LEFT: 1px;
+    WIDTH: 980px;
+    PADDING-RIGHT: 1px;
+    PADDING-TOP: 1px;
+}
+.wrapindex {
+    POSITION: relative;
+    WIDTH: 980px;
+    FLOAT: left;
+}
+.homeleft {
+    POSITION: relative;
+    PADDING-BOTTOM: 14px;
+    BACKGROUND-COLOR: white;
+    PADDING-LEFT: 14px;
+    WIDTH: 980px;
+    PADDING-RIGHT: 14px;
+    FLOAT: left;
+    PADDING-TOP: 14px;
+    HEIGHT: auto;
+}
+.mb15 {
+    MARGIN-BOTTOM: 15px;
+}
+
+.corner5px {
+    BORDER-BOTTOM: #ddd 1px solid;
+    BORDER-LEFT: #ddd 1px solid;
+    BORDER-TOP: #ddd 1px solid;
+    BORDER-RIGHT: #ddd 1px solid;
+    box-shadow: 0 1px 1px #aaa;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+}
+.position {
+    LINE-HEIGHT: 20px;
+    MARGIN-BOTTOM: 10px;
+    HEIGHT: 20px;
+    FONT-SIZE: 14px;
+    text-align: left;
+}
+.b2 {
+    WIDTH: 100%;
+    BORDER-TOP: #08a5e0 2px solid;
+}
+#content {
+    MARGIN-TOP: 20px;
+    POSITION: relative;
+    LINE-HEIGHT: 24px;
+    WIDTH: 950px;
+    FONT-SIZE: 16px;
+    OVERFLOW: hidden;
+    text-align: left;
+}
+#content .post-title H1 {
+    TEXT-ALIGN: center;
+    LINE-HEIGHT: 32px;
+    FONT-SIZE: 20px;
+    PADDING-TOP: 10px;
+}
+#content .post-content {
+    POSITION: relative;
+    LINE-HEIGHT: 200%;
+    MARGIN: 20px 0px;
+    COLOR: #444;
+    FONT-SIZE: 14px;
+    OVERFLOW: hidden;
+}
+#content .post-content P {
+    LINE-HEIGHT: 180%;
+    MARGIN: 5px 0px 10px;
+    COLOR: #444;
+    FONT-SIZE: 14px;
+}
+
+.btn-modify {
+    background: #40d0f9;
+    text-indent:-1px;
+}
+/*王庆路 首页QQ客服左栏样式*/
+#uchat {
+    display: none;
+    position: fixed;
+    width: 95px;
+    top: 180px;
+    left: 0;
+    font-size: 12px;
+    _position: absolute;
+    _bottom: auto;
+}
+#uchat a {
+    text-decoration: none;
+    color: #666;
+}
+.uchat-min, .uchat-title, .uchat-close, .uchat-content, .uchat-list a, .uchat-bottom, .uchat-bottom a span {
+    background: url(http://www.ruanwen.la/images/29981369650410.png) no-repeat;
+    _background: url(http://www.ruanwen.la/images/62501369650448.gif) no-repeat;
+}
+.uchat-min {
+    width: 33px;
+    height: 116px;
+    cursor: pointer;
+    float: left;
+    background-position: 0 0;
+    display: none;
+}
+.uchat-title {
+    height: 39px;
+    background-position: -40px 0;
+}
+a.uchat-close {
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    margin: -4px 0 0 -4px;
+    background-position: -186px -73px;
+}
+a.uchat-close:hover {
+    background-position: -206px -73px;
+}
+.uchat-content {
+    background-repeat: repeat-y;
+    background-position: -240px 0;
+    padding: 10px 0;
+    width: 95px;
+}
+.uchat-list {
+    width: 77px;
+    padding-left: 13px;
+}
+#uchat .uchat-list a.zx {
+    display: block;
+    margin: 5px 0;
+    width: 72px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #297ece;
+    background: none;
+}
+#uchat a.wj {
+    background: url(http://www.ruanwen.la/images/29981369650410.png) no-repeat;
+    _background: url(http://www.ruanwen.la/images/62501369650448.gif) no-repeat;
+    display: block;
+    margin: 10px 0 10px 15px;
+    width: 72px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    color: #297ece;
+    background-position: -92px -91px;
+}
+#uchat a.wj:hover {
+    background-position: -164px -91px;
+    color: #ff6000;
+}
+#uchat span {
+    border-top: 1px solid #ccc;
+    display: block;
+    margin: 5px 0px 5px 5px;
+    height: 1px;
+}
+.uchat-bottom {
+    height: 1px;
+    padding-left: 4px;
+    background-position: -140px 0;
+}
+.uchat-content a.wb {
+    background: url(http://www.ruanwen.la/images/38721369650558.png) 0 0 no-repeat;
+    display: block;
+    padding-left: 20px;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+.uchat-content a.wb:hover {
+    background: url(http://www.ruanwen.la/images/38721369650558.png) 0 -16px no-repeat;
+    color: #ff6000;
+}
+.upcont {
+    padding: 20px;
+    line-height: 25px;
+}
+.uchat-c a {
+    outline: 0;
+    text-decoration: none;
+    -webkit-transition: 0s;
+    -moz-transition: 0s;
+    -o-transition: .5s;
+    transition: 0s;
+}
+/*王庆路 首页QQ客服左栏样式 end*/
+
+/*王庆路 首页"联系我们"模块样式添加*/
+.contact .head {
+    height: 70px;
+    line-height: 70px;
+    background: url(http://www.ruanwen.la/new_images/background/bg_25.jpg) no-repeat;
+    padding: 38px 30px 0px 30px;
+}
+.contact .head h2 {
+    font-size: 24px;
+    color: #FFF;
+}
+.contact .head h2 em {
+    font-size: 14px;
+    padding: 0px 10px;
+}
+.contact .body {
+    background: #FFF;
+    padding: 15px;
+}
+.contact .body .left {
+    width: 217px;
+    float: left;
+    background: #f8f8f8;
+    padding: 3px 6px;
+}
+.contact .body .left ul li {
+    height: 45px;
+    line-height: 45px;
+    background: url(http://www.ruanwen.la/new_images/background/bg_26.png) repeat-x;
+    border: 1px solid #DFDFDF;
+    padding: 0px 0px 0px 52px;
+    font-size: 16px;
+    color: #454545;
+    margin: 3px 0px;
+}
+.contact .body .left ul li a {
+    background: url(http://www.ruanwen.la/new_images/icon/arrow_04.png) no-repeat 0px center;
+    padding: 0px 0px 0px 20px;
+    color: #454545;
+}
+.contact .body .left ul li.cur a, .contact .body .left ul li a:hover {
+    background: url(http://www.ruanwen.la/new_images/icon/arrow_05.png) no-repeat 0px center;
+    color: #f5892e;
+    text-decoration: none;
+}
+.contact .body .right {
+    width: 754px;
+    float: right;
+}
+.contact .body .right .about .hd {
+    height: 50px;
+    line-height: 50px;
+    background: url(http://www.ruanwen.la/new_images/icon/line_02.png) repeat-x 0px bottom;
+}
+.contact .body .right .about .hd h3 {
+    font-size: 24px;
+    color: #454545;
+}
+.contact .body .right .about .bd {
+    padding: 0px 20px 0px 0px;
+}
+.contact .body .right .about .bd p {
+    line-height: 24px;
+    font-size: 14px;
+    color: #454545;
+    text-indent: 2em;
+    padding: 10px 0px;
+}
+/*王庆路 首页"联系我们"模块样式添加 end*/
+
+

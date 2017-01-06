@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,textarea,p,th,td,tr,table,tbody,thead,tfoot,em,strong,span {padding:0;margin:0;} 
+table {border-collapse:collapse;border-spacing:0;} 
+img {border:0 none;} 
+em {font-weight:normal;font-style:normal;} 
+ol,ul {list-style:none;} 
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:100%;} 
+.clearFix:after{content:' ';display:block;height:0;clear:both;overflow:hidden;visibility:hidden;}
+.clearFix {*zoom:1;}
+a {text-decoration:none;}
+a:hover {text-decoration:none;}
+.fl {float:left;display:inline;}
+.fr {float:right;display:inline;}
+.none {display:none;}
+.block {display:block;}
+.vh {visibility:hidden;}
+input,textarea {font-size:12px;outline:0 none;}
+
+.checkcodeimg{
+	BACKGROUND: url(../images/getcode.png) no-repeat; WIDTH:60px; HEIGHT:25px; MARGIN-TOP:9px; margin-left:10px; float:left; padding-top:1px; padding-left:3px;padding-bottom:10px;line-height:20px;
+}

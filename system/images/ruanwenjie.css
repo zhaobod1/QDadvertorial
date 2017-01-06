@@ -1,0 +1,573 @@
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+PRE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+CODE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+LEGEND {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TEXTAREA {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+BLOCKQUOTE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TH {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+TABLE {
+	BORDER-SPACING: 0; BORDER-COLLAPSE: collapse
+}
+FIELDSET {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+ADDRESS {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CAPTION {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CITE {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CODE {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+DFN {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+EM {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+TH {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+VAR {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+H1 {
+	FONT-SIZE: 100%; FONT-WEIGHT: 700
+}
+H2 {
+	FONT-SIZE: 100%; FONT-WEIGHT: 700
+}
+H3 {
+	FONT-SIZE: 100%; FONT-WEIGHT: 700
+}
+H4 {
+	FONT-SIZE: 100%; FONT-WEIGHT: 700
+}
+H5 {
+	FONT-SIZE: 100%; FONT-WEIGHT: 700
+}
+H6 {
+	FONT-SIZE: 100%; FONT-WEIGHT: 700
+}
+Q:before {
+	CONTENT: ''
+}
+Q:after {
+	CONTENT: ''
+}
+A:hover {
+	CURSOR: pointer
+}
+ABBR {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; FONT-VARIANT: normal; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+ACRONYM {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; FONT-VARIANT: normal; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+SUP {
+	VERTICAL-ALIGN: text-top
+}
+SUB {
+	VERTICAL-ALIGN: text-bottom
+}
+INPUT {
+	FONT-FAMILY: inherit; FONT-SIZE: inherit; FONT-WEIGHT: inherit
+}
+TEXTAREA {
+	FONT-FAMILY: inherit; FONT-SIZE: inherit; FONT-WEIGHT: inherit
+}
+SELECT {
+	FONT-FAMILY: inherit; FONT-SIZE: inherit; FONT-WEIGHT: inherit
+}
+LEGEND {
+	COLOR: #000
+}
+:focus {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px
+}
+.clearfix {
+	ZOOM: 1
+}
+.clearfix:after {
+	DISPLAY: block; HEIGHT: 0px; VISIBILITY: hidden; CLEAR: both; CONTENT: " "; font©\size: 0
+}
+.hidden {
+	DISPLAY: none
+}
+.block {
+	DISPLAY: block
+}
+BODY {
+	FONT: 12px/1.8 "Hiragino Sans GB", "Microsoft Yahei", "ËÎÌå", "Helvetica Neue", Helvetica, Arial, Sans-serif; BACKGROUND: url(http://www.ruanwenjie.com/images/bg.png); COLOR: #666
+}
+PRE {
+	FONT: 12px/1.8 "Hiragino Sans GB", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, Sans-serif; COLOR: #666
+}
+CODE {
+	FONT-FAMILY: courier new, courier, monospace
+}
+A:active {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium
+}
+A {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #333; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff7200; TEXT-DECORATION: none
+}
+LI {
+	LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}
+.header {
+	TEXT-ALIGN: center; WIDTH: 100%
+}
+.header .mainbanner {
+	WIDTH: 100%; DISPLAY: block; HEIGHT: 85px
+}
+.header .mainbanner .inner {
+	Z-INDEX: 200; POSITION: relative; MARGIN: 0px auto; WIDTH: 980px; HEIGHT: 100%
+}
+.header .mainbanner .inner #logo {
+	MARGIN-TOP: 15px; WIDTH: 225px; DISPLAY: block; FLOAT: left
+}
+.loginbar {
+	Z-INDEX: 299; BORDER-BOTTOM: #b4b4b4 1px solid; POSITION: relative; LINE-HEIGHT: 30px; WIDTH: 100%; BACKGROUND: #ededed; HEIGHT: 30px; LEFT: 0px
+}
+.loginbar_main {
+	LINE-HEIGHT: 30px; MARGIN: 0px auto; WIDTH: 980px; COLOR: #474747; FONT-SIZE: 12px
+}
+.loginbar_main .h2_cat {
+	POSITION: relative; PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; FLOAT: left; PADDING-TOP: 0px
+}
+.loginbar_main .h2_cat H3 SPAN A {
+	MARGIN: 0px 5px
+}
+.loginbar_main H3 {
+	DISPLAY: block; FONT-SIZE: 14px; FONT-WEIGHT: normal
+}
+.loginbar_main H3 A {
+	FONT-WEIGHT: normal
+}
+.loginbar_main_left {
+	FLOAT: left
+}
+.loginbar_main_right {
+	FLOAT: right
+}
+.loginbar_main_right A {
+	MARGIN: 0px 5px
+}
+.loginbar_main_right SPAN {
+	MARGIN-LEFT: 15px
+}
+.loginbar_main_right SPAN A {
+	MARGIN: 0px 2px
+}
+.search_wrap {
+	BORDER-BOTTOM: #ebecec 1px solid; POSITION: relative; BORDER-LEFT: #ebecec 1px solid; MARGIN-TOP: 30px; FLOAT: right; BORDER-TOP: #ebecec 1px solid; BORDER-RIGHT: #ebecec 1px solid; border-radius: 2px
+}
+.mainnav {
+	WIDTH: 100%; BACKGROUND: #08a5e0; HEIGHT: 40px
+}
+.mainnav .nav {
+	MARGIN: 0px auto; WIDTH: 980px
+}
+.mainnav .nav .current-post-ancestor {
+	BACKGROUND: #40bbec
+}
+.mainnav .nav .current-menu-ancestor {
+	BACKGROUND: #40bbec
+}
+.mainnav .nav .current-menu-parent {
+	BACKGROUND: #40bbec
+}
+.mainnav .nav .current-menu-item {
+	BACKGROUND: #40bbec
+}
+.mainnav .nav UL {
+	Z-INDEX: 999; POSITION: relative; FLOAT: left; HEIGHT: 100%
+}
+.mainnav .nav LI {
+	TEXT-ALIGN: center; WIDTH: 100px; DISPLAY: inline; FLOAT: left; HEIGHT: 40px; MARGIN-RIGHT: 1px; TEXT-DECORATION: none
+}
+.mainnav .nav LI A {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 40px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: block; COLOR: #fff; FONT-SIZE: 16px; PADDING-TOP: 0px
+}
+.mainnav .nav LI A:link {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 40px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: block; COLOR: #fff; FONT-SIZE: 16px; PADDING-TOP: 0px
+}
+.mainnav .nav LI A:visited {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 40px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: block; COLOR: #fff; FONT-SIZE: 16px; PADDING-TOP: 0px
+}
+.mainnav .nav LI A:active {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 40px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: block; COLOR: #fff; FONT-SIZE: 16px; PADDING-TOP: 0px
+}
+.mainnav .nav UL LI UL {
+	Z-INDEX: 999; POSITION: absolute; FILTER: alpha(opacity=90); WIDTH: 158px; DISPLAY: none; BACKGROUND: #08a5e0; HEIGHT: auto; BORDER-TOP: #fff 1px solid; opacity: .9; -moz-opacity: .9
+}
+.mainnav .nav UL LI UL LI {
+	BORDER-BOTTOM: #fff 1px solid; TEXT-ALIGN: left; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 158px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; PADDING-TOP: 0px
+}
+.mainnav .nav UL LI UL LI A {
+	LINE-HEIGHT: 24px; WIDTH: 128px; DISPLAY: block; FLOAT: none; FONT-SIZE: 12px
+}
+.mainnav .nav LI A:hover {
+	BACKGROUND: #ffbf4b
+}
+.mainnav .nav UL LI UL LI A:hover {
+	BACKGROUND: #ffbf4b
+}
+#wrapmain {
+	WIDTH: 100%; PADDING-TOP: 15px
+}
+.maincont {
+	Z-INDEX: 2000; PADDING-BOTTOM: 1px; MARGIN: 0px auto; PADDING-LEFT: 1px; WIDTH: 980px; PADDING-RIGHT: 1px; PADDING-TOP: 1px
+}
+.wrap {
+	MARGIN-BOTTOM: 20px
+}
+.wrapindex {
+	POSITION: relative; WIDTH: 980px; FLOAT: left
+}
+.wrapleft {
+	PADDING-BOTTOM: 14px; BACKGROUND-COLOR: white; PADDING-LEFT: 14px; WIDTH: 950px; PADDING-RIGHT: 14px; FLOAT: left; PADDING-TOP: 14px
+}
+.homeleft {
+	POSITION: relative; PADDING-BOTTOM: 14px; BACKGROUND-COLOR: white; PADDING-LEFT: 14px; WIDTH: 950px; PADDING-RIGHT: 14px; FLOAT: left; PADDING-TOP: 14px
+}
+.wraptag {
+	PADDING-BOTTOM: 14px; BACKGROUND-COLOR: white; PADDING-LEFT: 14px; WIDTH: 950px; PADDING-RIGHT: 14px; FLOAT: left; PADDING-TOP: 14px
+}
+.position {
+	LINE-HEIGHT: 20px; MARGIN-BOTTOM: 10px; HEIGHT: 20px; FONT-SIZE: 14px
+}
+.mtitle {
+	LINE-HEIGHT: 30px; PADDING-LEFT: 5px; DISPLAY: inline; HEIGHT: 30px; COLOR: #333; FONT-SIZE: 14px; FONT-WEIGHT: 700
+}
+.mtitle SPAN {
+	FLOAT: right
+}
+.b2 {
+	WIDTH: 100%; BORDER-TOP: #08a5e0 2px solid
+}
+.dsline {
+	BORDER-BOTTOM: #cccccc 1px dashed; BORDER-TOP: 2px
+}
+.mt10 {
+	MARGIN-TOP: 10px
+}
+.mb10 {
+	MARGIN-BOTTOM: 10px
+}
+.mt15 {
+	MARGIN-TOP: 15px
+}
+.mb15 {
+	MARGIN-BOTTOM: 15px
+}
+.corner5px {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; box-shadow: 0 1px 3px #aaa; -webkit-border-radius: 0px; -moz-border-radius: 0px
+}
+.right {
+	FLOAT: right
+}
+.left {
+	FLOAT: left
+}
+.column-img {
+	WIDTH: 600px
+}
+.column-img LI {
+	MARGIN: 8px 0px; WIDTH: 300px; FLOAT: left; HEIGHT: 90px
+}
+.column-img A:hover IMG {
+	FILTER: alpha(opacity=80); opacity: 0.8
+}
+.column-img LI IMG {
+	BORDER-BOTTOM: #eee 1px solid; BORDER-LEFT: #eee 1px solid; PADDING-BOTTOM: 2px; MARGIN: 5px; PADDING-LEFT: 2px; WIDTH: 80px; PADDING-RIGHT: 2px; DISPLAY: inline; FLOAT: left; HEIGHT: 80px; BORDER-TOP: #eee 1px solid; BORDER-RIGHT: #eee 1px solid; PADDING-TOP: 2px; _margin: 4px 2px 2px 4px
+}
+.column-img .thumb2 {
+	WIDTH: 80px; HEIGHT: 80px
+}
+.column-img .list-name {
+	MARGIN: 5px 0px; WIDTH: 200px; TEXT-OVERFLOW: ellipsis; HEIGHT: 24px; FONT-SIZE: 14px; OVERFLOW: hidden
+}
+.column-img .list-name A {
+	LINE-HEIGHT: 22px; MARGIN: 5px; TEXT-OVERFLOW: ellipsis; COLOR: #333; OVERFLOW: hidden; CURSOR: pointer
+}
+.column-img .list-name A:hover {
+	COLOR: #ff7200
+}
+.column-img .list-summary {
+	LINE-HEIGHT: 24px; COLOR: #888; FONT-SIZE: 12px
+}
+.column-list UL {
+	DISPLAY: block; FONT-SIZE: 14px; OVERFLOW: hidden
+}
+.column-list LI {
+	LINE-HEIGHT: 28px; WIDTH: 300px; FLOAT: left; HEIGHT: 28px; OVERFLOW: hidden
+}
+.column-list LI A {
+	PADDING-LEFT: 8px; WIDTH: 240px; TEXT-OVERFLOW: ellipsis; WHITE-SPACE: nowrap; BACKGROUND: url(http://www.ruanwenjie.com/images/list.png) no-repeat 0px 50%; FLOAT: left; HEIGHT: 28px; OVERFLOW: hidden; CURSOR: pointer
+}
+.column-list LI A:hover {
+	COLOR: #ff7200
+}
+.column-list LI SPAN {
+	WIDTH: 40px; FLOAT: left; HEIGHT: 28px; COLOR: #999; MARGIN-LEFT: 6px
+}
+.archive-img .archive-list .webthumb {
+	WIDTH: auto; FLOAT: left; HEIGHT: auto
+}
+.webthumbnail {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 2px; MARGIN: 2px 15px 5px 0px; PADDING-LEFT: 2px; WIDTH: 150px; PADDING-RIGHT: 2px; DISPLAY: inline; HEIGHT: 120px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 2px
+}
+.lianxiqq {
+	TEXT-ALIGN: center
+}
+.archive-img .archive-list .web-info {
+	WIDTH: 420px; FLOAT: left; HEIGHT: auto
+}
+.archive-img .archive-list .web-info TABLE {
+	LINE-HEIGHT: 32px; WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+.archive-img .archive-list .web-info TABLE TR TD {
+	BORDER-BOTTOM: #e9e9e9 1px solid; BORDER-LEFT: #e9e9e9 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #e9e9e9 1px solid; BORDER-RIGHT: #e9e9e9 1px solid; PADDING-TOP: 0px
+}
+.archive-title {
+	PADDING-BOTTOM: 5px; MARGIN: 0px 0px 10px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #fff; PADDING-TOP: 5px
+}
+.archive-title UL LI {
+	BORDER-BOTTOM: #eee 1px dashed; LINE-HEIGHT: 36px; LIST-STYLE-TYPE: none; HEIGHT: 36px; LIST-STYLE-IMAGE: none
+}
+.archive-title H3 A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; BACKGROUND: url(http://www.ruanwenjie.com/images/list.png) no-repeat 0px 50%; COLOR: #333; FONT-SIZE: 14px; FONT-WEIGHT: 400; PADDING-TOP: 0px
+}
+.archive-title H3 A:hover {
+	COLOR: #e23a0a
+}
+.archive-title .date {
+	FLOAT: right; COLOR: #999; FONT-SIZE: 12px; FONT-WEIGHT: 400
+}
+.archive-title .date SMALL {
+	COLOR: #e23a0a
+}
+.page_navi {
+	TEXT-ALIGN: center; WIDTH: 100%; OVERFLOW: hidden
+}
+.page_navi LI {
+	DISPLAY: inline
+}
+.page_navi A {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; PADDING-BOTTOM: 3px; LINE-HEIGHT: 36px; MARGIN: 2px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; HEIGHT: 36px; COLOR: #333; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.page_navi A:hover {
+	BORDER-BOTTOM: #ffbb76 1px solid; BORDER-LEFT: #ffbb76 1px solid; COLOR: #ff7200; BORDER-TOP: #ffbb76 1px solid; FONT-WEIGHT: bolder; BORDER-RIGHT: #ffbb76 1px solid
+}
+.page_navi A.current {
+	BORDER-BOTTOM: #ffbb76 1px solid; BORDER-LEFT: #ffbb76 1px solid; COLOR: #ff7200; BORDER-TOP: #ffbb76 1px solid; FONT-WEIGHT: bolder; BORDER-RIGHT: #ffbb76 1px solid
+}
+#content {
+	POSITION: relative; LINE-HEIGHT: 24px; WIDTH: 950px; FONT-SIZE: 16px; OVERFLOW: hidden
+}
+#content .post-title H1 {
+	TEXT-ALIGN: center; LINE-HEIGHT: 32px; FONT-SIZE: 20px; PADDING-TOP: 10px
+}
+#content .post-info {
+	BORDER-BOTTOM: #eee 1px dashed; TEXT-ALIGN: center; LINE-HEIGHT: 24px; COLOR: #999; FONT-SIZE: 14px
+}
+#content .post-info A {
+	COLOR: #999
+}
+#content .post-info A:hover {
+	COLOR: #ff7200
+}
+#content .post-tag {
+	BORDER-BOTTOM: #e5e5e5 1px dashed; BORDER-LEFT: #e5e5e5 1px dashed; PADDING-BOTTOM: 5px; LINE-HEIGHT: 28px; MARGIN: 10px 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; FONT-SIZE: 14px; BORDER-TOP: #e5e5e5 1px dashed; BORDER-RIGHT: #e5e5e5 1px dashed; PADDING-TOP: 5px; border-radius: 4px; -webkit-border-radius: 5px; -moz-border-radius: 5px
+}
+#content .post-content {
+	POSITION: relative; LINE-HEIGHT: 200%; MARGIN: 20px 0px; COLOR: #444; FONT-SIZE: 14px; OVERFLOW: hidden
+}
+#content .post-content DIV {
+	TEXT-INDENT: 0.8cm; MARGIN: 20px 0px
+}
+#content .post-content DIV SPAN {
+	TEXT-INDENT: 0.8cm
+}
+#content .post-content H2 {
+	BORDER-BOTTOM: #eee 1px solid; LINE-HEIGHT: 30px; MARGIN: 15px 0px; COLOR: #222; FONT-SIZE: 18px
+}
+#content .post-content H3 {
+	BORDER-BOTTOM: #eee 1px solid; LINE-HEIGHT: 28px; MARGIN: 15px 0px; PADDING-LEFT: 10px; COLOR: #444; FONT-SIZE: 16px
+}
+#content .post-content H4 {
+	BORDER-BOTTOM: #eee 1px solid; LINE-HEIGHT: 26px; MARGIN: 10px 0px; PADDING-LEFT: 20px; COLOR: #555; FONT-SIZE: 14px
+}
+#content .post-content IMG {
+	TEXT-ALIGN: center; MARGIN: 5px 0px; MAX-WIDTH: 650px
+}
+#content .post-content P {
+	LINE-HEIGHT: 180%; TEXT-INDENT: 2em; MARGIN: 5px 0px 10px; COLOR: #444; FONT-SIZE: 14px
+}
+#content .post-content A:link {
+	COLOR: #09c; TEXT-DECORATION: none
+}
+.post-content A:active {
+	COLOR: #09c; TEXT-DECORATION: none
+}
+.post-content A:visited {
+	COLOR: #09c; TEXT-DECORATION: none
+}
+#content .post-content A:hover {
+	BORDER-BOTTOM: #ccc 1px dotted; COLOR: #ff7200
+}
+#content .post-content EM {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; COLOR: #a40000; PADDING-TOP: 0px
+}
+#content .post-content STRONG {
+	COLOR: #232323; FONT-WEIGHT: 700
+}
+#content .post-content BLOCKQUOTE {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 8px solid; PADDING-BOTTOM: 10px; MARGIN: 15px 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #fafafa; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 10px
+}
+#content .post-content OL {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 5px
+}
+#content .post-content UL {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 5px
+}
+#content .post-content OL LI {
+	LIST-STYLE-TYPE: decimal; MARGIN-LEFT: 20px
+}
+#content .post-content UL LI {
+	LIST-STYLE-TYPE: circle; MARGIN-LEFT: 20px
+}
+#content .post-content IMG.aligncenter {
+	DISPLAY: block; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+#content .post-content IMG.aligncenter P.wp-caption-text {
+	TEXT-ALIGN: center; DISPLAY: block; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+#content .web-intro {
+	BORDER-TOP: #eeeeee 1px dashed
+}
+#content .web-intro TABLE {
+	LINE-HEIGHT: 32px; MARGIN: 10px 0px; WIDTH: 100%
+}
+#content .web-intro TABLE STRONG {
+	COLOR: #ff6600
+}
+#content .web-intro TABLE TR TD {
+	BORDER-BOTTOM: #e9e9e9 1px solid; BORDER-LEFT: #e9e9e9 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #e9e9e9 1px solid; BORDER-RIGHT: #e9e9e9 1px solid; PADDING-TOP: 0px
+}
+#qqlianxi {
+	FLOAT: right
+}
+.top {
+	BORDER-BOTTOM: #808080 1px solid; WIDTH: 100%; BACKGROUND: url(images/head_bg.gif) repeat-x; HEIGHT: 75px
+}
+.head {
+	MARGIN: 0px auto; WIDTH: 980px; HEIGHT: 75px
+}
+.head H1 {
+	TEXT-INDENT: 500px; WIDTH: 316px; DISPLAY: block; WHITE-SPACE: nowrap; BACKGROUND: url(images/logo.png) no-repeat; FLOAT: left; HEIGHT: 75px; OVERFLOW: hidden
+}
+.foot {
+	TEXT-ALIGN: center; LINE-HEIGHT: 30px; WIDTH: 100%; BACKGROUND: url(images/footBgNew.png) repeat-x; HEIGHT: 100px; FONT-SIZE: 14px; PADDING-TOP: 30px
+}
+.white {
+	COLOR: #ffffff
+}
+.white A {
+	COLOR: #ffffff
+}
+.white A:link {
+	COLOR: #ffffff
+}
+.white A:visited {
+	COLOR: #ffffff
+}
+.white A:hover {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.white A:active {
+	COLOR: #ffffff
+}

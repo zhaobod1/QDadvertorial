@@ -1,0 +1,28 @@
+document.write('<div id="uchat" style="display: block;">');
+document.write('<div class="uchat-c" style="display: block;">');
+document.write('<div class="uchat-title"></div>');
+document.write('<div class="uchat-content">');
+document.write('<div class="uchat-list"> '+kefu1+'：<br>');
+document.write('<a rel="nofollow" class="zx" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin='+qq1+'&site=qq&menu=yes">');
+document.write('<img border="0" src="http://im.bizapp.qq.com:8000/zx_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息">');
+document.write('</a> '+kefu2+'：<br>');
+document.write('<a rel="nofollow" class="zx" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin='+qq2+'&site=qq&menu=yes">');
+document.write('<img border="0" src="http://im.bizapp.qq.com:8000/zx_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息">');
+document.write('</a> '+kefu3+'：<br>');
+document.write('<a rel="nofollow" class="zx" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin='+qq3+'&site=qq&menu=yes">');
+document.write('<img border="0" src="http://im.bizapp.qq.com:8000/zx_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息">');
+document.write('</a> '+kefu4+'：<br>');
+document.write('<a rel="nofollow" class="zx" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin='+qq4+'&site=qq&menu=yes">');
+document.write('<img border="0" src="http://im.bizapp.qq.com:8000/zx_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息">');
+document.write('</a> '+kefu5+'：<br>');
+document.write('<a rel="nofollow" class="zx" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin='+qq5+'&site=qq&menu=yes">');
+document.write('<img border="0" src="http://im.bizapp.qq.com:8000/zx_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息">');
+document.write('</div>');
+document.write('<span></span> <a rel="nofollow" class="wj" href="#" target="_blank"><b>价格下载</b></a>');
+document.write('<span></span>');
+/*document.write('<a rel="nofollow" class="wj" href="http://www.ruanwen.la/taocan.html" target="_blank"><b>软文套餐</b></a>');*/
+document.write('<span></span>');
+document.write('</div>');
+document.write('<div class="uchat-bottom"></div>');
+document.write('</div>');
+document.write('</div>');

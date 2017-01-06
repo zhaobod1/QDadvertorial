@@ -1,0 +1,30 @@
+#windownbg {
+	POSITION: absolute; WIDTH: 100%; DISPLAY: none; BACKGROUND: #000; HEIGHT: 100%; TOP: 0px; LEFT: 0px
+}
+#windown-box {
+	BORDER-BOTTOM: #e9f3fd 5px solid; POSITION: fixed; TEXT-ALIGN: left; BORDER-LEFT: #e9f3fd 5px solid; BACKGROUND: #fff; BORDER-TOP: #e9f3fd 5px solid; BORDER-RIGHT: #e9f3fd 5px solid; _position: absolute
+}
+#windown-title {
+	BACKGROUND-IMAGE: url(../images/navmenubg.gif); BORDER-BOTTOM: #a6c9e1 1px solid; POSITION: relative; BORDER-LEFT: #a6c9e1 1px solid; LINE-HEIGHT: 30px; VERTICAL-ALIGN: middle; OVERFLOW: hidden; BORDER-TOP: #a6c9e1 1px solid; BORDER-RIGHT: #a6c9e1 1px solid
+}
+#windown-title H2 {
+	POSITION: relative; COLOR: #666; FONT-SIZE: 14px; LEFT: 10px
+}
+#windown-close {
+	POSITION: absolute; TEXT-INDENT: -10em; WIDTH: 10px; BACKGROUND: url(../images/close.bmp) no-repeat; HEIGHT: 16px; OVERFLOW: hidden; TOP: 8px; CURSOR: pointer; RIGHT: 10px
+}
+#windown-content-border {
+	BORDER-BOTTOM: #a6c9e1 1px solid; POSITION: relative; BORDER-LEFT: #a6c9e1 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; BORDER-TOP: #a6c9e1 1px solid; TOP: -1px; BORDER-RIGHT: #a6c9e1 1px solid; PADDING-TOP: 5px
+}
+#windown-content {
+	POSITION: relative; TEXT-ALIGN: center; OVERFLOW: auto
+}
+#windown-content IMG {
+	DISPLAY: block
+}
+#windown-content IFRAME {
+	DISPLAY: block
+}
+#windown-content .loading {
+	POSITION: absolute; MARGIN-TOP: -8px; MARGIN-LEFT: -8px; TOP: 50%; LEFT: 50%
+}

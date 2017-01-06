@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <channel>
+         <item>
+            <link>http://www.aaa.com</link>
+             <image>images/flash01.jpg</image>
+            <title>中兴食品</title>
+        </item>
+         <item>
+            <link>http://www.bbb.cn</link>
+            <image>images/flash02.jpg</image>
+            <title>中兴食品</title>
+        </item>   
+  <item>
+            <link>http://www.ccc.cn</link>
+            <image>images/flash03.jpg</image>
+            <title>中兴香菇</title>
+        </item>   
+        
+ 
+    </channel>
+    <config>
+        <roundCorner>0</roundCorner>
+        <autoPlayTime>5</autoPlayTime>
+        <isHeightQuality>false</isHeightQuality>
+        <blendMode>normal</blendMode>
+        <transDuration>1</transDuration>
+        <windowOpen>_blank</windowOpen>
+        <btnSetMargin>auto 5 5 auto</btnSetMargin>
+        <btnDistance>20</btnDistance>
+        <titleBgColor>0xff6600</titleBgColor>
+        <titleTextColor>0xffffff</titleTextColor>
+        <titleBgAlpha>.75</titleBgAlpha>
+        <titleMoveDuration>1</titleMoveDuration>
+        <btnAlpha>.7</btnAlpha>
+        <btnTextColor>0xffffff</btnTextColor>
+        <btnDefaultColor>0x1B3433</btnDefaultColor>
+        <btnHoverColor>0xff9900</btnHoverColor>
+        <btnFocusColor>0xff6600</btnFocusColor>
+        <changImageMode>hover</changImageMode>
+        <isShowBtn>false</isShowBtn>
+        <isShowTitle>false</isShowTitle>
+        <scaleMode>noBorder</scaleMode>
+        <transform>blur</transform>
+        <isShowAbout>true</isShowAbout>
+        <titleFont>微软雅黑</titleFont>
+    </config>
+</data>

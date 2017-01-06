@@ -1,0 +1,16 @@
+.navbar {
+    margin-bottom: 0;
+}
+.p10 {
+    padding:10px;
+}
+.p0 {
+    padding:0;
+}
+.bg-black {
+    background-color: #333333;
+}
+.float_r {
+    float: right;
+
+}

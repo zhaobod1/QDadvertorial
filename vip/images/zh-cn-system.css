@@ -1,0 +1,786 @@
+BODY {
+	FONT-FAMILY: "ÐÂËÎÌå"; HEIGHT: 100%; COLOR: #444; FONT-SIZE: 12px
+}
+A {
+	COLOR: #444; TEXT-DECORATION: none
+}
+HTML.off {
+	BACKGROUND: url(images/left_bg.png) #e2e9ea repeat-y -40px top
+}
+HTML.off BODY {
+	BACKGROUND: url(images/left_bg.png) #e2e9ea repeat-y -40px top
+}
+HTML.on {
+	BACKGROUND: #e2e9ea
+}
+HTML.on BODY {
+	BACKGROUND: #e2e9ea
+}
+HTML.addbg {
+	BACKGROUND: #e2e9ea
+}
+HTML.addbg BODY {
+	BACKGROUND: #e2e9ea
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.pad-6 {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; OVERFLOW: hidden; PADDING-TOP: 6px
+}
+.pad-10 {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; OVERFLOW: hidden; PADDING-TOP: 10px
+}
+.pad_10 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+.pad-lr-10 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 0px
+}
+.pad-lr-6 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 0px
+}
+.hr {
+	BACKGROUND: url(images/uline.gif) repeat-x center center
+}
+.hr HR {
+	DISPLAY: none
+}
+.border-none {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.border-none-td TD {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.ib {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.ib-li LI {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.ib-a A {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.ib-span SPAN {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.common-form UL LI SPAN.text {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.fixed-bottom .fixed-but .button {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.arrowhead {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.arrowhead-b {
+	ZOOM: 1; DISPLAY: inline-block
+}
+#Skin LI {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.shortcut A {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.shortcut A SPAN {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.picBut A {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.tab-use {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.scroll A {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.cut_line SPAN {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; COLOR: #4d82bc; PADDING-TOP: 0px
+}
+.mr6 {
+	MARGIN-RIGHT: 6px
+}
+.mr8 {
+	MARGIN-RIGHT: 8px
+}
+.mr10 {
+	MARGIN-RIGHT: 10px
+}
+.mb6 {
+	MARGIN-BOTTOM: 6px
+}
+.mb8 {
+	MARGIN-BOTTOM: 8px
+}
+.mb10 {
+	MARGIN-BOTTOM: 10px
+}
+.picBut {
+	TEXT-ALIGN: center; LINE-HEIGHT: 26px; WIDTH: 75px; BACKGROUND: url(images/picBnt.png) no-repeat 0px -28px; FLOAT: left; HEIGHT: 28px; COLOR: #fff; FONT-WEIGHT: 700; MARGIN-RIGHT: 10px
+}
+.picBut A {
+	WIDTH: 75px; COLOR: #fff; TEXT-DECORATION: none
+}
+.line-x {
+	BORDER-BOTTOM: #eee 1px solid
+}
+.title-1 {
+	BORDER-BOTTOM: #eee 1px solid; PADDING-LEFT: 5px
+}
+.title-2 {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 3px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 18px/31px "MicroSoft YaHei", "SimHei"; HEIGHT: 34px; COLOR: #333; PADDING-TOP: 8px
+}
+BODY FIELDSET {
+	BORDER-BOTTOM: #d8d8d8 1px solid; BORDER-LEFT: #d8d8d8 1px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BORDER-TOP: #d8d8d8 1px solid; BORDER-RIGHT: #d8d8d8 1px solid; PADDING-TOP: 10px
+}
+BODY FIELDSET LEGEND {
+	BORDER-BOTTOM: #d8d8d8 1px solid; BORDER-LEFT: #d8d8d8 1px solid; PADDING-BOTTOM: 3px; BACKGROUND-COLOR: #f9f9f9; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BORDER-TOP: #d8d8d8 1px solid; FONT-WEIGHT: 700; BORDER-RIGHT: #d8d8d8 1px solid; PADDING-TOP: 3px
+}
+BODY FIELDSET.blue {
+	BORDER-BOTTOM: #dce3ed 1px solid; BORDER-LEFT: #dce3ed 1px solid; BORDER-TOP: #dce3ed 1px solid; BORDER-RIGHT: #dce3ed 1px solid
+}
+BODY FIELDSET.blue LEGEND {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 3px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #347add; BORDER-TOP: medium none; FONT-WEIGHT: 700; BORDER-RIGHT: medium none; PADDING-TOP: 3px
+}
+.fixed-bottom {
+	HEIGHT: 60px; _margin-top: 12px
+}
+.fixed-bottom .fixed-but {
+	POSITION: fixed; PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; WIDTH: 100%; BOTTOM: 0px; PADDING-RIGHT: 0px; BACKGROUND: url(images/x_bg.png) #fff repeat-x 0px -100px; HEIGHT: 30px; BORDER-TOP: #f1f1f1 1px solid; PADDING-TOP: 10px; _position: relative
+}
+.fixed-bottom .fixed-but .button {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; LINE-HEIGHT: 32px; MARGIN: 0px; BACKGROUND: url(images/btn-content.png) no-repeat; HEIGHT: 32px; VERTICAL-ALIGN: middle; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.fixed-bottom .fixed-but .button INPUT {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; LINE-HEIGHT: 32px; MARGIN: 0px; BACKGROUND: url(images/btn-content.png) no-repeat; HEIGHT: 32px; VERTICAL-ALIGN: middle; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.fixed-bottom .fixed-but .button {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 5px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.fixed-bottom .fixed-but .button INPUT {
+	MARGIN: 0px; PADDING-RIGHT: 10px; DISPLAY: block; WHITE-SPACE: nowrap; BACKGROUND-POSITION: right top; COLOR: #004092; FONT-SIZE: 14px; FONT-WEIGHT: 700
+}
+.subnav {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+.subnav H2 {
+	MARGIN-BOTTOM: 6px
+}
+.explain-col {
+	BORDER-BOTTOM: #ffbe7a 1px solid; BORDER-LEFT: #ffbe7a 1px solid; PADDING-BOTTOM: 8px; LINE-HEIGHT: 20px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; ZOOM: 1; BACKGROUND: #fffced; BORDER-TOP: #ffbe7a 1px solid; BORDER-RIGHT: #ffbe7a 1px solid; PADDING-TOP: 8px
+}
+.vote_bar {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; WIDTH: 90%; HEIGHT: 13px; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 1px solid
+}
+.vote_bar DIV {
+	POSITION: relative; BACKGROUND: url(images/x_bg.png) repeat-x left -194px; FLOAT: left; HEIGHT: 16px; _height: 13px
+}
+.vote_bar DIV SPAN {
+	POSITION: absolute; TEXT-ALIGN: center; LINE-HEIGHT: 12px; WIDTH: 180px; DISPLAY: block; HEIGHT: 16px; FONT-SIZE: 10px; VERTICAL-ALIGN: middle; TOP: 0px; LEFT: 0px
+}
+.crumbs {
+	BACKGROUND: url(images_use.png) no-repeat
+}
+.tab-web-panel LI A:hover {
+	BACKGROUND: url(images_use.png) no-repeat
+}
+.tab-web-panel LI.on A {
+	BACKGROUND: url(images_use.png) no-repeat
+}
+.header {
+	POSITION: relative; BACKGROUND: url(images/h_bg.gif) #3a6ea5 repeat-x left bottom; HEIGHT: 80px
+}
+.header .logo {
+	WIDTH: 136px; BACKGROUND: url(images/logo2.png) no-repeat; FLOAT: left; HEIGHT: 80px; MARGIN-RIGHT: 10px; _margin-right: 7px
+}
+.header .logo A {
+	DISPLAY: block; HEIGHT: 80px; TEXT-DECORATION: none
+}
+.header .rt-col {
+	Z-INDEX: 10; POSITION: absolute; WIDTH: 280px; HEIGHT: 44px; TOP: 0px; RIGHT: 0px
+}
+.header .nav {
+	POSITION: relative; BOTTOM: -10px; DISPLAY: block; HEIGHT: 34px
+}
+.header .col-auto {
+	FLOAT: none; OVERFLOW: visible
+}
+.header .nav LI {
+	LINE-HEIGHT: 38px; DISPLAY: block; BACKGROUND: url(images/nav_bg.png) no-repeat; HEIGHT: 34px; FONT-SIZE: 14px; FONT-WEIGHT: 700; _float: left
+}
+.header .nav LI A {
+	LINE-HEIGHT: 38px; DISPLAY: block; BACKGROUND: url(images/nav_bg.png) no-repeat; HEIGHT: 34px; FONT-SIZE: 14px; FONT-WEIGHT: 700; _float: left
+}
+.header .nav LI {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 0px
+}
+.header .nav LI A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 7px; PADDING-RIGHT: 15px; BACKGROUND-POSITION: right top; PADDING-TOP: 0px
+}
+.header .nav LI.on {
+	BACKGROUND-POSITION: left -43px
+}
+.header .nav LI.on A {
+	BACKGROUND-POSITION: right -43px; COLOR: #367abb
+}
+.header .nav LI.tab_web {
+	POSITION: relative
+}
+.header .nav LI.tab_web A {
+	POSITION: absolute
+}
+.header .nav LI.tab_web A {
+	LINE-HEIGHT: 34px; BACKGROUND: url(images/site.png) no-repeat; HEIGHT: 34px; _float: left
+}
+.header .nav LI.tab_web A SPAN {
+	LINE-HEIGHT: 34px; BACKGROUND: url(images/site.png) no-repeat; HEIGHT: 34px; _float: left
+}
+.header .nav LI.tab_web {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 38px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; VERTICAL-ALIGN: middle; PADDING-TOP: 0px
+}
+.header .nav LI.tab_web A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 0px; WHITE-SPACE: nowrap; CURSOR: pointer; PADDING-TOP: 0px
+}
+.header .nav LI.tab_web A:hover {
+	BACKGROUND-POSITION: left -40px; COLOR: #3a6ea5; TEXT-DECORATION: none
+}
+.header .nav LI.tab_web A.on {
+	BACKGROUND-POSITION: left -40px; COLOR: #3a6ea5; TEXT-DECORATION: none
+}
+.header .nav LI.tab_web A SPAN {
+	PADDING-RIGHT: 24px; DISPLAY: block; BACKGROUND-POSITION: right 2px
+}
+.header .nav LI.tab_web A:hover SPAN {
+	BACKGROUND-POSITION: right -40px
+}
+.header .nav LI.tab_web A.on SPAN {
+	BACKGROUND-POSITION: right -40px
+}
+.tab-web-panel {
+	BORDER-BOTTOM: #b3cbe4 1px solid; BORDER-LEFT: #b3cbe4 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; ZOOM: 1; BACKGROUND: #fff; BORDER-TOP: #b3cbe4 1px solid; BORDER-RIGHT: #b3cbe4 1px solid; PADDING-TOP: 1px
+}
+.tab-web-panel LI {
+	MARGIN-TOP: 1px; BACKGROUND: #f0f5f6
+}
+.tab-web-panel LI A {
+	PADDING-BOTTOM: 3px; LINE-HEIGHT: 18px; PADDING-LEFT: 8px; WIDTH: 105px; PADDING-RIGHT: 22px; DISPLAY: block; WHITE-SPACE: nowrap; HEIGHT: 18px; PADDING-TOP: 3px
+}
+.tab-web-panel LI A:hover {
+	BACKGROUND-COLOR: #d5e5f6; BACKGROUND-POSITION: 50px -52px
+}
+.tab-web-panel LI.on A {
+	BACKGROUND-COLOR: #d5e5f6; BACKGROUND-POSITION: 50px -52px
+}
+.header .col-auto {
+	HEIGHT: 80px
+}
+.header .log {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 0px; HEIGHT: 20px; PADDING-TOP: 16px
+}
+.header .tab_style {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 14px; PADDING-TOP: 16px
+}
+#Skin {
+	Z-INDEX: 1000; POSITION: relative; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; HEIGHT: 11px; FONT-SIZE: 0px; PADDING-TOP: 14px
+}
+#Skin LI {
+	WIDTH: 14px; BACKGROUND: url(images/skinbt.png) no-repeat; HEIGHT: 11px; CURSOR: pointer; _overflow: hidden
+}
+#Skin .s1 {
+	BACKGROUND-POSITION: -14px -66px
+}
+#Skin .s2 {
+	BACKGROUND-POSITION: 0px -55px
+}
+#Skin .s3 {
+	BACKGROUND-POSITION: 0px -33px
+}
+#Skin .s4 {
+	
+}
+.left_menu {
+	POSITION: relative; WIDTH: 145px; DISPLAY: block; OVERFLOW: hidden; PADDING-TOP: 10px
+}
+#Scroll {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; WIDTH: 125px; PADDING-RIGHT: 2px; FLOAT: left; OVERFLOW: hidden; PADDING-TOP: 0px
+}
+.left_menu_on {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 10px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.left_menu_on #Scroll {
+	DISPLAY: none
+}
+.left_menu H3 {
+	BORDER-BOTTOM: #d9e4ea 1px solid; LINE-HEIGHT: 24px; MARGIN-BOTTOM: 5px; HEIGHT: 24px; COLOR: #275d96; FONT-WEIGHT: 700
+}
+.left_menu UL LI {
+	DISPLAY: block; COLOR: #666; MARGIN-RIGHT: 1px
+}
+.left_menu UL LI A {
+	LINE-HEIGHT: 24px; BACKGROUND-COLOR: #f7fbfc; PADDING-LEFT: 8px; DISPLAY: block; TEXT-DECORATION: none
+}
+.left_menu UL LI A:hover {
+	BACKGROUND: url(images/left_menu.png) no-repeat; MARGIN-RIGHT: 6px; TEXT-DECORATION: none
+}
+.left_menu UL LI.on {
+	BACKGROUND: url(images/left_menu.png) no-repeat; MARGIN-RIGHT: 6px; TEXT-DECORATION: none
+}
+.left_menu H3 SPAN {
+	BACKGROUND: url(images/left_menu.png) no-repeat; MARGIN-RIGHT: 6px; TEXT-DECORATION: none
+}
+.left_menu UL LI.on {
+	PADDING-LEFT: 20px; HEIGHT: 29px; MARGIN-RIGHT: 0px
+}
+.left_menu UL LI.on A {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 29px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: 29px; PADDING-TOP: 0px
+}
+.left_menu UL LI.on A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.left_menu UL LI A:hover {
+	BACKGROUND-POSITION: left -38px
+}
+.left_menu A.open {
+	WIDTH: 8px; DISPLAY: block; BACKGROUND: url(images/left_menu_openClose.png) no-repeat 3px center; FLOAT: left; HEIGHT: auto; TOP: 0px; RIGHT: -11px
+}
+.left_menu A.close {
+	WIDTH: 8px; DISPLAY: block; BACKGROUND: url(images/left_menu_openClose.png) no-repeat 3px center; FLOAT: left; HEIGHT: auto; TOP: 0px; RIGHT: -11px
+}
+.left_menu A.open:hover {
+	BACKGROUND-COLOR: #d6e1e4
+}
+.left_menu A.close:hover {
+	BACKGROUND-COLOR: #d6e1e4
+}
+.left_menu A.close {
+	WIDTH: 10px; BACKGROUND-POSITION: right center
+}
+.left_menu H3 SPAN {
+	MARGIN-TOP: 5px; WIDTH: 14px; DISPLAY: block; BACKGROUND-POSITION: left -78px; FLOAT: right; HEIGHT: 14px
+}
+.left_menu H3 SPAN.on {
+	BACKGROUND-POSITION: -33px -78px
+}
+.scroll {
+	POSITION: absolute; WIDTH: 120px; BOTTOM: 14px; DISPLAY: none; HEIGHT: 17px; OVERFLOW: hidden; LEFT: 10px
+}
+.scroll A {
+	MARGIN: 0px 5px; WIDTH: 48px; BACKGROUND: url(images/scroll_bg.png) no-repeat left top; HEIGHT: 17px
+}
+.scroll A:hover {
+	BACKGROUND-POSITION: left bottom
+}
+.scroll A.next {
+	BACKGROUND-POSITION: right top
+}
+.scroll A.next:hover {
+	BACKGROUND-POSITION: right bottom
+}
+.crumbs {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: left -18px; HEIGHT: 22px; PADDING-TOP: 6px
+}
+.shortcut {
+	POSITION: relative; FLOAT: right; TOP: -3px
+}
+.shortcut A {
+	PADDING-LEFT: 6px; COLOR: #0364ae; MARGIN-LEFT: 6px
+}
+.shortcut A {
+	TEXT-ALIGN: center; LINE-HEIGHT: 21px; BACKGROUND: url(images/bnt_bg.png) no-repeat 0px -83px; HEIGHT: 21px; _line-height: 20px
+}
+.shortcut A SPAN {
+	TEXT-ALIGN: center; LINE-HEIGHT: 21px; BACKGROUND: url(images/bnt_bg.png) no-repeat 0px -83px; HEIGHT: 21px; _line-height: 20px
+}
+.shortcut A SPAN {
+	PADDING-RIGHT: 6px; BACKGROUND-POSITION: right -83px
+}
+.col-tab {
+	
+}
+.col-tab UL.tabBut {
+	POSITION: relative; PADDING-LEFT: 14px; BOTTOM: -1px; HEIGHT: 27px
+}
+.col-tab UL.tabBut LI {
+	BORDER-BOTTOM: #dce3ed 1px solid; BORDER-LEFT: #dce3ed 1px solid; LINE-HEIGHT: 26px; FLOAT: left; HEIGHT: 25px; BORDER-TOP: #dce3ed 1px solid; MARGIN-RIGHT: 5px; BORDER-RIGHT: #dce3ed 1px solid
+}
+.col-tab UL.tabBut LI {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; BACKGROUND: #eaeef4; PADDING-TOP: 0px
+}
+.col-tab UL.tabBut LI.on {
+	BORDER-BOTTOM: 0px; POSITION: relative; BACKGROUND: #fff; HEIGHT: 26px; FONT-WEIGHT: 700; _height: 27px
+}
+.col-tab UL.tabBut LI.icon {
+	BACKGROUND-IMAGE: url(images/exclamation_small.png); PADDING-LEFT: 18px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 3px center
+}
+.col-tab .content {
+	BORDER-BOTTOM: #dce3ed 1px solid; BORDER-LEFT: #dce3ed 1px solid; BORDER-TOP: #dce3ed 1px solid; BORDER-RIGHT: #dce3ed 1px solid; _zoom: 1
+}
+.col-tab .content-r {
+	BORDER-TOP: #dce3ed 1px solid
+}
+.col-tab .contentList {
+	BORDER-BOTTOM: #dce3ed 1px solid; BORDER-LEFT: #dce3ed 1px solid; BORDER-TOP: #dce3ed 1px solid; BORDER-RIGHT: #dce3ed 1px solid; _zoom: 1
+}
+.col-1 {
+	BORDER-BOTTOM: #f4f6f5 1px solid; BORDER-LEFT: #f4f6f5 1px solid; ZOOM: 1; BACKGROUND: #fff; BORDER-TOP: #f4f6f5 1px solid; BORDER-RIGHT: #f4f6f5 1px solid
+}
+.col-1 DIV.content {
+	BORDER-BOTTOM: #c2d1d8 1px solid; BORDER-LEFT: #c2d1d8 1px solid; ZOOM: 1; BORDER-TOP: #c2d1d8 1px solid; BORDER-RIGHT: #c2d1d8 1px solid
+}
+.col-2 {
+	BORDER-BOTTOM: #c7d8ea 1px solid; BORDER-LEFT: #c7d8ea 1px solid; ZOOM: 1; BORDER-TOP: #c7d8ea 1px solid; BORDER-RIGHT: #c7d8ea 1px solid
+}
+.col-2 H6 {
+	BORDER-BOTTOM: #c7d8ea 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 28px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: url(images/x_bg.png) repeat-x left -42px; HEIGHT: 26px; COLOR: #3a6ea5; PADDING-TOP: 0px
+}
+.col-2 DIV.content {
+	PADDING-BOTTOM: 9px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 9px
+}
+.cat-menu {
+	MARGIN: 10px 8px 0px 0px; WIDTH: 180px
+}
+.cat-menu DIV.content {
+	PADDING-LEFT: 8px
+}
+.fav-nav {
+	LINE-HEIGHT: 28px; BACKGROUND: url(images/fav-nav-bg.png) repeat-x left top; HEIGHT: 28px
+}
+.fav-nav SPAN {
+	LINE-HEIGHT: 28px; BACKGROUND: url(images/fav-nav-bg.png) repeat-x left top; HEIGHT: 28px
+}
+.fav-nav A {
+	LINE-HEIGHT: 28px; BACKGROUND: url(images/fav-nav-bg.png) repeat-x left top; HEIGHT: 28px
+}
+.fav-nav {
+	POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-LEFT: 12px; WIDTH: 100%; BOTTOM: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; LEFT: 0px
+}
+.fav-nav SPAN {
+	POSITION: relative; PADDING-RIGHT: 2px; DISPLAY: block; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: right -78px; FLOAT: left
+}
+.fav-nav DIV {
+	FLOAT: left
+}
+.fav-nav A {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 20px; DISPLAY: block; FLOAT: left; PADDING-TOP: 0px
+}
+.fav-nav A:hover {
+	BACKGROUND-POSITION: right -40px; TEXT-DECORATION: none
+}
+.fav-nav A.on {
+	BACKGROUND-POSITION: right -40px; TEXT-DECORATION: none
+}
+.fav-nav A.panel-delete {
+	Z-INDEX: 10; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 16px; PADDING-RIGHT: 0px; BACKGROUND: url(images/cross.png) no-repeat center 3px; HEIGHT: 16px; TOP: 7px; RIGHT: 4px; PADDING-TOP: 0px
+}
+.fav-nav A.panel-add {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 16px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: right -120px; FLOAT: left; MARGIN-LEFT: 5px; PADDING-TOP: 0px; _margin-left: 3px
+}
+.fav-nav A.panel-add:hover {
+	BACKGROUND-POSITION: center -163px
+}
+.fav-nav A.panel-delete:hover {
+	BACKGROUND-POSITION: center -46px
+}
+.fav-nav A.panel-delete EM {
+	DISPLAY: none
+}
+.fav-nav A.panel-add EM {
+	DISPLAY: none
+}
+.fav-help {
+	POSITION: absolute; PADDING-BOTTOM: 0px; LINE-HEIGHT: 26px; PADDING-LEFT: 24px; PADDING-RIGHT: 10px; DISPLAY: none; BACKGROUND: url(images/info.png) #fff no-repeat 3px 6px; FLOAT: none; HEIGHT: 26px; TOP: 2px; RIGHT: 14px; PADDING-TOP: 0px
+}
+.fav-help A {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 20px 0px 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; HEIGHT: auto; PADDING-TOP: 0px
+}
+.fav-help A.panel-delete {
+	MARGIN: 0px; TOP: 5px; RIGHT: 2px
+}
+.fav-help A:hover {
+	COLOR: #cc3300
+}
+.content-menu {
+	PADDING-BOTTOM: 6px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.content-menu A:hover {
+	TEXT-DECORATION: none
+}
+.content-menu A EM {
+	ZOOM: 1; DISPLAY: inline-block
+}
+.content-menu A.add {
+	LINE-HEIGHT: 28px; BACKGROUND: url(images/bnt_bg.png) no-repeat; HEIGHT: 28px
+}
+.content-menu A.add EM {
+	LINE-HEIGHT: 28px; BACKGROUND: url(images/bnt_bg.png) no-repeat; HEIGHT: 28px
+}
+.content-menu A.on {
+	LINE-HEIGHT: 28px; BACKGROUND: url(images/bnt_bg.png) no-repeat; HEIGHT: 28px
+}
+.content-menu A.on EM {
+	LINE-HEIGHT: 28px; BACKGROUND: url(images/bnt_bg.png) no-repeat; HEIGHT: 28px
+}
+.content-menu SPAN {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 8px; PADDING-RIGHT: 8px; COLOR: #ddd; PADDING-TOP: 0px
+}
+.content-menu A {
+	CURSOR: pointer
+}
+.content-menu A.add {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.content-menu A.add EM {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 10px; BACKGROUND-POSITION: right top; COLOR: #fff; PADDING-TOP: 0px
+}
+.content-menu A.on {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; BACKGROUND-POSITION: left -40px; COLOR: #fff; PADDING-TOP: 0px; _background-position: left -39px
+}
+.content-menu A.on EM {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 10px; BACKGROUND-POSITION: right -40px; PADDING-TOP: 0px; _background-position: right -39px
+}
+#pages {
+	TEXT-ALIGN: right; PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 14px
+}
+#pages A {
+	BORDER-BOTTOM: #e3e3e3 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #e3e3e3 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; BACKGROUND: #fff; HEIGHT: 22px; COLOR: #333; BORDER-TOP: #e3e3e3 1px solid; BORDER-RIGHT: #e3e3e3 1px solid; PADDING-TOP: 0px
+}
+#pages A.a1 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 56px; PADDING-RIGHT: 0px; BACKGROUND: url(images/pages.png) no-repeat 0px 5px; PADDING-TOP: 0px
+}
+#pages A:hover {
+	BACKGROUND: #f1f1f1; COLOR: #000; TEXT-DECORATION: none
+}
+#pages SPAN {
+	BORDER-BOTTOM: #5a85b2 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #5a85b2 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 22px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: inline-block; BACKGROUND: #5a85b2; HEIGHT: 22px; COLOR: #fff; BORDER-TOP: #5a85b2 1px solid; BORDER-RIGHT: #5a85b2 1px solid; PADDING-TOP: 0px
+}
+.page .noPage {
+	BORDER-BOTTOM: #e3e3e3 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #e3e3e3 1px solid; LINE-HEIGHT: 22px; DISPLAY: inline-block; BACKGROUND: url(images/titleBg.png) repeat-x 0px -55px; HEIGHT: 22px; COLOR: #a4a4a4; BORDER-TOP: #e3e3e3 1px solid; BORDER-RIGHT: #e3e3e3 1px solid
+}
+.img-wrap {
+	BORDER-BOTTOM: #eee 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #eee 1px solid; BACKGROUND: #fff; OVERFLOW: hidden; BORDER-TOP: #eee 1px solid; BORDER-RIGHT: #eee 1px solid
+}
+.img-wrap A {
+	TEXT-ALIGN: center; DISPLAY: table-cell; VERTICAL-ALIGN: middle
+}
+#imgPreview TD.on {
+	BACKGROUND: #f4f9fe
+}
+#imgPreview TD.on A {
+	LINE-HEIGHT: 16px; PADDING-RIGHT: 70px; ZOOM: 1; DISPLAY: inline-block; BACKGROUND: url(images/msg_bg.png) no-repeat right -250px; HEIGHT: 16px; VERTICAL-ALIGN: middle
+}
+.role-memu {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 5px
+}
+.role-memu LI A {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 24px; BACKGROUND-COLOR: #fff; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; DISPLAY: block; HEIGHT: 24px; COLOR: #2e74d7; VERTICAL-ALIGN: middle; OVERFLOW: hidden; CURSOR: pointer; TEXT-DECORATION: none; PADDING-TOP: 0px
+}
+.role-memu LI A EM {
+	WIDTH: 80px; DISPLAY: block; OVERFLOW: hidden
+}
+.role-memu LI A SPAN {
+	FLOAT: right; COLOR: #999
+}
+.role-memu LI A SPAN IMG {
+	MARGIN-RIGHT: 2px
+}
+.role-memu LI.on A {
+	BACKGROUND: #e0e9f0
+}
+.role-but {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; LINE-HEIGHT: 36px; PADDING-LEFT: 12px; ZOOM: 1; DISPLAY: inline-block; BACKGROUND: url(images/tbtn.png) no-repeat; HEIGHT: 36px; VERTICAL-ALIGN: middle; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.role-but SPAN {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; LINE-HEIGHT: 36px; PADDING-LEFT: 12px; ZOOM: 1; DISPLAY: inline-block; BACKGROUND: url(images/tbtn.png) no-repeat; HEIGHT: 36px; VERTICAL-ALIGN: middle; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.role-but SPAN {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 12px; BACKGROUND-POSITION: right top; COLOR: #fff; FONT-SIZE: 14px; FONT-WEIGHT: 700; PADDING-TOP: 0px
+}
+.addContent {
+	MARGIN: 0px auto; WIDTH: 960px; OVERFLOW: hidden
+}
+.addContent .col-auto {
+	
+}
+.addContent .col-right {
+	WIDTH: 204px; MARGIN-LEFT: 6px; OVERFLOW: hidden
+}
+.addContent .col-right .content H6 {
+	BORDER-BOTTOM: #cfdce3 1px solid; PADDING-BOTTOM: 3px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 7px; PADDING-TOP: 8px
+}
+.addContent .col-right .content INPUT {
+	MAX-WIDTH: 182px
+}
+.addContent .col-right .content .upload-pic {
+	TEXT-ALIGN: center; WIDTH: 180px; HEIGHT: 180px; OVERFLOW: hidden
+}
+.addContent .col-right .content .upload-pic A {
+	TEXT-ALIGN: center; WIDTH: 180px; DISPLAY: table-cell; HEIGHT: 145px; VERTICAL-ALIGN: middle
+}
+.addContent .col-right .content .upload-pic {
+	BORDER-BOTTOM: #dce6ea 1px solid; BORDER-LEFT: #dce6ea 1px solid; PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; ZOOM: 1; BACKGROUND: #eef2f2; BORDER-TOP: #dce6ea 1px solid; BORDER-RIGHT: #dce6ea 1px solid; PADDING-TOP: 1px
+}
+.addContent .col-right SELECT#template {
+	MAX-WIDTH: 188px; _width: 188px
+}
+.list-dot {
+	PADDING-BOTTOM: 10px
+}
+.list-dot LI {
+	BORDER-BOTTOM: #c6dde0 1px dotted; POSITION: relative; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "??¨¬?"; COLOR: #bbb; PADDING-TOP: 5px; _height: 22px
+}
+.list-dot-othors LI {
+	BORDER-BOTTOM: #c6dde0 1px dotted; POSITION: relative; PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "??¨¬?"; COLOR: #bbb; PADDING-TOP: 5px; _height: 22px
+}
+.list-dot LI:hover {
+	BACKGROUND-COLOR: #d9e5ee
+}
+.list-dot-othors LI:hover {
+	BACKGROUND-COLOR: #d9e5ee
+}
+.list-dot LI SPAN {
+	COLOR: #004499
+}
+.list-dot-othors LI SPAN {
+	COLOR: #004499
+}
+.list-dot LI A.close SPAN {
+	DISPLAY: none
+}
+.list-dot-othors LI A.close SPAN {
+	DISPLAY: none
+}
+.list-dot LI A.close {
+	POSITION: absolute; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 16px; BOTTOM: 5px; DISPLAY: block; BACKGROUND: url(images/cross.png) no-repeat left 3px; HEIGHT: 16px; RIGHT: 5px
+}
+.list-dot-othors LI A.close {
+	POSITION: absolute; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WIDTH: 16px; BOTTOM: 5px; DISPLAY: block; BACKGROUND: url(images/cross.png) no-repeat left 3px; HEIGHT: 16px; RIGHT: 5px
+}
+.list-dot LI A.close:hover {
+	BACKGROUND-POSITION: left -46px
+}
+.list-dot-othors LI A.close:hover {
+	BACKGROUND-POSITION: left -46px
+}
+.list-dot-othors LI {
+	WIDTH: 24%; FLOAT: left; OVERFLOW: hidden
+}
+.comment {
+	PADDING-BOTTOM: 8px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 8px
+}
+.comment .title {
+	MARGIN-BOTTOM: 5px
+}
+.comment .title SPAN {
+	POSITION: relative; TOP: -5px
+}
+.comment .content {
+	BORDER-BOTTOM: #c4d5df 1px solid; BORDER-LEFT: #c4d5df 1px solid; PADDING-BOTTOM: 8px; MARGIN: 5px 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; ZOOM: 1; BACKGROUND: #f6f9fb; FONT-SIZE: 14px; BORDER-TOP: #c4d5df 1px solid; BORDER-RIGHT: #c4d5df 1px solid; PADDING-TOP: 8px
+}
+.comment .content SPAN {
+	DISPLAY: block
+}
+.comment_button {
+	MARGIN-BOTTOM: 15px
+}
+.comment_button A {
+	BORDER-BOTTOM: #c3d4e7 1px solid; BORDER-LEFT: #c3d4e7 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #c3d4e7 1px solid; BORDER-RIGHT: #c3d4e7 1px solid; PADDING-TOP: 5px
+}
+.comment_button A.on {
+	BORDER-BOTTOM: #3e73a9 1px solid; BORDER-LEFT: #3e73a9 1px solid; BACKGROUND: #4c7fb6; COLOR: #fff; BORDER-TOP: #3e73a9 1px solid; BORDER-RIGHT: #3e73a9 1px solid
+}
+.fillet {
+	BORDER-BOTTOM: #c4d5df 1px solid; POSITION: relative; BORDER-LEFT: #c4d5df 1px solid; ZOOM: 1; BORDER-TOP: #c4d5df 1px solid; BORDER-RIGHT: #c4d5df 1px solid
+}
+.fillet SPAN.o1 {
+	POSITION: absolute; WIDTH: 3px; BACKGROUND: url(images/fillet.png) no-repeat; HEIGHT: 3px; FONT-SIZE: 1px
+}
+.fillet SPAN.o2 {
+	POSITION: absolute; WIDTH: 3px; BACKGROUND: url(images/fillet.png) no-repeat; HEIGHT: 3px; FONT-SIZE: 1px
+}
+.fillet SPAN.o3 {
+	POSITION: absolute; WIDTH: 3px; BACKGROUND: url(images/fillet.png) no-repeat; HEIGHT: 3px; FONT-SIZE: 1px
+}
+.fillet SPAN.o4 {
+	POSITION: absolute; WIDTH: 3px; BACKGROUND: url(images/fillet.png) no-repeat; HEIGHT: 3px; FONT-SIZE: 1px
+}
+.fillet SPAN.o1 {
+	BACKGROUND-POSITION: left -6px; TOP: -1px; LEFT: -1px
+}
+.fillet SPAN.o2 {
+	BACKGROUND-POSITION: right -6px; TOP: -1px; RIGHT: -1px
+}
+.fillet SPAN.o3 {
+	BOTTOM: -1px; BACKGROUND-POSITION: left bottom; LEFT: -1px
+}
+.fillet SPAN.o4 {
+	BOTTOM: -1px; BACKGROUND-POSITION: right bottom; RIGHT: -1px
+}
+.workflow {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 140px; PADDING-TOP: 10px
+}
+.workflow .col {
+	PADDING-BOTTOM: 20px; BACKGROUND: url(images/arrowhead-y.png) no-repeat 10px bottom
+}
+.workflow DIV.off {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 0px
+}
+.workflow .content {
+	POSITION: relative; LEFT: 130px
+}
+.workflow .title {
+	POSITION: absolute; TEXT-ALIGN: center; PADDING-BOTTOM: 3px; PADDING-LEFT: 0px; WIDTH: 90px; PADDING-RIGHT: 0px; BACKGROUND: #fff; FONT-SIZE: 14px; TOP: -1px; FONT-WEIGHT: 700; PADDING-TOP: 0px; LEFT: -130px
+}
+.workflow .title SPAN.line {
+	BORDER-BOTTOM: #95b9cf 1px solid; POSITION: absolute; WIDTH: 32px; HEIGHT: 1px; FONT-SIZE: 1px; TOP: 17px; RIGHT: -37px
+}
+.workflow .fillet {
+	PADDING-BOTTOM: 7px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; BACKGROUND: #f6f9fb; PADDING-TOP: 8px
+}
+.workflow .name {
+	FONT-SIZE: 14px
+}
+.ScreenLock {
+	BACKGROUND-IMAGE: url(images/ScreenLock.png); BACKGROUND-COLOR: #3a6ea5
+}
+.ScreenLock {
+	Z-INDEX: 2000; POSITION: absolute; WIDTH: 100%; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 50% 50%; HEIGHT: 100%; TOP: 0px; LEFT: 0px
+}
+.ScreenLock .inputpwd {
+	POSITION: absolute; PADDING-BOTTOM: 28px; MARGIN: -102px 0px 0px -150px; PADDING-LEFT: 28px; WIDTH: 280px; PADDING-RIGHT: 28px; HEIGHT: 134px; FONT-SIZE: 14px; TOP: 50%; PADDING-TOP: 28px; LEFT: 50%
+}
+.ScreenLock H5 {
+	LINE-HEIGHT: 60px; PADDING-LEFT: 40px; BACKGROUND: url(images/msg_img/msg_bg.png) no-repeat 0px -476px; HEIGHT: 60px; PADDING-TOP: 10px
+}
+.ScreenLock .input-text {
+	BORDER-BOTTOM: #d0d0d0 1px solid; BORDER-LEFT: #d0d0d0 1px solid; PADDING-BOTTOM: 2px; MARGIN: 0px 5px 0px 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; FONT-FAMILY: Verdana, Geneva, sans-serif, "??¨¬?"; BACKGROUND: url(images/input.png) #fff repeat-x; HEIGHT: 18px; FONT-SIZE: 12px; BORDER-TOP: #d0d0d0 1px solid; BORDER-RIGHT: #d0d0d0 1px solid; PADDING-TOP: 2px
+}
+.ScreenLock .submit {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; WIDTH: 55px; ZOOM: 1; DISPLAY: inline-block; BACKGROUND: url(images/ScreenLockBut.png) no-repeat; HEIGHT: 24px; BORDER-TOP: medium none; CURSOR: hand; BORDER-RIGHT: medium none
+}
+.map-menu UL {
+	BORDER-BOTTOM: #a4c0f7 1px solid; BORDER-LEFT: #a4c0f7 1px solid; MARGIN: 4px; WIDTH: 156px; BORDER-TOP: #a4c0f7 1px solid; BORDER-RIGHT: #a4c0f7 1px solid
+}
+.map-menu UL LI.title {
+	PADDING-LEFT: 5px; BACKGROUND: #edf2f8; FONT-WEIGHT: bold
+}
+.map-menu UL LI.title2 {
+	PADDING-LEFT: 10px; FONT-WEIGHT: bold
+}
+.map-menu UL LI {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 20px; PADDING-RIGHT: 4px; PADDING-TOP: 4px
+}
+.tab-use {
+	POSITION: relative
+}
+.tab-use .arrows {
+	POSITION: absolute; WIDTH: 16px; BACKGROUND: url(images/toggle-collapse-dark.png) no-repeat; HEIGHT: 16px; OVERFLOW: hidden; TOP: -11px; LEFT: 0px
+}
+.tab-use UL {
+	POSITION: absolute; WIDTH: 80px; DISPLAY: none; TOP: 5px; LEFT: 0px
+}
+.tab-use UL LI {
+	
+}
+.tab-use UL A {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 8px; WIDTH: auto; PADDING-RIGHT: 8px; PADDING-TOP: 3px
+}

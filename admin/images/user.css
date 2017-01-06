@@ -1,0 +1,276 @@
+HTML {
+	FILTER: expression(document.execCommand("BackgroundImageCache",false,true))
+}
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+DT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+OL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+PRE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+BLOCKQUOTE {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+TH {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+TD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-FAMILY: "Î¢ÈíÑÅºÚ"; COLOR: #231815; PADDING-TOP: 0px
+}
+H1 {
+	FONT-SIZE: 100%
+}
+H2 {
+	FONT-SIZE: 100%
+}
+H3 {
+	FONT-SIZE: 100%
+}
+H4 {
+	FONT-SIZE: 100%
+}
+H5 {
+	FONT-SIZE: 100%
+}
+H6 {
+	FONT-SIZE: 100%
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+ADDRESS {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CAPTION {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CITE {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CODE {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+DFN {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+EM {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+TH {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+VAR {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+TABLE {
+	BORDER-COLLAPSE: collapse
+}
+FIELDSET {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+IMG {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px
+}
+INPUT {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+CAPTION {
+	TEXT-ALIGN: left
+}
+TH {
+	TEXT-ALIGN: left
+}
+BODY {
+	FONT: 12px Arial, Helvetica, sans-serif; HEIGHT: 100%
+}
+A {
+	COLOR: #231815; TEXT-DECORATION: none
+}
+A:hover {
+	ZOOM: 1; COLOR: #fff100
+}
+:focus {
+	OUTLINE-WIDTH: 0px
+}
+A:active {
+	OUTLINE-STYLE: none
+}
+.Clear {
+	FONT: 0px/0 "Î¢ÈíÑÅºÚ"; FLOAT: none; HEIGHT: 0px; CLEAR: both
+}
+.yzm {
+	POSITION: absolute; TEXT-ALIGN: center; WIDTH: 140px; DISPLAY: none; BACKGROUND: url(../images/login_ts140x89.gif) no-repeat; HEIGHT: 89px; FONT-SIZE: 12px; TOP: -96px; RIGHT: 56px
+}
+.yzm A:link {
+	COLOR: #036; TEXT-DECORATION: none
+}
+.yzm A:visited {
+	COLOR: #036; TEXT-DECORATION: none
+}
+.yzm A:hover {
+	COLOR: #c30
+}
+.yzm IMG {
+	BORDER-BOTTOM: #fff 1px solid; BORDER-LEFT: #fff 1px solid; MARGIN: 4px auto 7px; WIDTH: 130px; HEIGHT: 50px; BORDER-TOP: #fff 1px solid; CURSOR: pointer; BORDER-RIGHT: #fff 1px solid
+}
+.cr {
+	POSITION: absolute; TEXT-ALIGN: center; WIDTH: 100%; BOTTOM: 58px; COLOR: #ccc; FONT-SIZE: 12px
+}
+.cr A {
+	COLOR: #ccc; TEXT-DECORATION: none
+}
+BODY {
+	BACKGROUND: url(../images/BodyBg.jpg) #83add0 repeat-x
+}
+* HTML #Login {
+	POSITION: absolute
+}
+#Login {
+	TEXT-ALIGN: center; Z-INDEX: 1; POSITION: fixed; MARGIN-TOP: -281px; WIDTH: 633px; BACKGROUND: url(../images/LoginBg.png) no-repeat; HEIGHT: 483px; MARGIN-LEFT: -316px; TOP: 50%; LEFT: 50%
+}
+#Login H1 {
+	LINE-HEIGHT: 28px; FLOAT: left; FONT-SIZE: 28px; FONT-WEIGHT: normal
+}
+.LoginHead {
+	PADDING-LEFT: 100px; OVERFLOW: hidden; PADDING-TOP: 90px
+}
+.CopyRight {
+	LINE-HEIGHT: 16px; PADDING-LEFT: 10px; FLOAT: left; COLOR: #666
+}
+.LoginContent {
+	PADDING-TOP: 60px
+}
+.InputContent1 {
+	LINE-HEIGHT: 56px; MARGIN: 0px auto 5px; WIDTH: 493px; BACKGROUND: url(../images/LoginA.gif) no-repeat; HEIGHT: 56px
+}
+.InputContent2 {
+	LINE-HEIGHT: 56px; MARGIN: 0px auto 5px; WIDTH: 493px; BACKGROUND: url(../images/LoginA.gif) no-repeat; HEIGHT: 56px
+}
+.InputContent3 {
+	LINE-HEIGHT: 56px; MARGIN: 0px auto 5px; WIDTH: 493px; BACKGROUND: url(../images/LoginA.gif) no-repeat; HEIGHT: 56px
+}
+.InputContent1 B {
+	TEXT-ALIGN: center; WIDTH: 110px; DISPLAY: block; FLOAT: left; COLOR: #666; FONT-SIZE: 18px; FONT-WEIGHT: normal
+}
+.InputContent2 B {
+	TEXT-ALIGN: center; WIDTH: 110px; DISPLAY: block; FLOAT: left; COLOR: #666; FONT-SIZE: 18px; FONT-WEIGHT: normal
+}
+.InputContent3 B {
+	TEXT-ALIGN: center; WIDTH: 110px; DISPLAY: block; FLOAT: left; COLOR: #666; FONT-SIZE: 18px; FONT-WEIGHT: normal
+}
+.InputContent1 INPUT {
+	BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; LINE-HEIGHT: 56px; BORDER-RIGHT-STYLE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 360px; PADDING-RIGHT: 0px; DISPLAY: block; FONT-FAMILY: Arial, Helvetica, sans-serif; BORDER-TOP-STYLE: none; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; HEIGHT: 56px; COLOR: #069; FONT-SIZE: 24px; BORDER-LEFT-STYLE: none; PADDING-TOP: 0px
+}
+.InputContent2 INPUT {
+	BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; LINE-HEIGHT: 56px; BORDER-RIGHT-STYLE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 360px; PADDING-RIGHT: 0px; DISPLAY: block; FONT-FAMILY: Arial, Helvetica, sans-serif; BORDER-TOP-STYLE: none; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; HEIGHT: 56px; COLOR: #069; FONT-SIZE: 24px; BORDER-LEFT-STYLE: none; PADDING-TOP: 0px
+}
+.InputContent3 INPUT {
+	BORDER-BOTTOM-STYLE: none; PADDING-BOTTOM: 0px; LINE-HEIGHT: 56px; BORDER-RIGHT-STYLE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 360px; PADDING-RIGHT: 0px; DISPLAY: block; FONT-FAMILY: Arial, Helvetica, sans-serif; BORDER-TOP-STYLE: none; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; HEIGHT: 56px; COLOR: #069; FONT-SIZE: 24px; BORDER-LEFT-STYLE: none; PADDING-TOP: 0px
+}
+.checkcodeimg{
+	BACKGROUND: url(../images/getcode1.png) no-repeat; WIDTH:60px; HEIGHT:50px; MARGIN-TOP:2px
+}
+.InputContent3 {
+	BACKGROUND: url(../images/LoginB.gif) no-repeat
+}
+.InputContent1:hover {
+	BACKGROUND: url(../images/LoginHover.gif) no-repeat
+}
+.InputContent2:hover {
+	BACKGROUND: url(../images/LoginHover.gif) no-repeat
+}
+.InputContent1:focus {
+	BACKGROUND: url(../images/LoginHover.gif) no-repeat
+}
+.InputContent2:focus {
+	BACKGROUND: url(../images/LoginHover.gif) no-repeat
+}
+.InputContent3 INPUT {
+	WIDTH: 170px
+}
+.InputContent3 SPAN {
+	PADDING-LEFT: 20px; FLOAT: left; HEIGHT: 56px; FONT-SIZE: 18px
+}
+.SubBtn {
+	WIDTH: 136px; BACKGROUND: url(../images/Btn1.png); HEIGHT: 51px; CURSOR: pointer
+}
+.NosubBtn {
+	WIDTH: 136px; BACKGROUND: url(../images/Btn2.png); HEIGHT: 51px; CURSOR: pointer
+}
+.LoginBtn {
+	MARGIN: 0px auto; WIDTH: 300px; CURSOR: pointer; PADDING-TOP: 40px
+}
+.SubBtn:hover {
+	BACKGROUND: url(../images/Btn1.png) no-repeat 0px -51px
+}
+.SubBtn:focus {
+	BACKGROUND: url(../images/Btn1.png) no-repeat 0px -51px
+}
+.NosubBtn:hover {
+	BACKGROUND: url(../images/Btn2.png) no-repeat 0px -51px
+}
+.NosubBtn:focus {
+	BACKGROUND: url(../images/Btn2.png) no-repeat 0px -51px
+}
+.InputContent3:hover {
+	BACKGROUND: url(../images/LoginHover3.gif) no-repeat
+}
+.InputContent3:focus {
+	BACKGROUND: url(../images/LoginHover3.gif) no-repeat
+}
+#code_img {
+	MARGIN-TOP: 2px
+}
