@@ -13,18 +13,18 @@ if($rs!=NULL)
 }
 
 $ID=$_REQUEST["ID"];
-$sqlN="select * from ruanwen_info where ID=".$ID."";
+$sqlN="select * from ruanwen_info where ID=".$ID;
 $resultN=mysql_db_query($dbname,$sqlN);
 $rsN=mysql_fetch_array($resultN);
 /*王庆路	根据content字段内容判断是三种类型的哪一种*/
 $content = $rsN['content'];
-
 $onLine = "";
 $reprint = "";
 $upload = "";
 
 $is_url = substr($rsN["content"], 0, 5);
 $is_also_url = substr($rsN["content"], 0, 6);
+
 $is_upload = substr($rsN["content"], 0, 10);
 if($is_url == "http:" || $is_also_url == "https:"){
 	$reprint = $content;
@@ -35,6 +35,9 @@ else if ($is_upload == "huo15com->"){
 else{
 	$onLine = $content;
 }
+
+
+
 /*王庆路	根据content字段内容判断是三种类型的哪一种 end*/
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -69,6 +72,7 @@ KE.show({
 /*王庆路	软文发布编辑三种方式切换*/
 $(function() {
 	$("#conurl").hide();
+	$("#uploadComponent").hide();
 	$("#upload").hide();
 	$("#uploadLabel").hide();
 	$("#file_upload").hide();
@@ -88,6 +92,7 @@ function docheck()
 		$("#art_url_input").hide();
 		$("#file_upload-button").hide();
 		$("#uploadLabel").hide();
+		$("#uploadComponent").hide();
 		$("#nr").removeClass("on");
 		$("#download").hide();
 		$("#judge").val(1);
@@ -102,6 +107,7 @@ function docheck()
 		$("#uploadLabel").show();
 		$("#nr").addClass("on");
 		$("#download").hide();
+		$("#uploadComponent").show();
 		$("#judge").val(2);
 	}
 	else if (document.form1.fbmode[2].checked)
@@ -179,15 +185,15 @@ html{_overflow-y:scroll}.background{display:block;width:100%;height:100%;opacity
 				<label id="uploadLabel" class="uploadifyQueue" style="display: none;"></label>
 
 				<!--上传组件-->
-				<div>
+				<div id="uploadComponent">
 					<div style="display: block; float: left">
-						<input id="art_url_input" name="art_url_input" type="text" size="100/" value="<?php echo substr($upload, 10); ?>">
+						<input id="art_url_input" name="art_url_input" type="text" size="100" value="<?php echo substr($upload, 10); ?>">
 						<input style=" float: left" id="file_upload" name="file_upload" type="file" multiple="true">
 					</div>
 					<!--上传word稿件文件路径-->
-					<?php $filePath = substr($upload, 11);?>
+					<?php $filePath = substr($upload, 10);?>
 					<!--稿件下载-->
-					<div style="margin-left: 10px; display: block; float: left"><div id="download" style="width: 120px; height: 30px;"><a style=" width: 100%; line-height: 30px; float: left;text-decoration:none;" class="uploadify-button" href="<?php echo $filePath; ?>"><span>稿件下载</span></a></div>
+					<div style="margin-left: 10px; display: block; float: left"><div id="download" style="width: 120px; height: 30px;"><a style=" width: 100%; line-height: 30px; float: left;text-decoration:none;" class="uploadify-button" href="/<?php echo $filePath; ?>" target="_blank"><span>稿件下载</span></a></div>
 				</div>
 				</div>
 				<script src="../huo15template/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>

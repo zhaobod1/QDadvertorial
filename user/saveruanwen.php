@@ -94,7 +94,7 @@ if ($_COOKIE["fg"] > 3) {
 					$mid = $idmc[0];
 					$medianame = $idmc[1];
 
-					$sqla = "select * from media_info where ID=" . $mid . "";
+					$sqla = "select * from media_info where ID=" . $mid ;
 					$resulta = mysql_db_query($dbname, $sqla);
 					$rsa = mysql_fetch_array($resulta);
 					$owner = $rsa["VipUser"];

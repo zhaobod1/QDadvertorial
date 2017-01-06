@@ -13,7 +13,7 @@ if($rs!=NULL)
 }
 
 $ID=$_REQUEST["ID"];
-$sqlN="select * from ruanwen_info where ID=".$ID."";
+$sqlN="select * from ruanwen_info where ID=".$ID;
 $resultN=mysql_db_query($dbname,$sqlN);
 $rsN=mysql_fetch_array($resultN);
 ?>

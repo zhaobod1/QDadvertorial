@@ -1,134 +1,139 @@
 <?php
 class newsNr
 {
-  /*--------------------Ωÿ»°◊÷∑˚¥Æ--------------------------*/
-  
-    function str($title,$n)
-  {
-  $len = strlen($title);//15
-  if ($len <= $n)
-  {
-   $title = $title;
-  }
-  else
-  {
-  $title = substr($title,0,$n).".."; 
-  }
-   return $title;
-  }
-  
-  
-function ChgTitle($title,$n)  
-{  
-$length = $n; //Œ“√«‘ –Ì◊÷∑˚¥Æœ‘ æµƒ◊Ó¥Û≥§∂» 
-if (strlen($title)>$length) {  
-$temp = 0;  
-for($i=0; $i<$length; $i++)  
-if (ord($title[$i]) > 128) $temp++;  
-if ($temp%2 == 0)  
-$title = substr($title,0,$length)."...";  
-else  
-$title = substr($title,0,$length+1)."...";  
-}  
-return $title;  
-}
+	/*--------------------Êà™ÂèñÂ≠óÁ¨¶‰∏≤--------------------------*/
 
-  
-  /*--------------------BigClass◊™ªª--------------------------*/
-  function BigIDtoBig($BigID,$table)
-  {
-    $sql="select * from ".$table." where id=".$BigID."";
-	global $dbname;
-	$result = mysql_db_query($dbname, $sql);
-	$rs=mysql_fetch_array($result);
-	return $rs["BigClass"];
-  }
-  
-  public function utfSubstr($str, $position, $length){
-  $type=1;
-  $startPos = strlen($str);
-  $startByte = 0;
-  $endPos = strlen($str);
-  $count = 0;
-  for($i=0; $i<strlen($str); $i++){
-   if($count>=$position && $startPos>$i){
-    $startPos = $i;
-    $startByte = $count;
-   }
-   if(($count-$startByte) >= $length) {
-    $endPos = $i;
-    break;
-   }    
-   $value = ord($str[$i]);
-   if($value > 127){
-    $count++;
-    if($value>=192 && $value<=223) $i++;
-    elseif($value>=224 && $value<=239) $i = $i + 2;
-    elseif($value>=240 && $value<=247) $i = $i + 3;
-    else return self::raiseError("\"$str\" Not a UTF-8 compatible string", 0, __CLASS__, __METHOD__, __FILE__, __LINE__);
-   }
-   $count++;
+	function str($title,$n)
+	{
+		$len = strlen($title);//15
+		if ($len <= $n)
+		{
+			$title = $title;
+		}
+		else
+		{
+			$title = substr($title,0,$n)."..";
+		}
+		return $title;
+	}
 
-  }
-  if($type==1 && ($endPos-6)>$length){
-   return substr($str, $startPos, $endPos-$startPos)."..."; 
-       }else{
-   return substr($str, $startPos, $endPos-$startPos);     
-    }
-  
- }
-  
+
+	function ChgTitle($title,$n)
+	{
+		$length = $n; //Êàë‰ª¨ÂÖÅËÆ∏Â≠óÁ¨¶‰∏≤ÊòæÁ§∫ÁöÑÊúÄÂ§ßÈïøÂ∫¶
+		if (strlen($title)>$length) {
+			$temp = 0;
+			for($i=0; $i<$length; $i++)
+				if (ord($title[$i]) > 128) $temp++;
+			if ($temp%2 == 0)
+				$title = substr($title,0,$length)."...";
+			else
+				$title = substr($title,0,$length+1)."...";
+		}
+		return $title;
+	}
+
+
+	/*--------------------BigClassËΩ¨Êç¢--------------------------*/
+	function BigIDtoBig($BigID,$table)
+	{
+		$sql="select * from ".$table." where id=".$BigID."";
+		global $dbname;
+		$result = mysql_db_query($dbname, $sql);
+		$rs=mysql_fetch_array($result);
+		return $rs["BigClass"];
+	}
+
+	public function utfSubstr($str, $position, $length){
+		$type=1;
+		$startPos = strlen($str);
+		$startByte = 0;
+		$endPos = strlen($str);
+		$count = 0;
+		for($i=0; $i<strlen($str); $i++){
+			if($count>=$position && $startPos>$i){
+				$startPos = $i;
+				$startByte = $count;
+			}
+			if(($count-$startByte) >= $length) {
+				$endPos = $i;
+				break;
+			}
+			$value = ord($str[$i]);
+			if($value > 127){
+				$count++;
+				if($value>=192 && $value<=223) $i++;
+				elseif($value>=224 && $value<=239) $i = $i + 2;
+				elseif($value>=240 && $value<=247) $i = $i + 3;
+				else return self::raiseError("\"$str\" Not a UTF-8 compatible string", 0, __CLASS__, __METHOD__, __FILE__, __LINE__);
+			}
+			$count++;
+
+		}
+		if($type==1 && ($endPos-6)>$length){
+			return substr($str, $startPos, $endPos-$startPos)."...";
+		}else{
+			return substr($str, $startPos, $endPos-$startPos);
+		}
+
+	}
+
 }
 $newsOB=new newsNr();
 
-
-//≈–∂œ∆Ê ˝£¨ «∑µªÿTRUE£¨∑Ò∑µªÿFALSE
+function dd($arr, $useDie=true) {
+	var_dump($arr);
+	if ($useDie == true) {
+		die;
+	}
+}
+//Âà§Êñ≠Â•áÊï∞ÔºåÊòØËøîÂõûTRUEÔºåÂê¶ËøîÂõûFALSE
 
 function is_odd($num){
-return (is_numeric($num)&($num&1));
+	return (is_numeric($num)&($num&1));
 }
 
-//≈–∂œ≈º ˝£¨ «∑µªÿTRUE£¨∑Ò∑µªÿFALSE
+//Âà§Êñ≠ÂÅ∂Êï∞ÔºåÊòØËøîÂõûTRUEÔºåÂê¶ËøîÂõûFALSE
 
 function is_even($num){
-return (is_numeric($num)&(!($num&1)));
+	return (is_numeric($num)&(!($num&1)));
 }
 
 
-//»°µ√ ±º‰µƒƒÍ
-//echo "ƒÍ£∫".getyear(date('Y-m-d H:i:s'));
+//ÂèñÂæóÊó∂Èó¥ÁöÑÂπ¥
+//echo "Âπ¥Ôºö".getyear(date('Y-m-d H:i:s'));
 function getyear($date)
 {
-$strtime = $date;
-$strtimes = explode(" ",$strtime);
-$timearray = explode("-",$strtimes[0]);
-$year = $timearray[0];
-$month = $timearray[1];
-$day = $timearray[2];
-return $year;
+	$strtime = $date;
+	$strtimes = explode(" ",$strtime);
+	$timearray = explode("-",$strtimes[0]);
+	$year = $timearray[0];
+	$month = $timearray[1];
+	$day = $timearray[2];
+	return $year;
 }
-//»°µ√ ±º‰µƒ‘¬
-//echo "‘¬£∫".getmonth(date('Y-m-d H:i:s'));
+//ÂèñÂæóÊó∂Èó¥ÁöÑÊúà
+//echo "ÊúàÔºö".getmonth(date('Y-m-d H:i:s'));
 function getmonth($date)
 {
-$strtime = $date;
-$strtimes = explode(" ",$strtime);
-$timearray = explode("-",$strtimes[0]);
-$year = $timearray[0];
-$month = $timearray[1];
-$day = $timearray[2];
-return $month;
+	$strtime = $date;
+	$strtimes = explode(" ",$strtime);
+	$timearray = explode("-",$strtimes[0]);
+	$year = $timearray[0];
+	$month = $timearray[1];
+	$day = $timearray[2];
+	return $month;
 }
-//»°µ√ ±º‰µƒ»’
-//echo "»’£∫".getday(date('Y-m-d H:i:s'));
+//ÂèñÂæóÊó∂Èó¥ÁöÑÊó•
+//echo "Êó•Ôºö".getday(date('Y-m-d H:i:s'));
 function getday($date)
 {
-$strtime = $date;
-$strtimes = explode(" ",$strtime);
-$timearray = explode("-",$strtimes[0]);
-$year = $timearray[0];
-$month = $timearray[1];
-$day = $timearray[2];
-return $day;
+	$strtime = $date;
+	$strtimes = explode(" ",$strtime);
+	$timearray = explode("-",$strtimes[0]);
+	$year = $timearray[0];
+	$month = $timearray[1];
+	$day = $timearray[2];
+	return $day;
 }
 ?>
