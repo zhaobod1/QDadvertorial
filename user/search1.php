@@ -1,4 +1,14 @@
 ﻿<?php
+/**
+ * 前台会员没有注册的时候 搜索价格报表
+ * Created by iMac
+ * 火一五信息科技有限公司
+ * 联系方式:15288986891
+ * QQ:3186355915
+ * web:http://host.huo15.com
+ * 日期：2017/1/6
+ */
+
 include ("../include/config.php");
 include ("../include/function.php");
 $VipUser=$_COOKIE["VipUser"];

@@ -1,0 +1,31 @@
+.nom {
+    margin:0;
+    padding:0;
+}
+#main .head {
+    height: 52px;
+    line-height: 52px;
+    padding-left: 50px;
+    border-bottom: 1px solid #ddd;
+}
+#main .head strong {
+    font-size: 16px;
+    color: #1F7ED0;
+}
+#main .head small {
+    color: #999;
+    font-size: 12px;
+}
+#main .body {
+    width:100%;
+    padding:10px 20px;
+}
+#flselect {
+    float: left;
+    border-top: 1px solid #d2d2d2;
+    margin-bottom: 30px;
+    padding-bottom: 26px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}

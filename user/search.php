@@ -1,8 +1,18 @@
 ﻿<?php
+/**
+ * 会员搜索价格报表
+ *
+ * Created by iMac
+ * 火一五信息科技有限公司
+ * 联系方式:15288986891
+ * QQ:3186355915
+ * web:http://host.huo15.com
+ * 日期：2017/1/6
+ */
+
 include ("../include/config.php");
 include ("../include/function.php");
 $VipUser=$_COOKIE["VipUser"];
-//echo "<script>alert('".$VipUser."');</script>";
 $sqlu="select * from user where VipUser='".$VipUser."'";
 $resultu=mysql_db_query($dbname,$sqlu);
 $rsu=mysql_fetch_array($resultu);

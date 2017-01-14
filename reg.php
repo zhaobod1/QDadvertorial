@@ -34,6 +34,8 @@ include("include/function.php");
 	<link rel="stylesheet" href="huo15template/css/normalize.css">
 	<link rel="stylesheet" href="huo15template/css/main.css">
 	<script src="huo15template/js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="huo15template/js/validation/lib/jquery.js"></script>
+
 	<!-- Bootstrap -->
 	<link href="huo15template/static/css/bootstrap.min.css" rel="stylesheet">
 
@@ -49,6 +51,10 @@ include("include/function.php");
 	<link rel="stylesheet" href="huo15template/css/base.css">
 	<link rel="stylesheet" href="huo15template/css/style.css">
 	<!--公共样式 end-->
+	<!-- 火一五信息科技 huo15.com validate on 2017/1/6. -->
+	<script src="huo15template/js/validation/jquery.validate.js"></script>
+	<script src="huo15template/js/validation/additional-methods.js"></script>
+	<script src="huo15template/js/validation/messages_zh.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -58,8 +64,6 @@ include("include/function.php");
 <![endif]-->
 
 <!-- Add your site or application content here -->
-
-
 
 
 <?php
@@ -113,10 +117,12 @@ include("menu.php");
 		margin-top: 10px;
 		line-height: 24px;
 	}
+
 	.enroll .en02 {
 		padding: 20px 0;
 		margin-bottom: 30px;
 	}
+
 	.enroll .en02 .hd {
 		background: #F5F5F5;
 		padding: 3px 10px;
@@ -125,20 +131,24 @@ include("menu.php");
 		font-size: 16px;
 		font-weight: bold;
 	}
+
 	.enroll .en02 dl {
 		padding: 20px 0;
 		margin-left: 140px;
 	}
+
 	.enroll .en02 dl dd {
 		height: 28px;
 		margin-bottom: 15px;
 	}
+
 	.enroll .en02 label {
 		display: block;
 		float: left;
 		margin-top: 3px;
 		width: 80px;
 	}
+
 	.enroll .en02 .text {
 		float: left;
 		height: 26px;
@@ -146,17 +156,20 @@ include("menu.php");
 		border: 1px solid #ddd;
 		width: 250px;
 	}
+
 	.enroll .en02 em {
 		margin-left: 10px;
 		line-height: 28px;
 	}
+
 	.Validform_wrong {
 		color: red;
 		white-space: nowrap;
 		background: url(huo15template/img/error.png) no-repeat left center;
 	}
 </style>
-<DIV class="enroll" style="PADDING-BOTTOM: 20px; MARGIN: 0px auto; PADDING-LEFT: 50px; WIDTH: 1040px; PADDING-RIGHT: 50px; PADDING-TOP: 10px">
+<DIV class="enroll"
+     style="PADDING-BOTTOM: 20px; MARGIN: 0px auto; PADDING-LEFT: 50px; WIDTH: 1040px; PADDING-RIGHT: 50px; PADDING-TOP: 10px">
 	<DIV class="en01">
 		<SPAN class=head>&gt;&gt;&nbsp;已经是会员？请点：
 			<input name="" type="submit" class="sub" onclick="location.href='/'">
@@ -172,29 +185,79 @@ include("menu.php");
 </SPAN>
 	</DIV>
 	<BR>
+	<style>
+		.enroll .en02 label.error {
+			display: inline-block;
+			float: none;
+			margin-top: 3px;
+			font-weight: normal;
+			color: red;
+			width: 400px;
+			margin-left: 5px;
+
+		}
+	</style>
+	<script>
+		$(function () {
+			$("#form1").validate({
+				rules: {
+					pass1: "required",
+					pass2: {
+						equalTo: "#pass1"
+					},
+					tel: {
+						isMobile : true,
+						required : true,
+						minlength : 11,
+					}
+
+				},
+				messages:{
+					tel : {
+						required : "请输入手机号",
+						minlength : "确认手机不能小于11个字符",
+						isMobile : "请正确填写您的手机号码"
+					},
+				}
+			});
+
+
+		});
+		// 手机号码验证
+		jQuery.validator.addMethod("isMobile", function(value, element) {
+			var length = value.length;
+			var mobile = /^(13[0-9]{9})|(18[0-9]{9})|(14[0-9]{9})|(17[0-9]{9})|(15[0-9]{9})$/;
+			return this.optional(element) || (length == 11 && mobile.test(value));
+		}, "请正确填写您的手机号码");
+	</script>
 	<FORM name="form1" id="form1" onsubmit="return postform();" method="post" action="savevip.php?action=add">
 		<div class="en02">
 			<ul>
 				<li>
 					<div class="hd">账户信息</div>
 					<dl>
-						<dd>
+						<dd style="display: none;">
 							<label>会员类型：</label>
 							<INPUT id=g_1 value=3 CHECKED type="radio" name="flag">企业用户　
-							<INPUT id=g_2 value=2 type="radio" name="flag">加盟合作用户						</dd>
+							<INPUT id=g_2 value=2 type="radio" name="flag">加盟合作用户
+						</dd>
 						<dd>
 							<label>会员名：</label>
-							<INPUT onblur=checknew() style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="user" class="reg_inp" type="text" name="user">
+							<INPUT onblur=checknew() style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="user"
+							       class="reg_inp" type="text" name="user" minlength="3" type="text" required>
 						</dd>
 						<dd>
 							<label>登录密码：</label>
-							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="pass1" class="reg_inp" type="password" name="pass1"> 密码不能小于6个字符
+							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="pass1" class="reg_inp"
+							       type="password" name="pass1" required minlength="6">
 						</dd>
 						<dd>
 							<label>确认密码：</label>
-							<INPUT onblur=twopass() style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="pass2" class="reg_inp" size=30 type="password" name="pass2">
+							<INPUT  style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="pass2"
+							       class="reg_inp" size=30 type="password" name="pass2">
 							<SPAN id=un1 class=f_red></SPAN>
-							<SPAN style="COLOR: #ccc">两次密码请输入一致</SPAN>						</dd>
+
+						</dd>
 
 					</dl>
 				</li>
@@ -203,27 +266,32 @@ include("menu.php");
 					<dl>
 						<dd>
 							<label>电子邮箱：</label>
-							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="email" class="reg_inp" type="text" name="email">
+							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="email" class="reg_inp"
+							       type="email" name="email" >
 							<DIV style="DISPLAY: none" id=temail class=tips></DIV>
 							<SPAN id=demail class=f_red></SPAN>&nbsp;
 						</dd>
 
 						<dd>
 							<label>QQ号码：</label>
-							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="qq" class="reg_inp" type="text" name="qq">
+							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="qq" class="reg_inp"
+							       type="text" name="qq" minlength="5"  required>
 							<SPAN id=dqq class=f_red></SPAN>
 						</dd>
 						<dd>
 							<label>手机号码：</label>
-							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="tel" class="reg_inp" type="text" name="tel">
+							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="tel" class="reg_inp"
+							       type="text" name="tel">
 						</dd>
 						<dd>
 							<label>网站地址：</label>
-							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="tel" class="reg_inp" type="text" name="tel">
+							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 200px; HEIGHT: 22px" id="website" class="reg_inp"
+							       type="text" name="website">
 						</dd>
 						<dd>
 							<label>验&nbsp;证&nbsp;码：</label>
-							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 130px; HEIGHT: 22px" id=ver maxLength=5 type=text name=code>
+							<INPUT style="LINE-HEIGHT: 22px; WIDTH: 130px; HEIGHT: 22px" id=ver maxLength=5 type=text
+							       name=code>
 							<div class="yzm"><?php echo $_SESSION['authnum']; ?></div>
 							<SPAN id=dcaptcha class=f_red></SPAN>
 						</dd>
@@ -231,12 +299,11 @@ include("menu.php");
 				</li>
 			</ul>
 
-			<input id="formSub" name="submit" style="width: 500px;margin-left: 140px;" type="submit" value="注册" class="btn btn-lg btn-primary">
+			<input id="formSub" name="submit" style="width: 500px;margin-left: 140px;" type="submit" value="注册"
+			       class="btn btn-lg btn-primary">
 		</div>
 	</FORM>
 	<BR>
-
-
 
 
 	<SCRIPT type=text/javascript>
@@ -345,7 +412,6 @@ include("menu.php");
 <?php
 include("footer.php");
 ?>
-<script src="huo15template/js/jquery1.42.min.js"></script>
 
 <script>
 	$('#formsub').click(function (e) {
