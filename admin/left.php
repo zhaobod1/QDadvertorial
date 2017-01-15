@@ -145,6 +145,8 @@ function ShowFLT(i) {
 <li id="_MP16" class="sub_menu"><a href="javascript:_MP(16,'managedqbigclass.php?titleID=diqu');" hidefocus="true" style="outline:none;">媒体地区管理</a></li>
 <li id="_MP17" class="sub_menu"><a href="javascript:_MP(17,'managemhbigclass.php?titleID=menhu');" hidefocus="true" style="outline:none;">门户媒体管理</a></li>
 <li id="_MP101" class="sub_menu"><a href="javascript:_MP(101,'managemhbigclass.php?titleID=lurl');" hidefocus="true" style="outline:none;">链接情况管理</a></li>
+<li id="_MP102" class="sub_menu"><a href="javascript:_MP(102,'managemhbigclass.php?titleID=source');" hidefocus="true" style="outline:none;">新闻源头管理</a></li>
+<li id="_MP103" class="sub_menu"><a href="javascript:_MP(103,'managemhbigclass.php?titleID=entrance');" hidefocus="true" style="outline:none;">入口级别管理</a></li>
 <li id="_MP18" class="sub_menu"><a href="javascript:_MP(18,'addmtbigclass.php?titleID=media');" hidefocus="true" style="outline:none;">添加媒体资源</a></li>
 <li id="_MP19" class="sub_menu"><a href="javascript:_MP(19,'managemtbiginfo.php');" hidefocus="true" style="outline:none;">管理媒体资源</a></li>
 <li id="_MP20" class="sub_menu"><a href="javascript:_MP(20,'managemtbiginfo1.php');" hidefocus="true" style="outline:none;">待审媒体资源</a></li>

@@ -148,21 +148,29 @@ $titleID = $_REQUEST["titleID"];
 		<tr bgcolor="#FFFFFF">
 			<td width="17%" align="right">新闻源：</td>
 			<td><select name="xinwenyuan" size="1" id="xinwenyuan">
-					<option value="非新闻源">非新闻源</option>
-					<option value="网页收录">网页收录</option>
-					<option value="百度新闻源">百度新闻源</option>
-					<option value="谷歌新闻源">谷歌新闻源</option>
-					<option value="搜狗新闻源">搜狗新闻源</option>
-					<option value="360新闻源">360新闻源</option>
-					<option value="搜搜新闻源">搜搜新闻源</option>
+					<?php
+					$sqld = "select * from source_class";
+					$resultd = mysql_db_query($dbname, $sqld);
+					while ($rsd = mysql_fetch_array($resultd)) {
+						?>
+						<option value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+						<?php
+					}
+					?>
 				</select></td>
 		</tr>
 		<tr bgcolor="#FFFFFF">
 			<td width="17%" align="right">入口级别：</td>
 			<td><select name="xinwenyuan" size="1" id="xinwenyuan">
-					<option value="媒体首页">媒体首页</option>
-					<option value="栏目页面">栏目页面</option>
-					<option value="没有入口">没有入口</option>
+					<?php
+					$sqld = "select * from entrance_class";
+					$resultd = mysql_db_query($dbname, $sqld);
+					while ($rsd = mysql_fetch_array($resultd)) {
+						?>
+						<option value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+						<?php
+					}
+					?>
 				</select></td>
 		</tr>
 		<tr bgcolor="#FFFFFF">

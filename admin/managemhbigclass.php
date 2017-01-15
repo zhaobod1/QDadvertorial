@@ -18,12 +18,13 @@ include ("checkuser.php");
 <?php
 $titleID=$_REQUEST["titleID"];
 $sql="select count(*) from ".$titleID."_class";
+
+
 //$result=mysql_db_query($dbname,$sql);
 mysql_select_db($dbname);
 $result=mysql_query($sql);
 $rs=mysql_fetch_array($result);
 $num=$rs[0];
-
 $sql="select * from ".$titleID."_class order by paixu asc";
 //$result=mysql_db_query($dbname,$sql);
 mysql_select_db($dbname);
