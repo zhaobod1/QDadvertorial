@@ -2,7 +2,8 @@
 
 
 ##页面信息
-
+* 管理媒体资源页面   
+/Users/apple/tina/www/php/QDadvertorial/admin/managemtbiginfo.php
 * 添加媒体页面   
 /Users/apple/tina/www/php/QDadvertorial/admin/addmtbigclass.php
 * 添加媒体 保持页面   
