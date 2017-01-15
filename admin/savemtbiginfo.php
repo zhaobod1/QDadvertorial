@@ -27,9 +27,11 @@ else
   if($fans==""){
 	$fans=0;
   }
-  $price=@$_REQUEST["price"];
-  $dlprice=@$_REQUEST["dlprice"];
-  $scprice=@$_REQUEST["scprice"];
+  $price=@$_REQUEST["price"];//成本价格
+  $dlprice1=@$_REQUEST["dlprice1"];
+  $dlprice2=@$_REQUEST["dlprice2"];
+  $dlprice3=@$_REQUEST["dlprice3"];
+  $scprice=@$_REQUEST["scprice"];//零售价格
   $jjprice=@$_REQUEST["jjprice"];
   $content=@$_REQUEST["content"];
   $neirong=@$_REQUEST["neirong"];

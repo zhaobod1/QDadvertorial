@@ -179,9 +179,21 @@ $titleID = $_REQUEST["titleID"];
 				</label></td>
 		</tr>
 		<tr bgcolor="#FFFFFF">
-			<td width="17%" align="right">代理价格：</td>
+			<td width="17%" align="right">三级价格：</td>
 			<td><label>
-					<input name="dlprice" type="text" id="dlprice" size="13"/>元
+					<input name="dlprice3" type="text" id="dlprice3" size="13"/>元
+				</label></td>
+		</tr>
+		<tr bgcolor="#FFFFFF">
+			<td width="17%" align="right">二级价格：</td>
+			<td><label>
+					<input name="dlprice2" type="text" id="dlprice2" size="13"/>元
+				</label></td>
+		</tr>
+		<tr bgcolor="#FFFFFF">
+			<td width="17%" align="right">一级价格：</td>
+			<td><label>
+					<input name="dlprice1" type="text" id="dlprice1" size="13"/>元
 				</label></td>
 		</tr>
 		<tr bgcolor="#FFFFFF">
