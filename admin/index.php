@@ -1,4 +1,14 @@
 ﻿<?php
+/**
+ * Created by iMac
+ * 后台框架页面
+ * 火一五信息科技有限公司
+ * 联系方式:15288986891
+ * QQ:3186355915
+ * web:http://host.huo15.com
+ * 日期：2017/1/15
+ */
+
 include ("checkuser.php");
 include ("../include/config.php");
 $fg=$_COOKIE["fg"];

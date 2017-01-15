@@ -7,6 +7,8 @@ include ("checkuser.php");
 $titleID=$_REQUEST["titleID"];
 
 $sql="select count(*) from ".$titleID."_class";
+
+
 //$result=mysql_db_query($dbname,$sql);
 mysql_select_db($dbname);
 $result=mysql_query($sql);

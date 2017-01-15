@@ -1,4 +1,14 @@
 <?php
+/**
+ * Created by iMac
+ * 添加媒体页面
+ * 火一五信息科技有限公司
+ * 联系方式:15288986891
+ * QQ:3186355915
+ * web:http://host.huo15.com
+ * 日期：2017/1/16
+ */
+
 include("../include/config.php");
 include("checkuser.php");
 
@@ -47,8 +57,7 @@ $titleID = $_REQUEST["titleID"];
 <body>
 <form id="form1" name="form1" method="post" action="savemtbiginfo.php?action=add&titleID=<?php echo $titleID; ?>"
       onSubmit="return CheckForm();">
-	<table width="98%" align="center" border="0" cellpadding="4" cellspacing="1" bgcolor="#e2e2e2"
-	       style="margin-bottom:8px">
+	<table width="98%" align="center" border="0" cellpadding="4" cellspacing="1" bgcolor="#e2e2e2" style="margin-bottom:8px">
 		<tr bgcolor="#EEF4EA">
 			<td colspan="2" align="center" background="skin/images/frame/wbg.gif" class='title'><span
 					class="sitemu"><strong>添加媒体资源</strong></span></td>
@@ -123,11 +132,16 @@ $titleID = $_REQUEST["titleID"];
 			<td width="17%" align="right">链接情况：</td>
 			<td><select name="linkurl" size="1" id="linkurl">
 					<option value=" ">请选择</option>
-					<option value="不限">不限</option>
-					<option value="不能带网址">不能带网址</option>
-					<option value="网址">网址</option>
-					<option value="超链接">超链接</option>
-					<option value="二维码">二维码</option>
+
+					<?php
+					$sqld = "select * from lurl_class";
+					$resultd = mysql_db_query($dbname, $sqld);
+					while ($rsd = mysql_fetch_array($resultd)) {
+						?>
+						<option value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+						<?php
+					}
+					?>
 				</select>
 			</td>
 		</tr>

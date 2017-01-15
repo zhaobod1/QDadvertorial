@@ -1,4 +1,14 @@
 ﻿<?php
+/**
+ * Created by iMac
+ * 会员 价格查询系统 页面。
+ * 火一五信息科技有限公司
+ * 联系方式:15288986891
+ * QQ:3186355915
+ * web:http://host.huo15.com
+ * 日期：2017/1/16
+ */
+
 include("../include/config.php");
 include("../include/function.php");
 $VipUser = $_COOKIE["VipUser"];
@@ -12,7 +22,7 @@ if ($rs != NULL) {
 ?>
 <HTML>
 <HEAD>
-	<TITLE>软文价格中心 - 好推手</TITLE>
+	<TITLE>软文价格中心 - 软文直通车</TITLE>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=7"/>
 	<link href="../images/reset.css" rel="stylesheet" type="text/css"/>
@@ -197,6 +207,7 @@ if ($rs != NULL) {
 
 							</div>
 						</li>
+
 						<li class="clearfix" id="xwy">
 							<div class="list-left">新闻源：</div>
 							<div class="list-right">
@@ -218,9 +229,30 @@ if ($rs != NULL) {
 
 							</div>
 						</li>
+						<li class="clearfix" id="xwy">
+							<div class="list-left">平台模式：</div>
+							<div class="list-right">
+								<div class="beginning">
+									<a onclick=mt_search3() href="javascript:;" class="active">不限</a>
+								</div>
+								<div class="text-block">
+									<p>
+										<?php
+										$sqls = "select * from lurl_class order by paixu asc";
+										$results = mysql_db_query($dbname, $sqls);
+										while ($rss = mysql_fetch_array($results)) {
+											?>
+											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"  href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<?php
+										} ?>
+									</p>
+								</div>
+
+							</div>
+						</li>
 						<li class="clearfix" id="lj">
 							<!--王庆路 联系方式分类-->
-							<div class="list-left">联系方式：</div>
+							<div class="list-left">链接方式：</div>
 							<div class="list-right">
 								<div class="beginning">
 									<a href="javascript:;" onclick=mt_search3() class="active">全部</a>
@@ -228,6 +260,19 @@ if ($rs != NULL) {
 								</div>
 								<div class="text-block">
 									<p>
+									<p>
+										<?php
+										$sqls = "select * from media_info where sh=1 and nav_id=46 and  order by id asc";
+										$results = mysql_db_query($dbname, $sqls);
+										while ($rss = mysql_fetch_array($results)) {
+											?>
+											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"  href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<?php
+										} ?>
+									</p>
+
+
+
 										<a href="javascript:;" onclick=mt_search3()>不限</a>
 										<a onclick="mt_search5('不允许')"  href="javascript:;">不允许</a>
 										<a onclick="mt_search5('网址')"  href="javascript:;">网址</a>

@@ -1,11 +1,22 @@
 <?php
+/**
+ * Created by iMac
+ * 媒体管理 详情页面
+ * 火一五信息科技有限公司
+ * 联系方式:15288986891
+ * QQ:3186355915
+ * web:http://host.huo15.com
+ * 日期：2017/1/15
+ */
+
 include ("../include/config.php");
+include_once "../include/function.php";
 include ("checkuser.php");
 ?>
 
+
 <?php
 $titleID=$_REQUEST["titleID"];
-
 $sql="select count(*) from ".$titleID."_class";
 //$result=mysql_db_query($dbname,$sql);
 mysql_select_db($dbname);
@@ -86,7 +97,7 @@ background:#FFFFCC; border:#999999 1px solid; text-decoration:none; color:#3399F
             <table style="BORDER-COLLAPSE: collapse" border=1 cellSpacing=0 borderColor=#c9d3e9 cellPadding=0 width="100%" align=center style="font-size:12px">
                 <tr align="center" height=25 bgColor=#e3e8f3>
                   <td align="center">序号</td>
-                  <td align="center">门户名称</td>
+                  <td align="center">类型名称</td>
                   <td width="19%" align="center">排序</td>
                   <td width="19%" align="center">操 作</td>
                 </tr>

@@ -1,4 +1,14 @@
 <?php
+/**
+ * Created by iMac
+ * 后台管理系统 左边菜单项
+ * 火一五信息科技有限公司
+ * 联系方式:15288986891
+ * QQ:3186355915
+ * web:http://host.huo15.com
+ * 日期：2017/1/15
+ */
+
 include ("../include/config.php");
 include ("checkuser.php");
 ?>
@@ -130,10 +140,11 @@ function ShowFLT(i) {
 <a onclick="javascript:ShowFLT(6)" href="javascript:void(null)"><h3 class="f14"><span class="switchs cu on" title="展开与收缩"></span>媒体管理</h3></a>
 <ul id="LM6" style="DISPLAY: none">
 <li id="_MP14" class="sub_menu"><a href="javascript:_MP(14,'managenavbigclass.php?titleID=nav');" hidefocus="true" style="outline:none;">媒体大类管理</a></li>
-<li id="_MP15" class="sub_menu"><a href="javascript:_MP(15,'managemtsmallclass.php?titleID=media');" hidefocus="true" style="outline:none;">媒体小类管理</a></li>
-<li id="_MP31" class="sub_menu"><a href="javascript:_MP(31,'managemtclass.php?titleID=media');" hidefocus="true" style="outline:none;">特殊类别管理</a></li>
+<li id="_MP15" class="sub_menu"><a href="javascript:_MP(15,'managemtsmallclass.php?titleID=media');" hidefocus="true" style="outline:none;">媒体小类管理</a></li><!-- 媒体小类管理 -->
+<li id="_MP31" class="sub_menu"><a href="javascript:_MP(31,'managemtclass.php?titleID=media');" hidefocus="true" style="outline:none;">优惠类别管理</a></li> <!--特殊类别管理-->
 <li id="_MP16" class="sub_menu"><a href="javascript:_MP(16,'managedqbigclass.php?titleID=diqu');" hidefocus="true" style="outline:none;">媒体地区管理</a></li>
 <li id="_MP17" class="sub_menu"><a href="javascript:_MP(17,'managemhbigclass.php?titleID=menhu');" hidefocus="true" style="outline:none;">门户媒体管理</a></li>
+<li id="_MP101" class="sub_menu"><a href="javascript:_MP(101,'managemhbigclass.php?titleID=lurl');" hidefocus="true" style="outline:none;">链接情况管理</a></li>
 <li id="_MP18" class="sub_menu"><a href="javascript:_MP(18,'addmtbigclass.php?titleID=media');" hidefocus="true" style="outline:none;">添加媒体资源</a></li>
 <li id="_MP19" class="sub_menu"><a href="javascript:_MP(19,'managemtbiginfo.php');" hidefocus="true" style="outline:none;">管理媒体资源</a></li>
 <li id="_MP20" class="sub_menu"><a href="javascript:_MP(20,'managemtbiginfo1.php');" hidefocus="true" style="outline:none;">待审媒体资源</a></li>
