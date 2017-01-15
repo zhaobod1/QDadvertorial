@@ -2,6 +2,11 @@
 
 
 ##页面信息
+###后台页面
+* 会员列表页面
+/Users/apple/tina/www/php/QDadvertorial/admin/viplist.php
+* 会员权限管理页面
+/Users/apple/tina/www/php/QDadvertorial/admin/managevip.php
 * 管理媒体资源页面   
 /Users/apple/tina/www/php/QDadvertorial/admin/managemtbiginfo.php
 * 添加媒体页面   

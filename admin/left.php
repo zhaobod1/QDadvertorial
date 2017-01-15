@@ -83,7 +83,7 @@ function ShowFLT(i) {
 <li id="_MP36" class="sub_menu"><a href="javascript:_MP(36,'shequ_list.php');" hidefocus="true" style="outline:none;">资源列表</a></li>
 </ul>
 
-<a onclick="javascript:ShowFLT(13)" href="javascript:void(null)"><h3 class="f14"><span class="switchs cu on" title="展开与收缩"></span>会员管理</h3></a>
+<a onclick="javascript:ShowFLT(13)" href="javascript:void(null)"><h3 class="f14"><span class="switchs cu on" title="展开与收缩"></span>-会员管理</h3></a>
 <ul id="LM13" style="DISPLAY: none">
 <li id="_MP37" class="sub_menu"><a href="javascript:_MP(37,'huiyuan_add.php');" hidefocus="true" style="outline:none;">发布任务</a></li>
 <li id="_MP38" class="sub_menu"><a href="javascript:_MP(38,'huiyuan.php');" hidefocus="true" style="outline:none;">任务列表</a></li>
