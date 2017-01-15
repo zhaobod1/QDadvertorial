@@ -131,8 +131,6 @@ $titleID = $_REQUEST["titleID"];
 		<tr bgcolor="#FFFFFF">
 			<td width="17%" align="right">链接情况：</td>
 			<td><select name="linkurl" size="1" id="linkurl">
-					<option value=" ">请选择</option>
-
 					<?php
 					$sqld = "select * from lurl_class";
 					$resultd = mysql_db_query($dbname, $sqld);

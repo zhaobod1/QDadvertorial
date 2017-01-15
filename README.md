@@ -5,11 +5,13 @@
 
 * 添加媒体页面   
 /Users/apple/tina/www/php/QDadvertorial/admin/addmtbigclass.php
+* 添加媒体 保持页面   
+/Users/apple/tina/www/php/QDadvertorial/admin/savemtbiginfo.php
 * 会员 价格查询系统 页面   
 /Users/apple/tina/www/php/QDadvertorial/vip/index1.php   
-* 媒体管理 详情页面   
+* 媒体类型管理 详情页面   
 /Users/apple/tina/www/php/QDadvertorial/admin/managemhbigclass.php
-* 媒体管理 详情页面 提交保存页面   
+* 媒体类型管理 详情页面 提交保存页面   
 /Users/apple/tina/www/php/QDadvertorial/admin/savemhbigclass.php
 * ajax 获取资源小类   
 /Users/apple/tina/www/php/QDadvertorial/admin/select.php
