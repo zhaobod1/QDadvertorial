@@ -145,7 +145,7 @@ else{
 	default:
 		$ssql="order by ID desc";
 	}
-	
+
 	if($mc==""){
 		$msql="";
 	}
@@ -182,7 +182,7 @@ else{
 	else{
 		$xsql="and xinwenyuan='".$xwy."'";
 	}
-	
+
 	$sql="select * from media_info where sh=1 and nav_id=46 ".$csql." ".$hsql." ".$dsql." ".$lsql." ".$xsql." ".$msql." ".$ssql."";
 }
 $result=mysql_db_query($dbname,$sql);
@@ -193,19 +193,24 @@ $result=mysql_db_query($dbname,$sql);
 
 <table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#CCCCCC" id="searchtr" style="font-size:13px">
 
-  <tr> 
+  <tr>
 
     <th height="30" width="33" bgcolor="#CDD3EB"><div align="center"><strong>勾选</strong></div></th>
 
 	<th height="30" width="100" bgcolor="#CDD3EB"><div align="center"><strong>媒体分类</strong></div></th>
 
     <th width="130" bgcolor="#CDD3EB"><div align="center"><strong>媒体名称</strong></div></th>
-	
+
 	<th width="80" bgcolor="#CDD3EB"><div align="center"><strong>推荐指数</strong></div></th>
-<?php if($flag==1){?>
-	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>代理价</strong></div></th>
+<?php if($flag==3){?>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>普通会员</strong></div></th>
+<?php } elseif($flag==4){?>
+    <th width="100" bgcolor="#CDD3EB"><div align="center"><strong>中级代理</strong></div></th>
+<?php } elseif($flag==5){?>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>高级代理</strong></div></th>
 <?php } elseif($flag==2){?>
-    <th width="100" bgcolor="#CDD3EB"><div align="center"><strong>价格</strong></div></th>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>核心代理</strong></div></th>
+
 <?php } else {?>
     <th width="100" bgcolor="#CDD3EB"><div align="center"><strong>零售价</strong></div></th>
 <?php }?>
@@ -222,7 +227,7 @@ $result=mysql_db_query($dbname,$sql);
 		   echo "<br><table width=750 border=0 align=center cellpadding=0 cellspacing=0><tr>
                  <td align=center><span class=rd rd>没有相关媒体数据！</span></td></tr></table>";
 		}
-       
+
 	else
 		{
 		?>
@@ -232,6 +237,23 @@ $result=mysql_db_query($dbname,$sql);
 		{
 			$ID=$rs["ID"];
 			$price=$rs["price"];
+			switch ($flag) {
+				case 1:
+					$thePrice = $rs['scprice'];
+					break;
+				case 2:
+					$thePrice = $rs['price'];
+					break;
+				case 3:
+					$thePrice = $rs['dlprice1'];
+					break;
+				case 4:
+					$thePrice = $rs['dlprice2'];
+					break;
+				case 5:
+					$thePrice = $rs['dlprice3'];
+					break;
+			}
 			$class_id=$rs["class_id"];
 			$sqlb="select * from media_class where ID=".$class_id."";
 			$resultb=mysql_db_query($dbname,$sqlb);
@@ -252,7 +274,7 @@ else{
     <td height="25" width="100" align="center"><?php echo $rsb["SmallClass"];?></td>
 
     <td width="130" ><div align="center"><a href='../zyinfo.php?ID=<?php echo $rs["ID"];?>' target="_blank"><?php echo $rs["medianame"];?></a></div><input name="xz_mc_<?php echo $rs["ID"];?>" type="hidden" id="xz_mc_<?php echo $rs["ID"];?>" value="<?php echo $rs["medianame"];?>"><span style="float:right"><a href='<?php echo $rs["anliurl"];?>' target="_blank"><img  alt="" src="<?php if ($rs["VipUser"]<>""){echo '../images/qiuqiu1.png';} else{echo '../images/qiuqiu2.png';}?>" name="qiu"  height="12"/></a></span></td>
-	
+
 	<td width="80" ><div align="center"><img src="<?php echo $rs["tj"];?>" border="0" width="64" height="12" alt="推荐指数"></div></td>
 
 <?php if($flag==1){?>

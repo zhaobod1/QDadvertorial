@@ -259,12 +259,12 @@ switch ($action) {
 								       style="width:60px; height:25px;display:none"/>
 							</div>
 							<!--王庆路 name更改-->
-							<input name="neturl" id="conurl" type="text" size="100/" style="display: inline-block;">
+							<input class="form-control" name="neturl" id="conurl" type="text" size="100/" style="display: inline-block;">
 							<!--王庆路 name更改 end-->
 							<label id="uploadLabel" class="uploadifyQueue" style="display: none;"></label>
 							<!--上传组件-->
 							<div id="uploadComponent">
-								<input id="art_url_input" name="art_url_input" type="text" size="100"/>
+								<input id="art_url_input" name="art_url_input" class="form-control" type="text" size="100"/>
 								<input id="file_upload" name="file_upload" type="file" multiple="true">
 								<script src="../huo15template/uploadify/jquery.uploadify.min.js"
 								        type="text/javascript"></script>
@@ -333,7 +333,7 @@ switch ($action) {
 				</table>
 				<div align="center">
 					<!--input name="totalmoney" type="hidden" id="totalmoney" style="border:0px;" value="0" readonly="readonly"/-->
-					<input type="hidden" id='yixuanhidden' name='yixuanhidden'/><input type="button" value="下一步 选择媒体"
+					<input type="hidden" id='yixuanhidden' name='yixuanhidden'/><input class="btn btn-primary" type="button" value="下一步 选择媒体"
 					                                                                   onclick="nextpage()"
 					                                                                   style="width:130px; height:30px;text-align:center;  margin-top:10px; "/>
 					<!--input type="button" value="上一步 选择媒体" onclick="perpage()" style="width:130px;height:30px; text-align:center;margin-top:3px;"/><input type="button" value=" 提 交 " onclick="$('#buttonsave').click()"  style="width:80px;height:30px; text-align:center;margin-top:3px;"/-->
@@ -346,6 +346,8 @@ switch ($action) {
 
 						<script>
 							$(function () {
+
+								//huo15
 								//显示媒体小类。
 
 
@@ -371,6 +373,13 @@ switch ($action) {
 													console.log("ruanwen_add.php-->res:",res);
 													$("#mtxl #pdlx_load").empty();
 													$("#mtxl #pdlx_load").append(res);
+													var aCollectionsMtxl = $('#mtxl .text-block').find('a');
+													aCollectionsMtxl.each(function (index, element) {
+														$(element).click(function (e) {
+															aCollectionsMtxl.removeClass('active');
+															$(this).addClass('active');
+														});
+													});
 												},
 												'json'
 
@@ -382,13 +391,7 @@ switch ($action) {
 									});
 								});
 
-								var aCollectionsMtxl = $('#mtxl .text-block').find('a');
-								aCollectionsMtxl.each(function (index, element) {
-									$(element).click(function (e) {
-										aCollectionsMtxl.removeClass('active');
-										$(this).addClass('active');
-									});
-								});
+
 								var aCollectionsZhmh = $('#zhmh .list-right').find('a');
 								aCollectionsZhmh.each(function (index, element) {
 									$(element).click(function (e) {
@@ -734,18 +737,31 @@ switch ($action) {
 						</tr>
 					</table>
 				</form>
-				<div id='yixuan' class="nextpage"> &nbsp;已选媒体: <span id="yixuantr"></span>&nbsp;&nbsp;总额：<b><span
-							id='totalmoney2'>0</span></b>元（余额：<b><span id="yue"><?php echo $yue; ?></span></b>元）
-					<!--<input type="button" value=" 清 空 " onclick="clearall()" style="width:80px;height:30px; text-align:center;margin-top:3px;"/>-->
-					<!--input type="button" value="下一步 编辑内容" onclick="nextpage()" style="width:130px; height:30px;text-align:center;  margin-top:10px; "/-->
-					<input type="button" value="上一步 编辑内容" onclick="perpage()"
-					       style="width:130px;height:30px; text-align:center;margin-top:3px;"/-->
-					<input type="button" value=" 提 交 " onclick="$('#buttonsave').click()"
-					       style="width:80px;height:30px; text-align:center;margin-top:3px;"/>
+				<div id='yixuan' class="nextpage">
+					<div class="fl">
+						&nbsp;已选媒体: <span id="yixuantr"></span>&nbsp;&nbsp;总额：<b><span
+								id='totalmoney2'>0</span></b>元（余额：<b><span id="yue"><?php echo $yue; ?></span></b>元）
+
+
+					</div>
+
+
+					<div class="fr">
+						<input type="button" class="btn btn-info" value="上一步 编辑内容" onclick="perpage()"
+						       style="width:130px;height:30px; text-align:center;margin-top:3px;"/-->
+						<input type="button" class="btn btn-success" value=" 提 交 " onclick="$('#buttonsave').click()"
+						       style="width:80px;height:30px; text-align:center;margin-top:3px;"/>
+					</div>
 				</div>
 			</div>
 		</div>
 		<style>
+			.fl {
+				float: left;
+			}
+			.fr {
+				float: right;
+			}
 			.attention .tipbox {
 				background: #e5f3ff;
 				border: 1px solid #c0dffa;
