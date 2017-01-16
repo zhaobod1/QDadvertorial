@@ -686,25 +686,32 @@ switch ($action) {
 											</select></td>
 										<td><select name="linkurl" size="1" id="linkurl">
 												<option value="">选择链接情况</option>
-												<option value="可超链接">可超链接</option>
-												<option value="文本链接">文本链接</option>
-												<option value="可带网址">可带网址</option>
-												<option value="不能带连接">不能带连接</option>
-												<option value="不能带网址">不能带网址</option>
+												<?php
+												$sqld = "select * from lurl_class";
+												$resultd = mysql_db_query($dbname, $sqld);
+												while ($rsd = mysql_fetch_array($resultd)) {
+													?>
+													<option
+														value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+													<?php
+												}
+												?>
 											</select></td>
 										<td><select name="xinwenyuan" size="1" id="xinwenyuan">
 												<option value="">选择新闻源</option>
-												<option value="非新闻源">非新闻源</option>
-												<option value="网页收录">网页收录</option>
-												<option value="百度新闻源">百度新闻源</option>
-												<option value="谷歌新闻源">谷歌新闻源</option>
-												<option value="搜狗新闻源">搜狗新闻源</option>
-												<option value="360新闻源">360新闻源</option>
-												<option value="搜搜新闻源">搜搜新闻源</option>
+												<?php
+												$sqld = "select * from source_class";
+												$resultd = mysql_db_query($dbname, $sqld);
+												while ($rsd = mysql_fetch_array($resultd)) {
+													?>
+													<option
+														value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+													<?php
+												}
+												?>
 											</select></td>
 										<td><select name="zhmh" size="1" id="zhmh">
 												<option value="">选择门户</option>
-												<option value=" ">非门户</option>
 												<?php
 												$sql2 = "select * from menhu_class";
 												$result2 = mysql_db_query($dbname, $sql2);
