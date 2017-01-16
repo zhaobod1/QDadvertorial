@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by iMac
- * 添加媒体 保持页面
+ * 添加媒体 保持页面 / 批量改价格
  * 火一五信息科技有限公司
  * 联系方式:15288986891
  * QQ:3186355915
@@ -35,11 +35,11 @@ if ($_COOKIE["fg"] > 2) {
 	if ($fans == "") {
 		$fans = 0;
 	}
-	$price = @$_REQUEST["price"];//成本价格
-	$dlprice1 = @$_REQUEST["dlprice1"];
-	$dlprice2 = @$_REQUEST["dlprice2"];
-	$dlprice3 = @$_REQUEST["dlprice3"];
-	$scprice = @$_REQUEST["scprice"];//零售价格
+	$price = isset($_REQUEST['price'])? intval($_REQUEST['price']):0; //成本价格
+	$dlprice1 = isset($_REQUEST['dlprice1'])? intval($_REQUEST['dlprice1']):0;
+	$dlprice2 = isset($_REQUEST['dlprice2'])? intval($_REQUEST['dlprice2']):0;
+	$dlprice3 = isset($_REQUEST['dlprice3'])? intval($_REQUEST['dlprice3']):0;
+	$scprice = isset($_REQUEST['scprice'])? intval($_REQUEST['scprice']):0;//零售价格
 	$jjprice = @$_REQUEST["jjprice"];
 	$content = @$_REQUEST["content"];
 	$neirong = @$_REQUEST["neirong"];
@@ -52,7 +52,6 @@ if ($_COOKIE["fg"] > 2) {
 	$data = date("Y-m-d");
 
 	$ID = @$_REQUEST["ID"];
-
 	switch ($action) {
 		case "add":
 			//调试变量
@@ -97,14 +96,21 @@ if ($_COOKIE["fg"] > 2) {
 		case "price":    //改价
 
 			if ($jjprice == 1) {
-				$sql = "update " . $titleID . "_info set price=price+" . $price . ",dlprice=dlprice+" . $dlprice . ",scprice=scprice+" . $scprice . "";
+				//批量加价
+				$sql = "update " . $titleID . "_info set price=price+" . $price . ",dlprice1=dlprice1+" . $dlprice1. ",dlprice2=dlprice2+" . $dlprice2. ",dlprice3=dlprice3+" . $dlprice3   . ",scprice=scprice+" . $scprice . "";
 			} else {
-				$sql = "update " . $titleID . "_info set price=price-" . $price . ",dlprice=dlprice-" . $dlprice . ",scprice=scprice-" . $scprice . "";
+				$sql = "update " . $titleID . "_info set price=price-" . $price . ",dlprice1=dlprice1-" . $dlprice1. ",dlprice2=dlprice2+" . $dlprice2. ",dlprice3=dlprice3+" . $dlprice   . ",scprice=scprice-" . $scprice . "";
 			}
-			mysql_db_query($dbname, $sql);
+			$res = mysql_db_query($dbname, $sql);
+			if ($res) {
+				echo "<script>alert('批量修改媒体价格成功！');location.href='managemtbiginfo.php?titleID=" . $titleID . "';</script>";
+
+			} else {
+				echo "<script>alert('批量修改媒体价格失败！错误提示信息：'+'".mysql_error()."');window.history.go(-1);</script>";
+
+			}
 			//mysql_select_db($dbname);
 			//$result=mysql_query($sql);
-			echo "<script>alert('批量修改媒体价格成功！');location.href='managemtbiginfo.php?titleID=" . $titleID . "';</script>";
 			break;
 
 		case "del":

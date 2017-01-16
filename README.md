@@ -15,6 +15,8 @@
 
 
 ###后台页面
+* 编辑价格页面   
+/Users/apple/tina/www/php/QDadvertorial/admin/editmtprice.php
 * 会员列表页面
 /Users/apple/tina/www/php/QDadvertorial/admin/viplist.php
 * 会员权限管理页面
@@ -23,7 +25,7 @@
 /Users/apple/tina/www/php/QDadvertorial/admin/managemtbiginfo.php
 * 添加媒体页面   
 /Users/apple/tina/www/php/QDadvertorial/admin/addmtbigclass.php
-* 添加媒体 保持页面   
+* 添加媒体 保持页面  批量改价  
 /Users/apple/tina/www/php/QDadvertorial/admin/savemtbiginfo.php
 * 编辑媒体信息页面
 /Users/apple/tina/www/php/QDadvertorial/admin/editmtbiginfo.php

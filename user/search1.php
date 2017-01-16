@@ -362,8 +362,7 @@ $result = mysql_db_query($dbname, $sql);
 				</td>
 
 				<td width="250">
-					<div align="center"><?php echo $rs["content"]; ?><a
-							href='../zyinfo.php?ID=<?php echo $rs["ID"]; ?>'>---详情</a></div>
+					<div align="center"><?php echo $rs["content"]; ?><!--<a  href='../zyinfo.php?ID=<?php /*echo $rs["ID"]; */?>'>---详情</a>--></div>
 				</td>
 
 			</tr>
