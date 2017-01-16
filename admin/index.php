@@ -86,7 +86,7 @@ var pc_hash = 'tPk1GW'
     <ul class="nav white" id="top_menu">
       <li id="_M1" class="top_menu"><a href="javascript:_M(1,'ruanwen_add.php')" hidefocus="true" style="outline:none;">软文发布</a></li>
       <li id="_M2" class="top_menu"><a href="javascript:_M(2,'daixie_add.php')"  hidefocus="true" style="outline:none;">代写文章</a></li>
-      <li id="_M3" class="top_menu"><a href="javascript:_M(3,'../vip/index2.php')"  hidefocus="true" style="outline:none;">软文价格</a></li>
+      <li id="_M3" class="top_menu"><a href="javascript:_M(3,'../vip/index1.php')"  hidefocus="true" style="outline:none;">软文价格</a></li>
       <li id="_M4" class="top_menu"><a href="javascript:_M(4,'info.php')"  hidefocus="true" style="outline:none;">个人信息</a></li>
       <!--li id="_M5" class="top_menu"><a href="javascript:_M(5,'work_add.php?titleID=ask')"  hidefocus="true" style="outline:none;">问题反馈</a></li-->
       <li id="_M6" class="top_menu"><a href="javascript:_M(6,'chongzhi.php')"  hidefocus="true" style="outline:none;">在线充值</a></li> 

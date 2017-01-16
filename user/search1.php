@@ -226,13 +226,13 @@ $result = mysql_db_query($dbname, $sql);
 				<div align="center"><strong>成本价格</strong></div>
 			</th>
 			<th width="100" bgcolor="#CDD3EB">
-				<div align="center"><strong>三级价格</strong></div>
+				<div align="center"><strong>高级代理</strong></div>
 			</th>
 			<th width="100" bgcolor="#CDD3EB">
-				<div align="center"><strong>二级价格</strong></div>
+				<div align="center"><strong>中级代理</strong></div>
 			</th>
 			<th width="100" bgcolor="#CDD3EB">
-				<div align="center"><strong>一级价格</strong></div>
+				<div align="center"><strong>普通会员</strong></div>
 			</th>
 			<th width="100" bgcolor="#CDD3EB">
 				<div align="center"><strong>零售价</strong></div>
@@ -240,13 +240,13 @@ $result = mysql_db_query($dbname, $sql);
 
 		<?php } elseif ($flag > 2 && $flag <= 5) { ?>
 			<th width="100" bgcolor="#CDD3EB">
-				<div align="center"><strong>三级价格</strong></div>
+				<div align="center"><strong>高级代理</strong></div>
 			</th>
 			<th width="100" bgcolor="#CDD3EB">
-				<div align="center"><strong>二级价格</strong></div>
+				<div align="center"><strong>中级代理</strong></div>
 			</th>
 			<th width="100" bgcolor="#CDD3EB">
-				<div align="center"><strong>一级价格</strong></div>
+				<div align="center"><strong>普通会员</strong></div>
 			</th>
 			<th width="100" bgcolor="#CDD3EB">
 				<div align="center"><strong>零售价</strong></div>
@@ -314,7 +314,7 @@ $result = mysql_db_query($dbname, $sql);
 
 				<?php if ($flag == 1) { ?>
 					<td width="100">
-						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["price"]; ?></b></div>
+						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["scprice"]; ?></b></div>
 					</td>
 					<td width="100">
 						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice3"]; ?></b></div>
@@ -323,11 +323,15 @@ $result = mysql_db_query($dbname, $sql);
 						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice2"]; ?></b></div>
 					</td>
 					<td width="100">
-						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice2"]; ?></b></div>
+						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice1"]; ?></b></div>
 					</td>
+					<td width="100">
+						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["price"]; ?></b></div>
+					</td>
+
 				<?php } elseif ($flag == 2) { ?>
 					<td width="100">
-						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["scprice"]; ?></b></div>
+						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["price"]; ?></b></div>
 					</td>
 				<?php } elseif ($flag > 2 && $flag <= 5) { ?>
 					<td width="100">
@@ -337,7 +341,7 @@ $result = mysql_db_query($dbname, $sql);
 						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice2"]; ?></b></div>
 					</td>
 					<td width="100">
-						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice2"]; ?></b></div>
+						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice1"]; ?></b></div>
 					</td>
 					<td width="100">
 						<div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["price"]; ?></b></div>

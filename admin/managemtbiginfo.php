@@ -330,7 +330,7 @@
 													?></DIV>
 											</TD>
 											<TD>
-												<DIV align=center><?php echo $rs["price"]; ?>元</DIV>
+												<DIV align=center><?php echo $rs["scprice"]; ?>元</DIV>
 											</TD>
 											<TD>
 												<DIV align=center><?php echo $rs["dlprice1"]; ?>元</DIV>
@@ -342,7 +342,7 @@
 												<DIV align=center><?php echo $rs["dlprice3"]; ?>元</DIV>
 											</TD>
 											<TD>
-												<DIV align=center><?php echo $rs["scprice"]; ?>元</DIV>
+												<DIV align=center><?php echo $rs["price"]; ?>元</DIV>
 											</TD>
 											<TD>
 												<DIV align=center>

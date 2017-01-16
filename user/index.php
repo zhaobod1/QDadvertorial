@@ -139,7 +139,7 @@ if ($VipUser <> "") {
 	</div>
 	<div class="col-auto">
 		<div class="log white cut_line">您好！<?php echo $_COOKIE["VipUser"]; ?><span>|</span>所属角色：<?php
-			switch ($fg) {
+			/*switch ($fg) {
 				case "1":
 					echo "核心代理";
 					break;
@@ -158,7 +158,8 @@ if ($VipUser <> "") {
 				default:
 					echo "一级会员";
 					break;
-			}
+			}*/
+			echo userIdentity($fg);
 			?>
 			<span>|</span><a href="../logouts.php">[退出]</a><span>|</span> <a href="/" target="_blank"
 		                                                                       id="site_homepage">站点首页</a><span>|</span>企业QQ：<?php echo $qq; ?>

@@ -60,7 +60,7 @@ var pc_hash = 'tPk1GW'
   </div>
   <div class="col-auto">
     <div class="log white cut_line">您好！<?php echo $_COOKIE["VipUser"];?><span>|</span>所属角色：<?php
-		switch($_COOKIE["fg"])
+		/*switch($_COOKIE["fg"])
 		{
 		 case "1":
 		 echo "核心代理";
@@ -71,7 +71,8 @@ var pc_hash = 'tPk1GW'
 		 case "3":
 		 echo "企业用户";
 		 break;
-		}
+		}*/
+		echo userIdentity($fg);
 		?><span>|</span><a href="../logouts.php">[退出]</a><span>|</span> <a href="/" target="_blank" id="site_homepage">站点首页</a><span>|</span>企业QQ：<?php echo $qq;?> <a href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $qq;?>&site=在线客服&menu=yes"><img src="images/qqaol.png" alt="点我咨询"></a></div>
     <ul class="nav white" id="top_menu">
 	<?php if($_COOKIE["fg"]==2){?>

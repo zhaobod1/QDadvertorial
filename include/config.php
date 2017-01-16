@@ -136,4 +136,7 @@ $descr=$rs2["descr"];
 $endescr=$rs2["endescr"];
 $about=$rs2["about"];
 $enabout=$rs2["enabout"];
+
+//跟目录
+define('ROOT_PATH', str_replace('include', '', str_replace('\\', '/', dirname(__FILE__))));
 ?>

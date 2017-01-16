@@ -4,6 +4,10 @@
 ##页面信息
 
 ###会员系统
+* 生成小类 /vip/
+/Users/apple/tina/www/php/QDadvertorial/vip/generateClass.php
+* 软文发布 会员系统
+/Users/apple/tina/www/php/QDadvertorial/user/ruanwen_add.php
 * 会员 价格查询系统 + 导出功能
 /Users/apple/tina/www/php/QDadvertorial/vip/index2.php
 * 登录验证页面

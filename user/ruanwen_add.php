@@ -1,4 +1,14 @@
 <?php
+/**
+ * Created by iMac
+ * 软文发布 会员系统
+ * 火一五信息科技有限公司
+ * 联系方式:15288986891
+ * QQ:3186355915
+ * web:http://host.huo15.com
+ * 日期：2017/1/16
+ */
+
 include("checkuser.php");
 include("../include/config.php");
 include("../include/function.php");
@@ -46,26 +56,18 @@ switch ($action) {
 	<title>后台管理中心</title>
 	<link href="../images/reset.css" rel="stylesheet" type="text/css"/>
 	<link href="../images/zh-cn-system.css" rel="stylesheet" type="text/css"/>
+
+
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+
 	<script language="javascript" type="text/javascript" src="../images/jquery.min.js"></script>
 	<script language="javascript" type="text/javascript" src="../images/styleswitch.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 
-	<!--王庆路 用ueditor替换kindeditor-->
-	<!--<script charset="utf-8" src="../kindeditor/kindeditor.js"></script>-->
-	<!--<script>
-		KE.show({
-			id: 'neirong',
-			afterCreate: function (id) {
-				KE.event.ctrl(document, 13, function () {
-					KE.util.setData(id);
-					document.forms['example'].submit();
-				});
-				KE.event.ctrl(KE.g[id].iframeDoc, 13, function () {
-					KE.util.setData(id);
-					document.forms['example'].submit();
-				});
-			}
-		});
-	</script>-->
 	<?php include("../ueditor.php") ?>
 	<!--王庆路 用ueditor替换kindeditor end-->
 	<style type="text/css">
@@ -93,8 +95,8 @@ switch ($action) {
 
 		.progressBar {
 			display: block;
-			width: 148px;
-			height: 28px;
+			width: 208px;
+			height: 48px;
 			position: fixed;
 			top: 50%;
 			left: 50%;
@@ -129,6 +131,8 @@ switch ($action) {
 	</style>
 </head>
 <body topmargin="0" bottommargin="0" leftmargin="0" rightmargin="0">
+<link rel="stylesheet" href="../huo15template/css/vip_index1.css">
+<link rel="stylesheet" href="../huo15template/css/style.css">
 <DIV style="_width: 80.9%; _margin-right: -12px" id=main_frameid class="pad-10 display">
 	<script language="JavaScript" type="text/JavaScript">
 		$(function () {
@@ -227,7 +231,7 @@ switch ($action) {
 						</td>
 						<td width="88%" align="left" bgcolor="#FFFFFF" style="padding:10px;"><input name="biaoti"
 						                                                                            type="text"
-						                                                                            class="txt"
+						                                                                            class="txt form-control"
 						                                                                            id="biaoti"
 						                                                                            lang='require'
 						                                                                            size="100"
@@ -337,148 +341,304 @@ switch ($action) {
 			</form>
 			<br/>
 			<div id="flselect" style="display:none">
-				<table width="100%" border="0" cellpadding="0" style="border:1px solid #ccc;padding-bottom:5px;">
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#f1f3f9>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick=mt_search3()>媒体类型-》</LI>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#ffffff>
-							<UL class=meitilist>
-								<?php
-								$sqls = "select * from media_class where BigID=46 order by paixu desc";
-								$results = mysql_db_query($dbname, $sqls);
-								while ($rss = mysql_fetch_array($results)) {
-									?>
-									<LI style="CURSOR: pointer"
-									    onclick=mt_search1(<?php echo $rss["ID"]; ?>)><?php echo $rss["SmallClass"]; ?></LI>
-									<?php
-								} ?>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#f1f3f9>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick=mt_search3()>特价秒杀-》</LI>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#ffffff>
-							<UL class=meitilist>
-								<?php
-								$sql8 = "select * from media_small order by paixu desc";
-								$result8 = mysql_query($sql8);
-								while ($rs8 = mysql_fetch_array($result8)) {
-									?>
-									<LI style="CURSOR: pointer"
-									    onclick=mt_search8(<?php echo $rs8["ID"]; ?>)><?php echo $rs8["BigClass"]; ?></LI>
-									<?php
-								} ?>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#f1f3f9>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick=mt_search3()>综合门户媒体-》</LI>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#ffffff>
-							<UL class=meitilist>
-								<?php
-								$sqls = "select * from menhu_class order by paixu desc";
-								$results = mysql_db_query($dbname, $sqls);
-								while ($rss = mysql_fetch_array($results)) {
-									?>
-									<LI style="CURSOR: pointer"
-									    onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"><?php echo $rss["BigClass"]; ?></LI>
-									<?php
-								} ?>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#f1f3f9>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick=mt_search3()>价格分类媒体-》</LI>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#ffffff>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick=mt_search2(0)>0-40元</LI>
-								<LI style="CURSOR: pointer" onclick=mt_search2(1)>40-70元</LI>
-								<LI style="CURSOR: pointer" onclick=mt_search2(2)>70-120元</LI>
-								<LI style="CURSOR: pointer" onclick=mt_search2(3)>120元以上</LI>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#f1f3f9>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick=mt_search3()>地区分类媒体-》</LI>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#ffffff>
-							<UL class=meitilist>
-								<?php
-								$sqls = "select * from diqu_class order by paixu asc";
-								$results = mysql_db_query($dbname, $sqls);
-								while ($rss = mysql_fetch_array($results)) {
-									?>
-									<LI style="CURSOR: pointer"
-									    onclick="mt_search6('<?php echo $rss["BigClass"]; ?>')"><?php echo $rss["BigClass"]; ?></LI>
-									<?php
-								} ?>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#f1f3f9>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick=mt_search3()>新闻源-》</LI>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#ffffff>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick="mt_search4('百度新闻源')">百度新闻源</LI>
-								<LI style="CURSOR: pointer" onclick="mt_search4('谷歌新闻源')">谷歌新闻源</LI>
-								<LI style="CURSOR: pointer" onclick="mt_search4('搜狗新闻源')">搜狗新闻源</LI>
-								<LI style="CURSOR: pointer" onclick="mt_search4('360新闻源')">360新闻源</LI>
-								<LI style="CURSOR: pointer" onclick="mt_search4('搜搜新闻源')">搜搜新闻源</LI>
-								<LI style="CURSOR: pointer" onclick="mt_search4('非新闻源')">无</LI>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#f1f3f9>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick=mt_search3()>链接-》</LI>
-							</UL>
-						</TD>
-					</TR>
-					<TR>
-						<TD style="PADDING-LEFT: 5px" bgColor=#ffffff>
-							<UL class=meitilist>
-								<LI style="CURSOR: pointer" onclick="mt_search5('可带网址')">可带网址</LI>
-								<LI style="CURSOR: pointer" onclick="mt_search5('可超链接')">可超链接</LI>
-								<LI style="CURSOR: pointer" onclick="mt_search5('不能带网址')">不能带网址</LI>
-							</UL>
-						</TD>
-					</TR>
-				</table>
+				<div class="search-condition">
+					<ul>
+
+						<script>
+							$(function () {
+								//显示媒体小类。
+
+
+
+
+								var aCollectionsMtdl = $('#mtdl .text-block').find('a');
+								aCollectionsMtdl.each(function (index, element) {
+									$(element).click(function (e) {
+										//测试是否是开启了
+										var id = $(element).attr('id');
+										id = id.substring(6);
+										if (id != 46 && id != 47) {
+
+											alert("暂未上线，敬请期待！");
+										} else {
+											$.post(
+												"../vip/generateClass.php",
+												{
+													"bigId" : id
+												},
+												function (res) {
+													//
+													console.log("ruanwen_add.php-->res:",res);
+													$("#mtxl #pdlx_load").empty();
+													$("#mtxl #pdlx_load").append(res);
+												},
+												'json'
+
+											)
+											aCollectionsMtdl.removeClass('active');
+											$(this).addClass('active');
+										}
+
+									});
+								});
+
+								var aCollectionsMtxl = $('#mtxl .text-block').find('a');
+								aCollectionsMtxl.each(function (index, element) {
+									$(element).click(function (e) {
+										aCollectionsMtxl.removeClass('active');
+										$(this).addClass('active');
+									});
+								});
+								var aCollectionsZhmh = $('#zhmh .list-right').find('a');
+								aCollectionsZhmh.each(function (index, element) {
+									$(element).click(function (e) {
+										aCollectionsZhmh.removeClass('active');
+										$(this).addClass('active');
+									});
+								});
+								var aCollectionsJgfl = $('#jgfl .list-right').find('a');
+								aCollectionsJgfl.each(function (index, element) {
+									$(element).click(function (e) {
+										aCollectionsJgfl.removeClass('active');
+										$(this).addClass('active');
+									});
+								});
+								var aCollectionsDqfl = $('#dqfl .list-right').find('a');
+								aCollectionsDqfl.each(function (index, element) {
+									$(element).click(function (e) {
+										aCollectionsDqfl.removeClass('active');
+										$(this).addClass('active');
+									});
+								});
+								var aCollectionsXwy = $('#xwy .list-right').find('a');
+								aCollectionsXwy.each(function (index, element) {
+									$(element).click(function (e) {
+										aCollectionsXwy.removeClass('active');
+										$(this).addClass('active');
+									});
+								});
+								var aCollectionsLj = $('#lj .list-right').find('a');
+								aCollectionsLj.each(function (index, element) {
+									$(element).click(function (e) {
+										aCollectionsLj.removeClass('active');
+										$(this).addClass('active');
+									});
+								});
+								/*王庆路 入口级别*/
+								var aCollectionsRk = $('#rk .list-right').find('a');
+								aCollectionsRk.each(function (index, element) {
+									$(element).click(function (e) {
+										aCollectionsRk.removeClass('active');
+										$(this).addClass('active');
+									});
+								});
+								/*王庆路 入口级别 end*/
+
+
+
+							});
+
+						</script>
+						<li class="clearfix" id="mtdl">
+							<div class="text-block">
+								<div class="list-left">媒体大类：</div>
+								<div class="list-right">
+									<div class="beginning">
+										<a onclick="mt_search3()" href="javascript:;" class="unlimited active"><span
+												style="color: #DDDDDD;float: none;margin: 0;">不限</span></a>
+									</div>
+									<div class="text-block">
+										<p id="pdlx_load">
+											<?php
+											$sqls = "select * from nav_class  order by paixu ASC";
+											$results = mysql_db_query($dbname, $sqls);
+											while ($rss = mysql_fetch_array($results)) {
+												?>
+
+												<a id="bigId_<?php echo $rss['ID']; ?>" href="javascript:;"
+												   ><?php echo $rss['BigClass']; ?></a>
+												<?php
+											} ?>
+
+										</p>
+									</div>
+
+								</div>
+							</div>
+						</li>
+						<li class="clearfix" id="mtxl">
+							<div class="text-block">
+								<div class="list-left">媒体小类：</div>
+								<div class="list-right">
+									<div class="beginning">
+										<a onclick="mt_search3()" href="javascript:;" class="active">不限</a>
+									</div>
+									<div class="text-block">
+										<p id="pdlx_load">
+
+
+										</p>
+									</div>
+
+								</div>
+							</div>
+						</li>
+						<li class="clearfix" id="zhmh">
+							<div class="text-block">
+								<div class="list-left">综合门户：</div>
+								<div class="list-right">
+									<div class="beginning">
+										<a onclick="mt_search3()" href="javascript:;" class="active">不限</a>
+									</div>
+									<div class="text-block">
+										<p id="pdlx_load">
+											<?php
+											$sqls = "select * from menhu_class order by paixu desc";
+											$results = mysql_db_query($dbname, $sqls);
+											while ($rss = mysql_fetch_array($results)) {
+												?>
+												<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"
+												   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+												<?php
+											} ?>
+
+										</p>
+									</div>
+
+								</div>
+							</div>
+						</li>
+						<li class="clearfix" id="jgfl">
+							<div class="list-left">优惠类别：</div>
+							<div class="list-right">
+								<div class="beginning">
+									<a onclick=mt_search3() href="javascript:;" class="active">不限</a>
+								</div>
+								<div class="text-block">
+									<p>
+
+										<?php
+										$sqls = "select * from media_small order by paixu desc";
+										$results = mysql_db_query($dbname, $sqls);
+										while ($rss = mysql_fetch_array($results)) {
+											?>
+											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"
+											   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<?php
+										} ?>
+
+
+									</p>
+								</div>
+
+							</div>
+						</li>
+
+						<li class="clearfix" id="jgfl">
+							<div class="list-left">价格分类：</div>
+							<div class="list-right">
+								<div class="beginning">
+									<a onclick=mt_search3() href="javascript:;" class="active">不限</a>
+								</div>
+								<div class="text-block">
+									<p>
+
+										<a onclick="mt_search2(0)" href="javascript:;">0-40元</a>
+										<a onclick="mt_search2(1)" href="javascript:;">40-70元</a>
+										<a onclick="mt_search2(2)" href="javascript:;">70-120元</a>
+										<a onclick="mt_search2(3)" href="javascript:;">120元以上</a>
+
+									</p>
+								</div>
+
+							</div>
+						</li>
+
+						<li class="clearfix" id="xwy">
+							<div class="list-left">新闻源：</div>
+							<div class="list-right">
+								<div class="beginning">
+									<a onclick=mt_search3() href="javascript:;" class="active">不限</a>
+								</div>
+								<div class="text-block">
+									<p>
+
+										<?php
+										$sqls = "select * from source_class order by paixu desc";
+										$results = mysql_db_query($dbname, $sqls);
+										while ($rss = mysql_fetch_array($results)) {
+											?>
+											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"
+											   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<?php
+										} ?>
+
+
+									</p>
+								</div>
+
+							</div>
+						</li>
+
+						<li class="clearfix" id="lj">
+							<!--王庆路 联系方式分类-->
+							<div class="list-left">链接方式：</div>
+							<div class="list-right">
+								<div class="beginning">
+									<a href="javascript:;" onclick=mt_search3() class="active">全部</a>
+
+								</div>
+								<div class="text-block">
+
+									<p>
+										<?php
+										$sqls = "select * from lurl_class   order by id asc";
+										$results = mysql_db_query($dbname, $sqls);
+										while ($rss = mysql_fetch_array($results)) {
+											?>
+											<a onclick="mt_search5('<?php echo $rss["BigClass"]; ?>')"
+											   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<?php
+										} ?>
+									</p>
+
+
+								</div>
+							</div>
+							<!--王庆路 联系方式分类 end-->
+						</li>
+						<!--王庆路 入口级别分类-->
+						<li class="clearfix" id="rk">
+
+							<div class="list-left">入口级别：</div>
+							<div class="list-right">
+								<div class="beginning">
+									<a href="javascript:;" onclick=mt_search3() class="active">全部</a>
+
+								</div>
+								<div class="text-block">
+									<p>
+										<?php
+										$sqls = "select * from entrance_class   order by id asc";
+										$results = mysql_db_query($dbname, $sqls);
+										while ($rss = mysql_fetch_array($results)) {
+											?>
+											<a onclick="mt_search8('<?php echo $rss["BigClass"]; ?>')"
+											   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<?php
+										} ?>
+
+									</p>
+								</div>
+							</div>
+
+						</li>
+						<!--王庆路 入口级别分类 end-->
+					</ul>
+
+				</div>
+
+
 				<form name="form2" id='searchtrun' style="margin-bottom:20px;">
 					<br/>
 					<table width="100%" cellpadding="0" cellspacing="0" bgcolor="#e2e2e2">
@@ -596,14 +756,17 @@ switch ($action) {
 				margin: 20px 60px;
 				margin-bottom: 0;
 			}
+
 			.tipbox .glyph {
 				float: left;
 				margin-right: 20px;
 				color: #1F7ED0;
 			}
+
 			.glyph .fs1 {
 				font-size: 2em;
 			}
+
 			[data-icon]:before {
 				font-family: 'ElegantIcons';
 				content: attr(data-icon);
@@ -615,12 +778,14 @@ switch ($action) {
 				-webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
 			}
+
 			.clearfix:after {
 				content: "";
 				display: block;
 				clear: both;
 			}
 		</style>
+		<div class="clearfix"></div>
 		<div class="attention">
 			<div class="tipbox clearfix">
 				<div class="glyph">
@@ -639,7 +804,6 @@ switch ($action) {
 		</div>
 		<div class="bk20 hr"></div>
 	</div>
-
 
 
 	<div class="bk20 hr"></div>

@@ -80,6 +80,8 @@ class newsNr
 
 }
 $newsOB=new newsNr();
+
+
 /**
  * @param $fg $_COOKIE['fg']
  * @return string 会员身份
@@ -111,16 +113,16 @@ function userIdentity($fg) {
 			$ret = "合作加盟供应商";
 			break;
 		case "3":
-			$ret = "一级会员";
+			$ret = "普通会员";
 			break;
 		case "4":
-			$ret = "二级会员";
+			$ret = "中级代理";
 			break;
 		case "5":
-			$ret = "三级会员";
+			$ret = "高级代理";
 			break;
 		default:
-			$ret = "一级会员";
+			$ret = "普通会员";
 			break;
 	}
 	return $ret;

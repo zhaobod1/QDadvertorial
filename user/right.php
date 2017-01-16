@@ -44,18 +44,7 @@ class="pad-10 display">
 <H6>我的个人信息</H6>
 <DIV class=content>
 <div width="120px" style="float:left;padding-top:3px;padding-bottom:5px;"><img src="<?php echo $rs["headpic"];?>" border="0" width="110" height="110"><br><a href="info.php">编辑资料</a> | <a href="info.php">修改头像</a></div><div width="830px" style="float:left;margin-left:8px;"><?php echo $_COOKIE["VipUser"];?>，欢迎您！<BR>所属角色：<?php
-		switch($_COOKIE["fg"])
-		{
-		 case "1":
-		 echo "核心代理";
-		 break;
-		 case "2":
-		 echo "合作加盟供应商";
-		 break;
-		 case "3":
-		 echo "企业用户";
-		 break;
-		}
+		echo userIdentity($fg);
 		?> <BR>账号余额：<b style='color:#FF0000'><?php echo $rs["yue"];?></b>元<?php if($_COOKIE["fg"]==2){?>，可提现金额：<b style='color:#FF0000'><?php echo $txyue;?></b>元<?php } ?><a href="chongzhi.php"><img src="../images/chongzhi.gif" border="0" width="27" height="15"></a><BR>
 <DIV class="bk20 hr">
 <HR>
