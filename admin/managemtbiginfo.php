@@ -267,6 +267,9 @@
 											<DIV align=center>零售价</DIV>
 										</TD>
 										<TD>
+											<DIV align=center>百度权重</DIV>
+										</TD>
+										<TD>
 											<DIV align=center>新闻源</DIV>
 										</TD>
 										<TD>
@@ -341,7 +344,12 @@
 											<TD>
 												<DIV align=center><?php echo $rs["scprice"]; ?>元</DIV>
 											</TD>
+											<TD>
+												<DIV align=center>
+													<img src="http://cdn.chinaz.com/tools/images/public/baiduapp/<?php echo $rs["baiduWeight"]; ?>.gif" alt="">
 
+												</DIV>
+											</TD>
 											<TD>
 												<DIV align=center><?php echo $rs["xinwenyuan"]; ?></DIV>
 											</TD>
@@ -362,7 +370,7 @@
 										$i = $i + 1;
 									} ?>
 									<tr align="center">
-										<td colspan="14" align="right" bgcolor="#FFFFFF">
+										<td colspan="15" align="right" bgcolor="#FFFFFF">
 											<table width="100%" border="0" cellspacing="0" cellpadding="2">
 												<tr>
 													<td width="87%" height="35" align="center">

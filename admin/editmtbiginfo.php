@@ -119,6 +119,9 @@ $rsN = mysql_fetch_array($resultN)
 		<tr bgcolor="#FFFFFF">
 			<td align="right">所在地区：</td>
 			<td><select name="diqu" size="1" id="diqu">
+
+
+
 					<?php
 					$sqld = "select * from diqu_class";
 					$resultd = mysql_query($sqld);
@@ -148,15 +151,20 @@ $rsN = mysql_fetch_array($resultN)
 			<td width="17%" align="right">链接情况：</td>
 			<td>
 				<select name="linkurl" size="1" id="linkurl">
+
 					<?php
 					$sqld = "select * from lurl_class";
-					$resultd = mysql_db_query($dbname, $sqld);
+					$resultd = mysql_query($sqld);
 					while ($rsd = mysql_fetch_array($resultd)) {
 						?>
-						<option value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+						<option value="<?php echo $rsd["BigClass"]; ?>" <?php if ($rsd["BigClass"] == $rsN["linkurl"]) {
+							echo "selected";
+						} ?>><?php echo $rsd["BigClass"]; ?></option>
 						<?php
 					}
 					?>
+
+
 				</select>
 			</td>
 		</tr>
@@ -164,15 +172,20 @@ $rsN = mysql_fetch_array($resultN)
 			<td width="17%" align="right">新闻源：</td>
 			<td>
 				<select name="xinwenyuan" size="1" id="xinwenyuan">
+
 					<?php
 					$sqld = "select * from source_class";
-					$resultd = mysql_db_query($dbname, $sqld);
+					$resultd = mysql_query($sqld);
 					while ($rsd = mysql_fetch_array($resultd)) {
 						?>
-						<option value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+						<option value="<?php echo $rsd["BigClass"]; ?>" <?php if ($rsd["BigClass"] == $rsN["xinwenyuan"]) {
+							echo "selected";
+						} ?>><?php echo $rsd["BigClass"]; ?></option>
 						<?php
 					}
 					?>
+
+
 				</select>
 			</td>
 		</tr>
@@ -182,14 +195,35 @@ $rsN = mysql_fetch_array($resultN)
 				<select name="zhmh" size="1" id="zhmh">
 
 					<?php
-					$sql2 = "select * from menhu_class";
-					$result2 = mysql_db_query($dbname, $sql2);
-					while ($rs2 = mysql_fetch_array($result2)) {
+					$sqld = "select * from menhu_class";
+					$resultd = mysql_query($sqld);
+					while ($rsd = mysql_fetch_array($resultd)) {
 						?>
-						<option value="<?php echo $rs2["BigClass"]; ?>"><?php echo $rs2["BigClass"]; ?></option>
+						<option value="<?php echo $rsd["BigClass"]; ?>" <?php if ($rsd["BigClass"] == $rsN["zhmh"]) {
+							echo "selected";
+						} ?>><?php echo $rsd["BigClass"]; ?></option>
 						<?php
 					}
 					?>
+
+				</select></td>
+		</tr>
+		<tr bgcolor="#FFFFFF">
+			<td width="17%" align="right">百度权重：</td>
+			<td>
+				<select name="baiduWeight" size="1" id="baiduWeight">
+					<?php
+					$sqld = "select * from baiduWeight_class";
+					$resultd = mysql_query($sqld);
+					while ($rsd = mysql_fetch_array($resultd)) {
+						?>
+						<option value="<?php echo $rsd["BigClass"]; ?>" <?php if ($rsd["BigClass"] == $rsN["baiduWeight"]) {
+							echo "selected";
+						} ?>><?php echo $rsd["BigClass"]; ?></option>
+						<?php
+					}
+					?>
+
 				</select></td>
 		</tr>
 		<tr bgcolor="#FFFFFF">
@@ -198,13 +232,16 @@ $rsN = mysql_fetch_array($resultN)
 				<select name="rkjibie" size="1" id="xinwenyuan">
 					<?php
 					$sqld = "select * from entrance_class";
-					$resultd = mysql_db_query($dbname, $sqld);
+					$resultd = mysql_query($sqld);
 					while ($rsd = mysql_fetch_array($resultd)) {
 						?>
-						<option value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+						<option value="<?php echo $rsd["BigClass"]; ?>" <?php if ($rsd["BigClass"] == $rsN["rkjibie"]) {
+							echo "selected";
+						} ?>><?php echo $rsd["BigClass"]; ?></option>
 						<?php
 					}
 					?>
+
 				</select></td>
 		</tr>
 		<tr bgcolor="#FFFFFF">
@@ -379,6 +416,11 @@ $rsN = mysql_fetch_array($resultN)
 	}
 	//下面是页面加载时自动执行一次getVal()函数
 	$().ready(function () {
+		$("#sc_id").change(function () {
+			if ($(this).val() == "63") {
+				$("#weburl").val("http://www.ruanwenztc.com/system/taocan.php");
+			}
+		});
 		//if(empty($sc_id)){
 		//getVal();
 		//}

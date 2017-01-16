@@ -159,9 +159,23 @@ $titleID = $_REQUEST["titleID"];
 		</tr>
 		<tr bgcolor="#FFFFFF">
 			<td width="17%" align="right">入口级别：</td>
-			<td><select name="rkjibie" size="1" id="xinwenyuan">
+			<td><select name="rkjibie" size="1" >
 					<?php
 					$sqld = "select * from entrance_class";
+					$resultd = mysql_db_query($dbname, $sqld);
+					while ($rsd = mysql_fetch_array($resultd)) {
+						?>
+						<option value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+						<?php
+					}
+					?>
+				</select></td>
+		</tr>
+		<tr bgcolor="#FFFFFF">
+			<td width="17%" align="right">百度权重：</td>
+			<td><select name="baiduWeight" size="1" >
+					<?php
+					$sqld = "select * from baiduWeight_class order by ID ASC ";
 					$resultd = mysql_db_query($dbname, $sqld);
 					while ($rsd = mysql_fetch_array($resultd)) {
 						?>
@@ -343,6 +357,11 @@ $titleID = $_REQUEST["titleID"];
 	}
 	//下面是页面加载时自动执行一次getVal()函数
 	$().ready(function () {
+		$("#sc_id").change(function () {
+			if ($(this).val() == "63") {
+				$("#weburl").val("http://www.ruanwenztc.com/system/taocan.php");
+			}
+		});
 		getVal();
 		$("#nav_id").change(function () {//有变动时，执行getVal()函数
 			getVal();

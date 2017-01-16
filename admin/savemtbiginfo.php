@@ -45,6 +45,7 @@ if ($_COOKIE["fg"] > 2) {
 	$neirong = @$_REQUEST["neirong"];
 	$rkjibie = @$_REQUEST["rkjibie"];
 	$tj = @$_REQUEST["tj"]; //推荐
+	$baiduWeight = @$_REQUEST["baiduWeight"];
 
 	//echo "<script>alert('".$nav_id."');</script>";
 
@@ -61,7 +62,7 @@ if ($_COOKIE["fg"] > 2) {
 			$VipUser = $_COOKIE["AdminUser"];    //获取媒体添加者：当前用户（即媒介编辑）
 			$sh = 1;                            //0为未审核通过，需要超管审核
 
-			$sql = "insert into " . trim($titleID) . "_info (class_id,small_id,medianame,nav_id,sh,diqu,weburl,anliurl,linkurl,xinwenyuan,zhmh,fans,price,dlprice1,dlprice2,dlprice3,scprice,content,neirong,tj,data,rkjibie) values (" . $class_id . "," . $small_id . ",'" . $medianame . "'," . $nav_id . "," . $sh . ",'" . $diqu . "','" . $weburl . "','" . $anliurl . "','" . $linkurl . "','" . $xinwenyuan . "','" . $zhmh . "'," . $fans . "," . $price . "," . $dlprice1 . ",". $dlprice2 . ",". $dlprice3 . "," . $scprice . ",'" . $content . "','" . $neirong . "','" . $tj . "','" . $data . "','".$rkjibie."')";
+			$sql = "insert into " . trim($titleID) . "_info (class_id,small_id,medianame,nav_id,sh,diqu,weburl,anliurl,linkurl,xinwenyuan,zhmh,fans,price,dlprice1,dlprice2,dlprice3,scprice,content,neirong,tj,data,rkjibie,baiduWeight) values (" . $class_id . "," . $small_id . ",'" . $medianame . "'," . $nav_id . "," . $sh . ",'" . $diqu . "','" . $weburl . "','" . $anliurl . "','" . $linkurl . "','" . $xinwenyuan . "','" . $zhmh . "'," . $fans . "," . $price . "," . $dlprice1 . ",". $dlprice2 . ",". $dlprice3 . "," . $scprice . ",'" . $content . "','" . $neirong . "','" . $tj . "','" . $data . "','".$rkjibie."',".$baiduWeight.")";
 			$res = mysql_db_query($dbname, $sql);
 			if ($res) {
 				echo "<script>alert('添加媒体资源成功！');location.href='addmtbigclass.php?titleID=" . $titleID . "';</script>";
@@ -77,7 +78,7 @@ if ($_COOKIE["fg"] > 2) {
 
 		case "edit":
 
-			$sql = "update " . $titleID . "_info set nav_id=" . $nav_id . ",class_id=" . $class_id . ",small_id=" . $small_id . ",medianame='" . $medianame . "',diqu='" . $diqu . "',weburl='" . $weburl . "',anliurl='" . $anliurl . "',linkurl='" . $linkurl . "',xinwenyuan='" . $xinwenyuan . "',zhmh='" . $zhmh . "',fans=" . $fans . ",price=" . $price . ",dlprice1=" . $dlprice1. ",dlprice2=" . $dlprice2. ",dlprice3=" . $dlprice3 . ",scprice=" . $scprice . ",content='" . $content . "',neirong='" . $neirong . "',tj='" . $tj . "',data='" . $data . "', rkjibie='".$rkjibie."' where ID=" . $ID . "";
+			$sql = "update " . $titleID . "_info set nav_id=" . $nav_id . ",class_id=" . $class_id . ",small_id=" . $small_id . ",medianame='" . $medianame . "',diqu='" . $diqu . "',weburl='" . $weburl . "',anliurl='" . $anliurl . "',linkurl='" . $linkurl . "',xinwenyuan='" . $xinwenyuan . "',zhmh='" . $zhmh . "',fans=" . $fans . ",price=" . $price . ",dlprice1=" . $dlprice1. ",dlprice2=" . $dlprice2. ",dlprice3=" . $dlprice3 . ",scprice=" . $scprice . ",content='" . $content . "',neirong='" . $neirong . "',tj='" . $tj . "',data='" . $data . "', rkjibie='".$rkjibie."',baiduWeight=".$baiduWeight." where ID=" . $ID . "";
 			mysql_db_query($dbname, $sql);
 			//mysql_select_db($dbname);
 			//$result=mysql_query($sql);
