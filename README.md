@@ -4,6 +4,8 @@
 ##页面信息
 
 ###会员系统
+* 会员 价格查询系统 + 导出功能
+/Users/apple/tina/www/php/QDadvertorial/vip/index2.php
 * 登录验证页面
 /Users/apple/tina/www/php/QDadvertorial/checklogin.php
 * 左边菜单项

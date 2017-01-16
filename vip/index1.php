@@ -1,7 +1,7 @@
 ﻿<?php
 /**
  * Created by iMac
- * 会员 价格查询系统 页面。
+ * 会员 价格查询系统 + 导出功能。
  * 火一五信息科技有限公司
  * 联系方式:15288986891
  * QQ:3186355915
@@ -265,12 +265,16 @@ if ($rs != NULL) {
 								<div class="text-block">
 									<p>
 
-										<a onclick="mt_search4('百度新闻源')" href="javascript:;">百度新闻源</a>
-										<a onclick="mt_search4('谷歌新闻源')" href="javascript:;">谷歌新闻源</a>
-										<a onclick="mt_search4('搜狗新闻源')" href="javascript:;">搜狗新闻源</a>
-										<a onclick="mt_search4('360新闻源')" href="javascript:;">360新闻源</a>
-										<a onclick="mt_search4('搜搜新闻源')" href="javascript:;">搜搜新闻源</a>
-										<a onclick="mt_search4('非新闻源')" href="javascript:;">无</a>
+										<?php
+										$sqls = "select * from source_class order by paixu desc";
+										$results = mysql_db_query($dbname, $sqls);
+										while ($rss = mysql_fetch_array($results)) {
+											?>
+											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"
+											   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<?php
+										} ?>
+
 
 									</p>
 								</div>
@@ -459,11 +463,11 @@ if ($rs != NULL) {
 			ajaxbg.hide();
 		});
 		mt_search();
-	})
+	});
 
 
 	function mt_search() {
-		$.get("../user/search1.php?a=mt_search", {
+		$.get("../user/search1.php?a=mt_search&bigId="+ $("#inputBigId").val(), {
 			"mc": $("#meiti_name").val(),
 			"cid": $("#class_id").val(),
 			"skey": $("#skey").val(),
