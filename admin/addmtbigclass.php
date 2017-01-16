@@ -159,7 +159,7 @@ $titleID = $_REQUEST["titleID"];
 		</tr>
 		<tr bgcolor="#FFFFFF">
 			<td width="17%" align="right">入口级别：</td>
-			<td><select name="xinwenyuan" size="1" id="xinwenyuan">
+			<td><select name="rkjibie" size="1" id="xinwenyuan">
 					<?php
 					$sqld = "select * from entrance_class";
 					$resultd = mysql_db_query($dbname, $sqld);

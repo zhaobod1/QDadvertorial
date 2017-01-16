@@ -2,6 +2,14 @@
 
 
 ##页面信息
+
+###会员系统
+* 左边菜单项
+/Users/apple/tina/www/php/QDadvertorial/user/left.php
+* 会员 价格查询系统 页面   
+/Users/apple/tina/www/php/QDadvertorial/vip/index1.php   
+
+
 ###后台页面
 * 会员列表页面
 /Users/apple/tina/www/php/QDadvertorial/admin/viplist.php
@@ -13,8 +21,9 @@
 /Users/apple/tina/www/php/QDadvertorial/admin/addmtbigclass.php
 * 添加媒体 保持页面   
 /Users/apple/tina/www/php/QDadvertorial/admin/savemtbiginfo.php
-* 会员 价格查询系统 页面   
-/Users/apple/tina/www/php/QDadvertorial/vip/index1.php   
+* 编辑媒体信息页面
+/Users/apple/tina/www/php/QDadvertorial/admin/editmtbiginfo.php
+
 * 媒体类型管理 详情页面   
 /Users/apple/tina/www/php/QDadvertorial/admin/managemhbigclass.php
 * 媒体类型管理 详情页面 提交保存页面   
@@ -29,6 +38,7 @@
 /Users/apple/tina/www/php/QDadvertorial/admin/left.php
 * 资源小类管理页面   
 /Users/apple/tina/www/php/QDadvertorial/admin/managemtsmallclass.php
+
 
 
 ##数据库信息

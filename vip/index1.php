@@ -17,8 +17,12 @@ $sql = "select * from user where VipUser='" . $VipUser . "'";
 $result = mysql_db_query($dbname, $sql);
 $rs = mysql_fetch_array($result);
 if ($rs != NULL) {
-	$yue = $rs["yue"];
+	$yue = $rs["yue"]; //余额
+
+
 }
+$bigId = isset($_GET['bigId']) ? intval($_GET['bigId']) : 46;
+
 ?>
 <HTML>
 <HEAD>
@@ -45,14 +49,22 @@ if ($rs != NULL) {
 <DIV id=main_frameid class="container-fulid">
 	<DIV class="row nom" id="main">
 		<div class="head">
-			<strong>价格查询系统</strong> / <small>Price Search</small>
+			<strong>价格查询系统</strong> /
+			<small>Price Search</small>
 		</div>
 		<DIV class="body">
-
+			<input type="hidden" id="inputBigId" value="<?php echo $bigId; ?>">
 			<script>
 				$(function () {
+					//初始化；
+					var iBigId = $("#inputBigId").val();
+					if (iBigId) {
+						$("#mtdl .unlimited").removeClass("active");
+						$("#bigId_" + iBigId).siblings().removeClass("active");
+						$("#bigId_" + iBigId).addClass("active");
+					}
 					var aCollectionsMtdl = $('#mtdl .text-block').find('a');
-					aCollectionsMtdl.each(function(index, element) {
+					aCollectionsMtdl.each(function (index, element) {
 						$(element).click(function (e) {
 							aCollectionsMtdl.removeClass('active');
 							$(this).addClass('active');
@@ -60,42 +72,42 @@ if ($rs != NULL) {
 					});
 
 					var aCollectionsMtxl = $('#mtxl .text-block').find('a');
-					aCollectionsMtxl.each(function(index, element) {
+					aCollectionsMtxl.each(function (index, element) {
 						$(element).click(function (e) {
 							aCollectionsMtxl.removeClass('active');
 							$(this).addClass('active');
 						});
 					});
 					var aCollectionsZhmh = $('#zhmh .list-right').find('a');
-					aCollectionsZhmh.each(function(index, element) {
+					aCollectionsZhmh.each(function (index, element) {
 						$(element).click(function (e) {
 							aCollectionsZhmh.removeClass('active');
 							$(this).addClass('active');
 						});
 					});
 					var aCollectionsJgfl = $('#jgfl .list-right').find('a');
-					aCollectionsJgfl.each(function(index, element) {
+					aCollectionsJgfl.each(function (index, element) {
 						$(element).click(function (e) {
 							aCollectionsJgfl.removeClass('active');
 							$(this).addClass('active');
 						});
 					});
 					var aCollectionsDqfl = $('#dqfl .list-right').find('a');
-					aCollectionsDqfl.each(function(index, element) {
+					aCollectionsDqfl.each(function (index, element) {
 						$(element).click(function (e) {
 							aCollectionsDqfl.removeClass('active');
 							$(this).addClass('active');
 						});
 					});
 					var aCollectionsXwy = $('#xwy .list-right').find('a');
-					aCollectionsXwy.each(function(index, element) {
+					aCollectionsXwy.each(function (index, element) {
 						$(element).click(function (e) {
 							aCollectionsXwy.removeClass('active');
 							$(this).addClass('active');
 						});
 					});
 					var aCollectionsLj = $('#lj .list-right').find('a');
-					aCollectionsLj.each(function(index, element) {
+					aCollectionsLj.each(function (index, element) {
 						$(element).click(function (e) {
 							aCollectionsLj.removeClass('active');
 							$(this).addClass('active');
@@ -103,14 +115,17 @@ if ($rs != NULL) {
 					});
 					/*王庆路 入口级别*/
 					var aCollectionsRk = $('#rk .list-right').find('a');
-					aCollectionsRk.each(function(index, element) {
+					aCollectionsRk.each(function (index, element) {
 						$(element).click(function (e) {
 							aCollectionsRk.removeClass('active');
 							$(this).addClass('active');
 						});
 					});
 					/*王庆路 入口级别 end*/
-				})
+
+
+
+				});
 			</script>
 			<DIV id="flselect">
 
@@ -123,20 +138,20 @@ if ($rs != NULL) {
 								<div class="list-left">媒体大类：</div>
 								<div class="list-right">
 									<div class="beginning">
-										<a onclick="mt_search3()" href="javascript:;" class="active">不限</a>
+										<a  onclick="mt_search3()" href="javascript:;" class="unlimited active"><span style="color: #DDDDDD;float: none;margin: 0;">不限</span></a>
 									</div>
 									<div class="text-block">
 										<p id="pdlx_load">
 											<?php
-											$sqls="select * from media_class where BigID=46 order by paixu desc";
-											$results=mysql_db_query($dbname,$sqls);
-											while($rss=mysql_fetch_array($results))
-											{
+											$sqls = "select * from nav_class  order by paixu ASC";
+											$results = mysql_db_query($dbname, $sqls);
+											while ($rss = mysql_fetch_array($results)) {
 												?>
 
-												<a href="javascript:;" onclick="mt_search1(<?php echo $rss["ID"];?>)"><?php echo $rss['SmallClass'];?></a>
+												<a id="bigId_<?php echo $rss['ID'];?>" href="javascript:window.location.href='index1.php?bigId='+ '<?php echo $rss['ID'];?>';"
+												   onclick=""><?php echo $rss['BigClass']; ?></a>
 												<?php
-											}?>
+											} ?>
 
 										</p>
 									</div>
@@ -148,18 +163,22 @@ if ($rs != NULL) {
 							<div class="text-block">
 								<div class="list-left">媒体小类：</div>
 								<div class="list-right">
-									<div class="beginning"><a href="javascript:;" class="active" onclick=mt_search3()>不限</a></div>
+									<div class="beginning">
+										<a onclick="mt_search3()" href="javascript:;" class="active">不限</a>
+									</div>
 									<div class="text-block">
-										<p>
+										<p id="pdlx_load">
 											<?php
-											$sqls="select * from media_small order by paixu desc";
-											$results=mysql_db_query($dbname,$sqls);
-											while($rss=mysql_fetch_array($results))
-											{
+											$sqls = "select * from media_class where BigID=$bigId order by paixu desc";
+											$results = mysql_db_query($dbname, $sqls);
+											while ($rss = mysql_fetch_array($results)) {
 												?>
-												<a  onclick="mt_searchs1(<?php echo $rss["ID"];?>)" href="javascript:;"><?php echo $rss["BigClass"];?></a>
 
-											<?php }?>
+												<a href="javascript:;"
+												   onclick="mt_search1(<?php echo $rss["ID"]; ?>)"><?php echo $rss['SmallClass']; ?></a>
+												<?php
+											} ?>
+
 										</p>
 									</div>
 
@@ -167,21 +186,50 @@ if ($rs != NULL) {
 							</div>
 						</li>
 						<li class="clearfix" id="zhmh">
-							<div class="list-left">综合门户：</div>
+							<div class="text-block">
+								<div class="list-left">综合门户：</div>
+								<div class="list-right">
+									<div class="beginning">
+										<a onclick="mt_search3()" href="javascript:;" class="active">不限</a>
+									</div>
+									<div class="text-block">
+										<p id="pdlx_load">
+											<?php
+											$sqls = "select * from menhu_class order by paixu desc";
+											$results = mysql_db_query($dbname, $sqls);
+											while ($rss = mysql_fetch_array($results)) {
+												?>
+												<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"
+												   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+												<?php
+											} ?>
+
+										</p>
+									</div>
+
+								</div>
+							</div>
+						</li>
+						<li class="clearfix" id="jgfl">
+							<div class="list-left">优惠类别：</div>
 							<div class="list-right">
 								<div class="beginning">
 									<a onclick=mt_search3() href="javascript:;" class="active">不限</a>
 								</div>
 								<div class="text-block">
 									<p>
+
 										<?php
-										$sqls = "select * from menhu_class order by paixu desc";
+										$sqls = "select * from media_small order by paixu desc";
 										$results = mysql_db_query($dbname, $sqls);
 										while ($rss = mysql_fetch_array($results)) {
 											?>
-											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"  href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"
+											   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
 											<?php
 										} ?>
+
+
 									</p>
 								</div>
 
@@ -197,10 +245,10 @@ if ($rs != NULL) {
 								<div class="text-block">
 									<p>
 
-										<a onclick="mt_search2(0)"  href="javascript:;">0-40元</a>
-										<a onclick="mt_search2(1)"  href="javascript:;">40-70元</a>
-										<a onclick="mt_search2(2)"  href="javascript:;">70-120元</a>
-										<a onclick="mt_search2(3)"  href="javascript:;">120元以上</a>
+										<a onclick="mt_search2(0)" href="javascript:;">0-40元</a>
+										<a onclick="mt_search2(1)" href="javascript:;">40-70元</a>
+										<a onclick="mt_search2(2)" href="javascript:;">70-120元</a>
+										<a onclick="mt_search2(3)" href="javascript:;">120元以上</a>
 
 									</p>
 								</div>
@@ -217,39 +265,19 @@ if ($rs != NULL) {
 								<div class="text-block">
 									<p>
 
-										<a onclick="mt_search4('百度新闻源')"  href="javascript:;">百度新闻源</a>
-										<a onclick="mt_search4('谷歌新闻源')"  href="javascript:;">谷歌新闻源</a>
-										<a onclick="mt_search4('搜狗新闻源')"  href="javascript:;">搜狗新闻源</a>
-										<a onclick="mt_search4('360新闻源')"  href="javascript:;">360新闻源</a>
-										<a onclick="mt_search4('搜搜新闻源')"  href="javascript:;">搜搜新闻源</a>
-										<a onclick="mt_search4('非新闻源')"  href="javascript:;">无</a>
+										<a onclick="mt_search4('百度新闻源')" href="javascript:;">百度新闻源</a>
+										<a onclick="mt_search4('谷歌新闻源')" href="javascript:;">谷歌新闻源</a>
+										<a onclick="mt_search4('搜狗新闻源')" href="javascript:;">搜狗新闻源</a>
+										<a onclick="mt_search4('360新闻源')" href="javascript:;">360新闻源</a>
+										<a onclick="mt_search4('搜搜新闻源')" href="javascript:;">搜搜新闻源</a>
+										<a onclick="mt_search4('非新闻源')" href="javascript:;">无</a>
 
 									</p>
 								</div>
 
 							</div>
 						</li>
-						<li class="clearfix" id="xwy">
-							<div class="list-left">平台模式：</div>
-							<div class="list-right">
-								<div class="beginning">
-									<a onclick=mt_search3() href="javascript:;" class="active">不限</a>
-								</div>
-								<div class="text-block">
-									<p>
-										<?php
-										$sqls = "select * from lurl_class order by paixu asc";
-										$results = mysql_db_query($dbname, $sqls);
-										while ($rss = mysql_fetch_array($results)) {
-											?>
-											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"  href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
-											<?php
-										} ?>
-									</p>
-								</div>
 
-							</div>
-						</li>
 						<li class="clearfix" id="lj">
 							<!--王庆路 联系方式分类-->
 							<div class="list-left">链接方式：</div>
@@ -262,22 +290,16 @@ if ($rs != NULL) {
 									<p>
 									<p>
 										<?php
-										$sqls = "select * from media_info where sh=1 and nav_id=46 and  order by id asc";
+										$sqls = "select * from lurl_class   order by id asc";
 										$results = mysql_db_query($dbname, $sqls);
 										while ($rss = mysql_fetch_array($results)) {
 											?>
-											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"  href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"
+											   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
 											<?php
 										} ?>
 									</p>
 
-
-
-										<a href="javascript:;" onclick=mt_search3()>不限</a>
-										<a onclick="mt_search5('不允许')"  href="javascript:;">不允许</a>
-										<a onclick="mt_search5('网址')"  href="javascript:;">网址</a>
-										<a onclick="mt_search5('链接')"  href="javascript:;">超链接</a>
-										<a onclick="mt_search5('二维码')"  href="javascript:;">二维码</a>
 									</p>
 								</div>
 							</div>
@@ -294,9 +316,9 @@ if ($rs != NULL) {
 								</div>
 								<div class="text-block">
 									<p>
-										<a onclick="mt_search8('媒体首页')"  href="javascript:;">媒体首页</a>
-										<a onclick="mt_search8('栏目页面')"  href="javascript:;">栏目页面</a>
-										<a onclick="mt_search8('没有入口')"  href="javascript:;">没有入口</a>
+										<a onclick="mt_search8('媒体首页')" href="javascript:;">媒体首页</a>
+										<a onclick="mt_search8('栏目页面')" href="javascript:;">栏目页面</a>
+										<a onclick="mt_search8('没有入口')" href="javascript:;">没有入口</a>
 									</p>
 								</div>
 							</div>
@@ -306,7 +328,6 @@ if ($rs != NULL) {
 					</ul>
 
 				</div>
-
 
 
 				<form name="form2" id='searchtrun' style="margin-bottom:20px;">
