@@ -29,17 +29,8 @@ if ($VipUser <> "") {
 	$username = $VipUser;
 	$userpath = "../user/";
 	$fg = $_COOKIE["fg"];
-	switch ($_COOKIE["fg"]) {
-		case "1":
-			$jiaose = "核心代理";
-			break;
-		case "2":
-			$jiaose = "合作加盟供应商";
-			break;
-		case "3":
-			$jiaose = "企业用户";
-			break;
-	}
+	$jiaose = userIdentity($fg);
+
 } elseif ($AdminUser <> "") {
 	$sql = "select * from admin where AdminUser='" . $AdminUser . "'";
 	//$result=mysql_db_query($dbname,$sql);

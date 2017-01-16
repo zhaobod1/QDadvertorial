@@ -80,6 +80,51 @@ class newsNr
 
 }
 $newsOB=new newsNr();
+/**
+ * @param $fg $_COOKIE['fg']
+ * @return string 会员身份
+ */
+function adminIdentity($fg) {
+	switch ($fg) {
+		case "1":
+			$jiaose = "站长";
+			break;
+		case "2":
+			$jiaose = "副站长";
+			break;
+		case "3":
+			$jiaose = "检查员";
+			break;
+	}
+	return $jiaose;
+}
+/**
+ * @param $fg $_COOKIE['fg']
+ * @return string 会员身份
+ */
+function userIdentity($fg) {
+	switch ($fg) {
+		case "1":
+			$ret =  "核心代理";
+			break;
+		case "2":
+			$ret = "合作加盟供应商";
+			break;
+		case "3":
+			$ret = "一级会员";
+			break;
+		case "4":
+			$ret = "二级会员";
+			break;
+		case "5":
+			$ret = "三级会员";
+			break;
+		default:
+			$ret = "一级会员";
+			break;
+	}
+	return $ret;
+}
 
 function dd($arr, $useDie=true) {
 	var_dump($arr);

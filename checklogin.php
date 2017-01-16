@@ -1,4 +1,14 @@
 <?php
+/**
+ * Created by iMac
+ * 登录验证页面
+ * 火一五信息科技有限公司
+ * 联系方式:15288986891
+ * QQ:3186355915
+ * web:http://host.huo15.com
+ * 日期：2017/1/16
+ */
+
 session_start();
 ob_start();
 
@@ -38,11 +48,11 @@ if ($rs != NULL) {
 	setcookie('ips', $ip);
 	setcookie('dt', $data);
 
-	$_SESSION['cckey']="yes";
-	$_SESSION['VipUser']=$VipUser;
-	$_SESSION['fg']=$fg;
-	$_SESSION['ips']=$ip;
-	$_SESSION['dt']=$data;
+	$_SESSION['cckey'] = "yes";
+	$_SESSION['VipUser'] = $VipUser;
+	$_SESSION['fg'] = $fg;
+	$_SESSION['ips'] = $ip;
+	$_SESSION['dt'] = $data;
 
 	if ($rs["flag"] == 2) {
 		echo "<script>alert('用户登陆成功！');location.href='../user/indexs.php';</script>";
@@ -64,11 +74,11 @@ if ($rs != NULL) {
 		setcookie('ips', $ip);
 		setcookie('dt', $data);
 
-		$_SESSION['cckey']="yes";
-		$_SESSION['AdminUser']=$VipUser;
-		$_SESSION['fg']=$fg;
-		$_SESSION['ips']=$ip;
-		$_SESSION['dt']=$data;
+		$_SESSION['cckey'] = "yes";
+		$_SESSION['AdminUser'] = $VipUser;
+		$_SESSION['fg'] = $fg;
+		$_SESSION['ips'] = $ip;
+		$_SESSION['dt'] = $data;
 		echo "<script>alert('管理登陆成功！');location.href='../admin/index.php';</script>";
 	} else {
 		echo "<script>alert('用户名或密码错误！');history.go(-1);</script>";

@@ -20,43 +20,44 @@ if($rsu!=NULL)
     $yue=$rsu["yue"];
 	$flag=$rsu["flag"];
 }
+$bigId = isset($_REQUEST['bigId']) ? $_REQUEST['bigId']:46;
 ?>
 
 <?php
 if($_GET["fl"]<>""){
 	$id=$_GET["fl"];
 	if($flag==2){
-		$sql="select * from media_info where sh=1 and nav_id=46 and VipUser='".$VipUser."' and class_id=".$id." order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' and class_id=".$id." order by ID asc";
 	}
 	else{
-		$sql="select * from media_info where sh=1 and nav_id=46 and class_id=".$id." order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and class_id=".$id." order by ID asc";
 	}
 }
 elseif($_GET["fls"]<>""){
 	$id=$_GET["fls"];
 	if($flag==2){
-		$sql="select * from media_info where sh=1 and nav_id=46 and VipUser='".$VipUser."' and small_id=".$id." order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' and small_id=".$id." order by ID asc";
 	}
 	else{
-		$sql="select * from media_info where sh=1 and nav_id=46 and small_id=".$id." order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and small_id=".$id." order by ID asc";
 	}
 }
 elseif($_GET["lj"]<>""){
 	$id=$_GET["lj"];
 	if($flag==2){
-		$sql="select * from media_info where sh=1 and nav_id=46 and VipUser='".$VipUser."' and linkurl='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' and linkurl='".$id."' order by ID asc";
 	}
 	else{
-		$sql="select * from media_info where sh=1 and nav_id=46 and linkurl='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and linkurl='".$id."' order by ID asc";
 	}
 }
 elseif($_GET["xw"]<>""){
 	$id=$_GET["xw"];
 	if($flag==2){
-		$sql="select * from media_info where sh=1 and nav_id=46 and VipUser='".$VipUser."' and xinwenyuan='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' and xinwenyuan='".$id."' order by ID asc";
 	}
 	else{
-		$sql="select * from media_info where sh=1 and nav_id=46 and xinwenyuan='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and xinwenyuan='".$id."' order by ID asc";
 	}
 }
 elseif($_GET["jg"]<>"" and $_GET["jg"]<>"all"){
@@ -65,85 +66,94 @@ elseif($_GET["jg"]<>"" and $_GET["jg"]<>"all"){
 	  switch($_GET["jg"])
 		{
 		 case "0":
-		   $sql="select * from media_info where (dlprice between 0 and 40) and sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where (dlprice between 0 and 40) and sh=1 and nav_id=$bigId order by ID asc";
 		   break;
 		 case "1":
-		   $sql="select * from media_info where (dlprice between 41 and 70) and sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where (dlprice between 41 and 70) and sh=1 and nav_id=$bigId order by ID asc";
 		   break;
 		 case "2":
-		   $sql="select * from media_info where (dlprice between 71 and 120) and sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where (dlprice between 71 and 120) and sh=1 and nav_id=$bigId order by ID asc";
 		   break;
 		 case "3":
-		   $sql="select * from media_info where (dlprice >120) and sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where (dlprice >120) and sh=1 and nav_id=$bigId order by ID asc";
 		   break;
 		 default:
-		   $sql="select * from media_info where sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where sh=1 and nav_id=$bigId order by ID asc";
 		}
 	}
 	elseif($flag==2){
 	  switch($_GET["jg"])
 		{
 		 case "0":
-		   $sql="select * from media_info where (scprice between 0 and 40) and sh=1 and nav_id=46 and VipUser='".$VipUser."' order by ID asc";
+		   $sql="select * from media_info where (scprice between 0 and 40) and sh=1 and nav_id=$bigId and VipUser='".$VipUser."' order by ID asc";
 		   break;
 		 case "1":
-		   $sql="select * from media_info where (scprice between 41 and 70) and sh=1 and nav_id=46 and VipUser='".$VipUser."' order by ID asc";
+		   $sql="select * from media_info where (scprice between 41 and 70) and sh=1 and nav_id=$bigId and VipUser='".$VipUser."' order by ID asc";
 		   break;
 		 case "2":
-		   $sql="select * from media_info where (scprice between 71 and 120) and sh=1 and nav_id=46 and VipUser='".$VipUser."' order by ID asc";
+		   $sql="select * from media_info where (scprice between 71 and 120) and sh=1 and nav_id=$bigId and VipUser='".$VipUser."' order by ID asc";
 		   break;
 		 case "3":
-		   $sql="select * from media_info where (scprice >120) and sh=1 and nav_id=46 and VipUser='".$VipUser."' order by ID asc";
+		   $sql="select * from media_info where (scprice >120) and sh=1 and nav_id=$bigId and VipUser='".$VipUser."' order by ID asc";
 		   break;
 		 default:
-		   $sql="select * from media_info where sh=1 and nav_id=46 and VipUser='".$VipUser."' order by ID asc";
+		   $sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' order by ID asc";
 		}
 	}
 	else{
 	  switch($_GET["jg"])
 		{
 		 case "0":
-		   $sql="select * from media_info where (price between 0 and 40) and sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where (price between 0 and 40) and sh=1 and nav_id=$bigId order by ID asc";
 		   break;
 		 case "1":
-		   $sql="select * from media_info where (price between 41 and 70) and sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where (price between 41 and 70) and sh=1 and nav_id=$bigId order by ID asc";
 		   break;
 		 case "2":
-		   $sql="select * from media_info where (price between 71 and 120) and sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where (price between 71 and 120) and sh=1 and nav_id=$bigId order by ID asc";
 		   break;
 		 case "3":
-		   $sql="select * from media_info where (price >120) and sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where (price >120) and sh=1 and nav_id=$bigId order by ID asc";
 		   break;
 		 default:
-		   $sql="select * from media_info where sh=1 and nav_id=46 order by ID asc";
+		   $sql="select * from media_info where sh=1 and nav_id=$bigId order by ID asc";
 		}
 	}
 }
 elseif($_GET["dq"]<>""){
 	$id=$_GET["dq"];
 	if($flag==2){
-		$sql="select * from media_info where sh=1 and nav_id=46 and VipUser='".$VipUser."' and diqu='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' and diqu='".$id."' order by ID asc";
 	}
 	else{
-		$sql="select * from media_info where sh=1 and nav_id=46 and diqu='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and diqu='".$id."' order by ID asc";
 	}
 }
 elseif($_GET["zhmh"]<>""){
 	$id=$_GET["zhmh"];
 	if($flag==2){
-		$sql="select * from media_info where sh=1 and nav_id=46 and VipUser='".$VipUser."' and zhmh='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' and zhmh='".$id."' order by ID asc";
 	}
 	else{
-		$sql="select * from media_info where sh=1 and nav_id=46 and zhmh='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and zhmh='".$id."' order by ID asc";
 	}
 }
 elseif($_GET["tejia"]<>""){
 	$id=$_GET["tejia"];
 	if($flag==2){
-		$sql="select * from media_info where sh=1 and nav_id=46 and VipUser='".$VipUser."' and small_id='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' and small_id='".$id."' order by ID asc";
 	}
 	else{
-		$sql="select * from media_info where sh=1 and nav_id=46 and small_id='".$id."' order by ID asc";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and small_id='".$id."' order by ID asc";
+	}
+}
+elseif($_GET["rk"]<>""){
+	$id=$_GET["tejia"];
+	if($flag==2){
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' and small_id='".$id."' order by ID asc";
+	}
+	else{
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and small_id='".$id."' order by ID asc";
 	}
 }
 else{
@@ -226,10 +236,10 @@ else{
 	}
 	
 	if($flag==2){
-		$sql="select * from media_info where sh=1 and nav_id=46 and VipUser='".$VipUser."' ".$csql." ".$hsql." ".$dsql." ".$lsql." ".$xsql." ".$msql." ".$ssql."";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId and VipUser='".$VipUser."' ".$csql." ".$hsql." ".$dsql." ".$lsql." ".$xsql." ".$msql." ".$ssql."";
 	}
 	else{
-		$sql="select * from media_info where sh=1 and nav_id=46 ".$csql." ".$hsql." ".$dsql." ".$lsql." ".$xsql." ".$msql." ".$ssql."";
+		$sql="select * from media_info where sh=1 and nav_id=$bigId ".$csql." ".$hsql." ".$dsql." ".$lsql." ".$xsql." ".$msql." ".$ssql."";
 	}
 }
 $result=mysql_db_query($dbname,$sql);
@@ -241,9 +251,17 @@ $result=mysql_db_query($dbname,$sql);
     <th width="130" bgcolor="#CDD3EB"><div align="center"><strong>媒体名称</strong></div></th>
 	<th width="80" bgcolor="#CDD3EB"><div align="center"><strong>推荐指数</strong></div></th>
 <?php if($flag==1){?>
-	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>代理价</strong></div></th>
-<?php } elseif($flag==2){?>
-    <th width="100" bgcolor="#CDD3EB"><div align="center"><strong>价格</strong></div></th>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>成本价格</strong></div></th>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>三级价格</strong></div></th>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>二级价格</strong></div></th>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>一级价格</strong></div></th>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>零售价</strong></div></th>
+
+<?php } elseif($flag>2 && $flag <=5) {?>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>三级价格</strong></div></th>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>二级价格</strong></div></th>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>一级价格</strong></div></th>
+	<th width="100" bgcolor="#CDD3EB"><div align="center"><strong>零售价</strong></div></th>
 <?php } else {?>
     <th width="100" bgcolor="#CDD3EB"><div align="center"><strong>零售价</strong></div></th>
 <?php }?>
@@ -283,9 +301,17 @@ $result=mysql_db_query($dbname,$sql);
 	<td width="80" ><div align="center"><img src="<?php echo $rs["tj"];?>" border="0" width="64" height="12" alt="推荐指数"></div></td>
 	
 <?php if($flag==1){?>
-    <td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice"];?></b></div></td>
+    <td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["price"];?></b></div></td>
+    <td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice3"];?></b></div></td>
+    <td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice2"];?></b></div></td>
+    <td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice2"];?></b></div></td>
 <?php } elseif($flag==2){?>
     <td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["scprice"];?></b></div></td>
+<?php }elseif($flag>2 && $flag <=5){?>
+	<td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice3"];?></b></div></td>
+	<td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice2"];?></b></div></td>
+	<td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["dlprice2"];?></b></div></td>
+	<td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["price"];?></b></div></td>
 <?php } else {?>
 	<td width="100" ><div align="center" style="color: rgb(255, 0, 0);"><b><?php echo $rs["price"];?></b></div></td>
 <?php }?>

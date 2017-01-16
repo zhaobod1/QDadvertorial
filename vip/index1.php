@@ -8,11 +8,12 @@
  * web:http://host.huo15.com
  * 日期：2017/1/16
  */
-
+session_start();
+ob_start();
+$bigId = isset($_GET['bigId']) ? intval($_GET['bigId']) : 46;
 include("../include/config.php");
 include("../include/function.php");
 $VipUser = $_COOKIE["VipUser"];
-//echo "<script>alert('".$VipUser."');</script>";
 $sql = "select * from user where VipUser='" . $VipUser . "'";
 $result = mysql_db_query($dbname, $sql);
 $rs = mysql_fetch_array($result);
@@ -21,7 +22,6 @@ if ($rs != NULL) {
 
 
 }
-$bigId = isset($_GET['bigId']) ? intval($_GET['bigId']) : 46;
 
 ?>
 <HTML>
@@ -287,20 +287,20 @@ $bigId = isset($_GET['bigId']) ? intval($_GET['bigId']) : 46;
 
 								</div>
 								<div class="text-block">
-									<p>
+
 									<p>
 										<?php
 										$sqls = "select * from lurl_class   order by id asc";
 										$results = mysql_db_query($dbname, $sqls);
 										while ($rss = mysql_fetch_array($results)) {
 											?>
-											<a onclick="mt_search7('<?php echo $rss["BigClass"]; ?>')"
+											<a onclick="mt_search5('<?php echo $rss["BigClass"]; ?>')"
 											   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
 											<?php
 										} ?>
 									</p>
 
-									</p>
+
 								</div>
 							</div>
 							<!--王庆路 联系方式分类 end-->
@@ -316,9 +316,16 @@ $bigId = isset($_GET['bigId']) ? intval($_GET['bigId']) : 46;
 								</div>
 								<div class="text-block">
 									<p>
-										<a onclick="mt_search8('媒体首页')" href="javascript:;">媒体首页</a>
-										<a onclick="mt_search8('栏目页面')" href="javascript:;">栏目页面</a>
-										<a onclick="mt_search8('没有入口')" href="javascript:;">没有入口</a>
+										<?php
+										$sqls = "select * from entrance_class   order by id asc";
+										$results = mysql_db_query($dbname, $sqls);
+										while ($rss = mysql_fetch_array($results)) {
+											?>
+											<a onclick="mt_search8('<?php echo $rss["BigClass"]; ?>')"
+											   href="javascript:;"><?php echo $rss["BigClass"]; ?></a>
+											<?php
+										} ?>
+
 									</p>
 								</div>
 							</div>
@@ -374,25 +381,33 @@ $bigId = isset($_GET['bigId']) ? intval($_GET['bigId']) : 46;
 											</select></td>
 										<td><select name="linkurl" size="1" id="linkurl">
 												<option value="">选择链接情况</option>
-												<option value="可超链接">可超链接</option>
-												<option value="文本链接">文本链接</option>
-												<option value="可带网址">可带网址</option>
-												<option value="不能带连接">不能带连接</option>
-												<option value="不能带网址">不能带网址</option>
+												<?php
+												$sqld = "select * from lurl_class";
+												$resultd = mysql_db_query($dbname, $sqld);
+												while ($rsd = mysql_fetch_array($resultd)) {
+													?>
+													<option
+														value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+													<?php
+												}
+												?>
+
 											</select></td>
 										<td><select name="xinwenyuan" size="1" id="xinwenyuan">
 												<option value="">选择新闻源</option>
-												<option value="非新闻源">非新闻源</option>
-												<option value="网页收录">网页收录</option>
-												<option value="百度新闻源">百度新闻源</option>
-												<option value="谷歌新闻源">谷歌新闻源</option>
-												<option value="搜狗新闻源">搜狗新闻源</option>
-												<option value="360新闻源">360新闻源</option>
-												<option value="搜搜新闻源">搜搜新闻源</option>
+												<?php
+												$sqld = "select * from source_class";
+												$resultd = mysql_db_query($dbname, $sqld);
+												while ($rsd = mysql_fetch_array($resultd)) {
+													?>
+													<option
+														value="<?php echo $rsd["BigClass"]; ?>"><?php echo $rsd["BigClass"]; ?></option>
+													<?php
+												}
+												?>
 											</select></td>
 										<td><select name="zhmh" size="1" id="zhmh">
 												<option value="">选择门户</option>
-												<option value=" ">非门户</option>
 												<?php
 												$sql2 = "select * from menhu_class";
 												$result2 = mysql_db_query($dbname, $sql2);
@@ -463,21 +478,21 @@ $bigId = isset($_GET['bigId']) ? intval($_GET['bigId']) : 46;
 	}
 
 	function mt_search1(id) {
-		$.get("../user/search1.php?a=mt_search", {"fl": id}, function (data) {
+		$.get("../user/search1.php?a=mt_search&bigId="+ $("#inputBigId").val(), {"fl": id}, function (data) {
 
 			$("#s_meti").html(data);
 		});
 	}
 
 	function mt_search2(id) {
-		$.get("../user/search1.php?a=mt_search", {"jg": id}, function (data) {
+		$.get("../user/search1.php?a=mt_search&bigId="+ $("#inputBigId").val(), {"jg": id}, function (data) {
 
 			$("#s_meti").html(data);
 		});
 	}
 
 	function mt_search3(id) {
-		$.get("../user/search1.php?a=mt_searchall", {"jg": "all"}, function (data) {
+		$.get("../user/search1.php?a=mt_searchall&bigId="+ $("#inputBigId").val(), {"jg": "all"}, function (data) {
 
 			$("#s_meti").html(data);
 		});
@@ -485,27 +500,33 @@ $bigId = isset($_GET['bigId']) ? intval($_GET['bigId']) : 46;
 
 
 	function mt_search4(id) {
-		$.get("../user/search1.php?a=mt_searchall", {"xw": id}, function (data) {
+		$.get("../user/search1.php?a=mt_searchall&bigId="+ $("#inputBigId").val(), {"xw": id}, function (data) {
 
 			$("#s_meti").html(data);
 		});
 	}
 
 	function mt_search5(id) {
-		$.get("../user/search1.php?a=mt_searchall", {"lj": id}, function (data) {
+		$.get("../user/search1.php?a=mt_searchall&bigId="+ $("#inputBigId").val(), {"lj": id}, function (data) {
 
 			$("#s_meti").html(data);
 		});
 	}
 
 	function mt_search6(id) {
-		$.get("../user/search1.php?a=mt_searchall", {"dq": id}, function (data) {
+		$.get("../user/search1.php?a=mt_searchall&bigId="+ $("#inputBigId").val(), {"dq": id}, function (data) {
 
 			$("#s_meti").html(data);
 		});
 	}
 	function mt_search7(id) {
-		$.get("../user/search1.php?a=mt_searchall", {"zhmh": id}, function (data) {
+		$.get("../user/search1.php?a=mt_searchall&bigId="+ $("#inputBigId").val(), {"zhmh": id}, function (data) {
+
+			$("#s_meti").html(data);
+		});
+	}
+	function mt_search8(id) {
+		$.get("../user/search1.php?a=mt_searchall&bigId="+ $("#inputBigId").val(), {"rk": id}, function (data) {
 
 			$("#s_meti").html(data);
 		});
