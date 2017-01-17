@@ -746,23 +746,33 @@ switch ($action) {
 				</form>
 				<div id='yixuan' class="nextpage">
 					<div class="fl">
-						&nbsp;已选媒体: <span id="yixuantr"></span>&nbsp;&nbsp;总额：<b><span
-								id='totalmoney2'>0</span></b>元（余额：<b><span id="yue"><?php echo $yue; ?></span></b>元）
+						&nbsp;已选媒体: <span id="yixuantr"></span>&nbsp;&nbsp;
 
 
 					</div>
 
 
 					<div class="fr">
-						<input type="button" class="btn btn-info" value="上一步 编辑内容" onclick="perpage()"
-						       style="width:130px;height:30px; text-align:center;margin-top:3px;"/-->
-						<input type="button" class="btn btn-success" value=" 提 交 " onclick="$('#buttonsave').click()"
-						       style="width:80px;height:30px; text-align:center;margin-top:3px;"/>
+						<div>
+							总额：<b><span id='totalmoney2'>0</span></b>元
+							（余额：<b><span id="yue"><?php echo $yue; ?></span></b>元）
+
+						</div>
+						<div>
+							<input type="button" class="btn btn-info" value="上一步 编辑内容" onclick="perpage()"
+							       style="width:130px;height:30px; text-align:center;margin-top:3px;"/-->
+							<input type="button" class="btn btn-success" value=" 提 交 " onclick="$('#buttonsave').click()"
+							       style="width:80px;height:30px; text-align:center;margin-top:3px;"/>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<style>
+			#yixuan {
+				padding:5px;
+				padding-bottom: 3px;
+			}
 			.fl {
 				float: left;
 			}

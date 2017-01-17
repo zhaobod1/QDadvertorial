@@ -6,8 +6,9 @@ include("checkuser.php");
 ?>
 
 <?php
-if ($_COOKIE["fg"] > 3) {
-	echo "<script>alert('您的权限有限，请与超级管理员联系！');history.go(-1);</script>";
+if ($_COOKIE["fg"] > 5 || $_COOKIE["fg"] == '') {
+	//echo "<script>alert('您的权限有限，请与超级管理员联系！');history.go(-1);</script>";
+	echo "<script>alert('您的权限有限，请与超级管理员联系！');window.location.href='ruanwen_add.php';</script>";
 } else {
 	$action = @$_REQUEST["action"];
 	$data = date("Y-m-d h:i:s");
@@ -59,11 +60,28 @@ if ($_COOKIE["fg"] > 3) {
 						$resulta = mysql_db_query($dbname, $sqla);
 						$rsa = mysql_fetch_array($resulta);
 						$owner = $rsa["VipUser"];
-						if ($_COOKIE["fg"] == 1) {
+
+						/*if ($_COOKIE["fg"] == 1) {
 							$price = $rsa["scprice"];
 						} elseif ($_COOKIE["fg"] == 2) {
 							$price = $rsa["dlprice"];
 						} else {
+							$price = $rsa["price"];
+						}*/
+						// 火一五信息科技 huo15.com Created by apple on 2017/1/17.
+						if ($_COOKIE["fg"] == 1) {
+							$price = $rsa["scprice"];
+						} elseif ($_COOKIE["fg"] == 2) {
+							$price = $rsa["price"];
+						} elseif ($_COOKIE["fg"] == 3) {
+							$price = $rsa["dlprice1"];
+						} elseif ($_COOKIE["fg"] == 4) {
+							$price = $rsa["dlprice2"];
+						}
+						elseif ($_COOKIE["fg"] == 5) {
+							$price = $rsa["dlprice3"];
+						}
+						else {
 							$price = $rsa["price"];
 						}
 
@@ -98,13 +116,30 @@ if ($_COOKIE["fg"] > 3) {
 					$resulta = mysql_db_query($dbname, $sqla);
 					$rsa = mysql_fetch_array($resulta);
 					$owner = $rsa["VipUser"];
-					if ($_COOKIE["fg"] == 1) {
+					/*if ($_COOKIE["fg"] == 1) {
 						$price = $rsa["dlprice"];
 					} elseif ($_COOKIE["fg"] == 2) {
 						$price = $rsa["scprice"];
 					} else {
 						$price = $rsa["price"];
+					}*/
+					// 火一五信息科技 huo15.com Created by apple on 2017/1/17.
+					if ($_COOKIE["fg"] == 1) {
+						$price = $rsa["scprice"];
+					} elseif ($_COOKIE["fg"] == 2) {
+						$price = $rsa["price"];
+					} elseif ($_COOKIE["fg"] == 3) {
+						$price = $rsa["dlprice1"];
+					} elseif ($_COOKIE["fg"] == 4) {
+						$price = $rsa["dlprice2"];
 					}
+					elseif ($_COOKIE["fg"] == 5) {
+						$price = $rsa["dlprice3"];
+					}
+					else {
+						$price = $rsa["price"];
+					}
+
 					/*王庆路 根据judge值判断三种方式的哪一种*/
 					switch ($judge){
 						case 1:
