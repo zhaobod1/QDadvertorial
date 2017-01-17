@@ -28,17 +28,9 @@ if ($VipUser <> "") {
 	$username = $VipUser;
 	$userpath = "../user/";
 	$fg = $_COOKIE["fg"];
-	switch ($_COOKIE["fg"]) {
-		case "1":
-			$jiaose = "核心代理";
-			break;
-		case "2":
-			$jiaose = "合作加盟供应商";
-			break;
-		case "3":
-			$jiaose = "企业用户";
-			break;
-	}
+	$jiaose = userIdentity($fg);
+
+
 } elseif ($AdminUser <> "") {
 	$sql = "select * from admin where AdminUser='" . $AdminUser . "'";
 	//$result=mysql_db_query($dbname,$sql);
@@ -54,17 +46,8 @@ if ($VipUser <> "") {
 	$username = $AdminUser;
 	$userpath = "../admin/";
 	$fg = $_COOKIE["fg"];
-	switch ($_COOKIE["fg"]) {
-		case "1":
-			$jiaose = "站长";
-			break;
-		case "2":
-			$jiaose = "副站长";
-			break;
-		case "3":
-			$jiaose = "检查员";
-			break;
-	}
+	$jiaose = adminIdentity($fg);
+
 } else {
 	$ufalg = 0;
 }
@@ -186,6 +169,57 @@ include("../menu.php");
 <div class="package">
 	<div class="wrapper">
 		<dl>
+			<dd>
+				<img src="../huo15template/img/taocan/60.png" alt="60家综合套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/120.png" alt="120家综合套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/100.png" alt="688元100家小站套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/108.png" alt="2888科技数码套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/108car.png" alt="2888汽车套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/140.png" alt="2888医疗健康套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/10.png" alt="财经套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/200.png" alt="超值550元200家套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/700house.png" alt="家居套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/800healthy.png" alt="健康套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/800healthy.png" alt="科技套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/beautifulChina.png" alt="美丽中国套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/500portal.png" alt="门户套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/900car.png" alt="汽车套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/fashion.png" alt="时尚套餐">
+			</dd>
+			<dd>
+				<img src="../huo15template/img/taocan/100url.png" alt="外链套餐">
+			</dd>
+
+		</dl>
+		<dl style="display: none;">
 			<dd>
 				<div class="hd"> <a name="10"></a>
 					<h3>综合套餐60家媒体<span>仅需2000元</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;包含十大门户媒体</h3>
