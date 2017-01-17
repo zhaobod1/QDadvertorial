@@ -349,8 +349,36 @@ switch ($action) {
 
 								//huo15
 								//显示媒体小类。
+								//初始化小类
 
+								$.post(
+									"../vip/generateClass.php",
+									{
+										"bigId" : 46
+									},
+									function (res) {
+										//
+										console.log("ruanwen_add.php-->res:",res);
+										$("#mtxl #pdlx_load").empty();
+										$("#mtxl #pdlx_load").append(res);
+										var aCollectionsMtxl = $('#mtxl .text-block').find('a');
+										aCollectionsMtxl.each(function (index, element) {
+											$(element).click(function (e) {
+												aCollectionsMtxl.removeClass('active');
+												$(this).addClass('active');
+											});
+										});
 
+										//初始化软文发布小类
+										$(".unlimited").removeClass('active');
+										$("#bigId_46").siblings().removeClass('active');
+										$("#bigId_46").addClass('active');
+										//抓取小类不限制的全部媒体资源
+										mt_search3();
+									},
+									'json'
+
+								);
 
 
 								var aCollectionsMtdl = $('#mtdl .text-block').find('a');
@@ -383,7 +411,7 @@ switch ($action) {
 												},
 												'json'
 
-											)
+											);
 											aCollectionsMtdl.removeClass('active');
 											$(this).addClass('active');
 										}
