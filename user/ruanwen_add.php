@@ -787,10 +787,11 @@ switch ($action) {
 
 						</div>
 						<div>
-							<input type="button" class="btn btn-info" value="上一步 编辑内容" onclick="perpage()"
-							       style="width:130px;height:30px; text-align:center;margin-top:3px;"/-->
-							<input type="button" class="btn btn-success" value=" 提 交 " onclick="$('#buttonsave').click()"
-							       style="width:80px;height:30px; text-align:center;margin-top:3px;"/>
+							<a href="#" style="display: none;" id="exportExcel-a" class="btn btn-danger" target="_blank">下载表格</a>
+							<input type="button" class="btn btn-info" value="上一步 编辑内容" onclick="perpage()"/>
+							<input type="button" class="btn btn-info" id="exportExcel" value="导出表格">
+							<input type="button" class="btn btn-success" value=" &nbsp;&nbsp;提&nbsp;&nbsp;&nbsp;&nbsp;交&nbsp;&nbsp;" onclick="$('#buttonsave').click()"/>
+
 						</div>
 					</div>
 				</div>
@@ -881,8 +882,72 @@ switch ($action) {
 		}).ajaxStop(function () {
 			ajaxbg.hide();
 		});
-		mt_search();
-	})
+		//mt_search();
+
+
+		// 下载表格按钮
+		$("#exportExcel-a").click(function (e) {
+			$(this).hide();
+		});
+		//huo15 导出excel功能
+		$("#exportExcel").click(function (e) {
+			e.preventDefault();
+			$("#exportExcel-a").hide();
+			var exportData = $("#yixuanhidden").val();
+			if (!exportData) {
+				alert("请先选择资源！");
+				return;
+			}
+			$(this).attr("disabled", "disabled");
+			$(this).val("计算中...");
+
+			console.log("exportData origin:",exportData);
+			var arrTmp = exportData.split(",");
+			var exportData = [];
+			if(arrTmp.length) {
+				for(var i=0;i<arrTmp.length -1;i++) {
+					var temId = arrTmp[i].substring(0, arrTmp[i].indexOf(":"));
+					exportData.push(temId);
+				}
+
+			}
+
+			console.log("exportData processed:",exportData);
+			$.post(
+				"../huo15template/org/phpexcel/api/exportExcel.php",
+				{
+					"data":exportData,
+					"total": $("#totalmoney2").text()
+				},
+				function (res) {
+					console.log("exportExcel-btn---> response-->", res);
+					if (res.flag) {
+						if (res.content.length>8) {
+							//下载excel
+							$("#exportExcel-a").show()
+								.attr("href", "/" + res.content);
+							$("#exportExcel").val("导出表格")
+							setTimeout(enableExportExcel, 2000);
+
+						} else {
+							alert("excel导出出错，请联系管理员解决！");
+						}
+					} else {
+						alert("excel导出出错，请联系管理员解决！");
+					}
+				},
+				'json'
+
+			);
+		});
+
+
+
+	});
+
+	function enableExportExcel() {
+		$("#exportExcel").removeAttr("disabled");
+	}
 
 	function setprice(val) {
 		$("#jiage").val(val * 15);
@@ -975,6 +1040,12 @@ switch ($action) {
 		$("#searchtrun").slideToggle();
 	}
 
+	/**
+	 * huo15 选择资源
+	 * id  数据库中的 ID
+	 * jq 价格
+	 * yue 余额
+	 * **/
 	function sel(id, tr, jg, yue) {
 		var ye = yue;
 		var s7 = jg;
@@ -982,7 +1053,7 @@ switch ($action) {
 		//alert(yue);
 		//alert(s7);
 
-		//如何取消选择，运行yixuansc，减掉选择金额
+		//如果取消选择，运行yixuansc，减掉选择金额
 		if ($("#xz_" + id).attr("checked") == false) {
 			yixuancl(id, s2, s7);
 			return false;
@@ -993,10 +1064,11 @@ switch ($action) {
 			$("#yixuan").show();
 			if (yx.indexOf(tr) == -1) {
 				$("#yixuanhidden").val(id + ":" + s2 + "," + yx);
-				$("#totalmoney").val($("#totalmoney").val() * 1 + s7 * 1)
-				$("#totalmoney2").html($("#totalmoney2").html() * 1 + s7 * 1)
+				$("#totalmoney").val($("#totalmoney").val() * 1 + s7 * 1);
+				$("#totalmoney2").html($("#totalmoney2").html() * 1 + s7 * 1);
 				$("#yixuantr").append("<span id='yixuantr2_" + id + "'>&nbsp;" + s2 + s7 + "元<a href='javascript:;'onclick=\"yixuancl('" + id + "','" + s2 + "'," + s7 + ")\" style='color:#FF0'>[X]</a></span>");
 			}
+
 		}
 		else {
 			$("#biaoti")[0].focus();
