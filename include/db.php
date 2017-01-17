@@ -1,5 +1,8 @@
 <?php
 $ip = real_ip();
+if ($ip != "127.0.0.1") {
+	error_reporting(0);
+}
 dbSetByIp($ip);
 $dbhost = $GLOBALS['dbhost'];		//数据库服务器
 $dbuser = $GLOBALS['dbuser'];			//数据库用户名
