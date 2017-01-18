@@ -195,7 +195,9 @@ if ($VipUser <> "") {
 	<INPUT value=1 type="hidden" name="commit">
 </FORM>
 <script>
+
 	var code_hidden = '<?php echo $_SESSION['authnum'];?>';
+	var goBackFlag = getQueryString("back");
 	function check() {
 		if (document.getElementById('VipUser').value == "") {
 			document.getElementById('VipUser').focus();
@@ -212,12 +214,24 @@ if ($VipUser <> "") {
 			alert('验证码输入错误!');
 			return false;
 		}
-		document.form1.action = "checklogin.php";
+		if (goBackFlag) {
+
+			document.form1.action = window.location.protocol  + "/checklogin.php?back=1";
+		} else {
+			document.form1.action = window.location.protocol  + "/checklogin.php";
+		}
 		document.form1.submit();
 		return true;
 	}
 	function refreshimg() {
 		document.all.checkcode.src = 'checkcode.php?authnum=<?php echo $_SESSION['authnum']?>';
+	}
+
+	function getQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return decodeURIComponent(r[2]);
+		return null;
 	}
 </script>
 <!--登录框 end-->

@@ -57,6 +57,11 @@ if ($rs != NULL) {
 	if ($rs["flag"] == 2) {
 		echo "<script>alert('用户登陆成功！');location.href='../user/indexs.php';</script>";
 	} else {
+		$goBack = isset($_REQUEST['back'])? intval($_REQUEST['back']):0;
+		if ($goBack) {
+			echo "<script>alert('登录成功！您现在可以查看会员价格了！');history.go(-1);</script>";
+			die;
+		}
 		echo "<script>alert('用户登陆成功！');location.href='../user/index.php';</script>";
 	}
 } else {
@@ -79,6 +84,11 @@ if ($rs != NULL) {
 		$_SESSION['fg'] = $fg;
 		$_SESSION['ips'] = $ip;
 		$_SESSION['dt'] = $data;
+		$goBack = isset($_REQUEST['back'])? intval($_REQUEST['back']):0;
+		if ($goBack) {
+			echo "<script>alert('登录成功！您现在可以查看会员价格了！');history.go(-1);</script>";
+			die;
+		}
 		echo "<script>alert('管理登陆成功！');location.href='../admin/index.php';</script>";
 	} else {
 		echo "<script>alert('用户名或密码错误！');history.go(-1);</script>";

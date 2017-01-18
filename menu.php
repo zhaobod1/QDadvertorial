@@ -21,7 +21,7 @@ $navName = $_SERVER['PHP_SELF'];
 		<li class=""><a href="#">微信价格</a></li>
 		<!--王庆路 添加微信价格模块 end-->
 		<li class="<?php echo $navName=='/popularize.php'? 'cur':''; ?>"><a href="../popularize.php">软文推广</a></li>
-		<li class="<?php echo $navName=='/vip/index.php'?'cur':''; ?>"><a href="../vip/index.php">软文价格</a></li>
+		<li class="<?php echo $navName=='/vip/index.php?back=1'?'cur':''; ?>"><a href="../vip/index.php?back=1">软文价格</a></li>
 		<li class="<?php echo $navName=='/system/daixie.php'?'cur':''; ?>"><a href="../system/daixie.php">软文代写</a></li>
 		<li class="<?php echo $navName=='/system/taocan.php'?'cur':''; ?>"><a href="../system/taocan.php">优惠套餐</a></li>
 		<li class="<?php echo $navName=='/system/media.php'?'cur':''; ?>"><a href="../system/media.php">媒体资源</a></li>
