@@ -4,6 +4,8 @@
 ##页面信息
 
 ###会员系统
+*  文章代写 user系统
+/Users/apple/tina/www/php/QDadvertorial/user/daixie_add.php
 * 生成小类 /vip/
 /Users/apple/tina/www/php/QDadvertorial/vip/generateClass.php
 * 软文发布 会员系统

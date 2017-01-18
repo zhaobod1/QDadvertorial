@@ -722,5 +722,49 @@ include("../footer.php");
 		LEFT: 50%
 	}
 </style>
+
+<?php if (!$_COOKIE['fg']) { ?>
+<div class="mark">
+	<div class="login-wrapper">
+		<?php
+
+		include_once "../loginDialog.php";
+
+		?>
+	</div>
+</div>
+
+<?php } ?>
+
+
+<style>
+	.mark {
+		width:100%;
+		height:100%;
+		position: absolute;
+		background: rgba(34, 34, 34, 0.8);
+		top:0;
+		z-index: 9999;
+
+	}
+	.login-wrapper {
+		position: absolute;
+		width:300px;
+		height:400px;
+		background: #177bb1;
+		margin: auto;
+		top: 0; left: 0; bottom: 0; right: 0;
+	}
+	.login-wrapper #form1 {
+		position: relative;
+		right:0;
+		top:0;
+	}
+	#progressBar {
+		width:248px;
+		height:48px;
+		overflow: hidden;
+	}
+</style>
 </body>
 </html>
