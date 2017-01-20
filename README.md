@@ -4,6 +4,8 @@
 ##页面信息
 
 ###会员系统
+* 软文列表
+/Users/apple/tina/www/php/QDadvertorial/user/ruanwen.php
 *  文章代写 user系统
 /Users/apple/tina/www/php/QDadvertorial/user/daixie_add.php
 * 生成小类 /vip/
