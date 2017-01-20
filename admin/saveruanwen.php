@@ -27,9 +27,6 @@ if ($_COOKIE["fg"] > 2) {
 	$data = date("Y-m-d H:i:s");
 	//$order_id=strtotime("now").rand(0,10000);
 	$order_id = getyear($data) . getmonth($data) . getday($data) . rand(10000, 99999);
-	//echo "<script>alert('会员：".$VipUser."　标题：".$title."　内容：".$content."　金额：".$price."');</script>";
-	//echo "<script>alert('会员：".$VipUser."　标题：".$title."　内容：".$content."<br/>". $art_url_input ."　金额：".$price."');</script>";
-
 	$ID = @$_REQUEST["userid"];
 
 	switch ($action) {

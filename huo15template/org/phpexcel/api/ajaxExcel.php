@@ -68,37 +68,38 @@ if ($action == "generateExcel") {
 	$arrOrders = array();
 	while ($rs = mysql_fetch_array($result)) {
 
-		$arrOrders[] = $rs;
+		if ($rs['yn'] == 1) {
+			$arrOrders[] = $rs;
+		}
+
 	}
 
 
 	foreach ($arrOrders as $key => $arrOrder) {
 
-		if ($arrOrder['yn'] == 1) {
-			$objSheet->setCellValue("A".($key+4), $arrOrder['ID']);
-			$objSheet->setCellValue("B".($key+4), "软文");
-			$objSheet->setCellValue("C".($key+4), "'".$arrOrder['order_id']."'");
+		$objSheet->setCellValue("A".($key+4), $arrOrder['ID']);
+		$objSheet->setCellValue("B".($key+4), "软文");
+		$objSheet->setCellValue("C".($key+4), "'".$arrOrder['order_id']."'");
 
-			$objSheet->setCellValue("D".($key+4), $_COOKIE["VipUser"]);
-			$objSheet->setCellValue("E".($key+4), $arrOrder["fbtime"]);
-			$objSheet->setCellValue("F".($key+4), $arrOrder["title"]);
-			$objSheet->setCellValue("G".($key+4), $arrOrder["weburl"]);
+		$objSheet->setCellValue("D".($key+4), $_COOKIE["VipUser"]);
+		$objSheet->setCellValue("E".($key+4), $arrOrder["fbtime"]);
+		$objSheet->setCellValue("F".($key+4), $arrOrder["title"]);
+		$objSheet->setCellValue("G".($key+4), $arrOrder["weburl"]);
 
-			$objSheet->getCell("G".($key+4))->getHyperlink()->setUrl($arrOrder['weburl']);    //超链接url地址
-			$objSheet->getCell("G".($key+4))->getHyperlink()->setTooltip( '官方网址');  //鼠标移上去连接提示信息
-			$objSheet->getStyle("G".($key+4))->getFont()->setColor(new PHPExcel_Style_Color("177bb1"));
+		$objSheet->getCell("G".($key+4))->getHyperlink()->setUrl($arrOrder['weburl']);    //超链接url地址
+		$objSheet->getCell("G".($key+4))->getHyperlink()->setTooltip( '官方网址');  //鼠标移上去连接提示信息
+		$objSheet->getStyle("G".($key+4))->getFont()->setColor(new PHPExcel_Style_Color("177bb1"));
 
 
-			//../rwinfo.php?ID=<?php echo $rs["ID"];
+		//../rwinfo.php?ID=<?php echo $rs["ID"];
 
-			$objSheet->setCellValue("H".($key+4), $arrOrder["medianame"]);
-			$mediaUrl = "http://" . $_SERVER['SERVER_NAME'] . "/rwinfo.php?ID=".$arrOrder["ID"];
-			$objSheet->getCell("H".($key+4))->getHyperlink()->setUrl($mediaUrl);    //超链接url地址
-			$objSheet->getCell("H".($key+4))->getHyperlink()->setTooltip( '案例网址');  //鼠标移上去连接提示信息
-			$objSheet->getStyle("H".($key+4))->getFont()->setColor(new PHPExcel_Style_Color("177bb1"));
+		$objSheet->setCellValue("H".($key+4), $arrOrder["medianame"]);
+		$mediaUrl = "http://" . $_SERVER['SERVER_NAME'] . "/rwinfo.php?ID=".$arrOrder["ID"];
+		$objSheet->getCell("H".($key+4))->getHyperlink()->setUrl($mediaUrl);    //超链接url地址
+		$objSheet->getCell("H".($key+4))->getHyperlink()->setTooltip( '案例网址');  //鼠标移上去连接提示信息
+		$objSheet->getStyle("H".($key+4))->getFont()->setColor(new PHPExcel_Style_Color("177bb1"));
 
-			$objSheet->setCellValue("I".($key+4), $arrOrder["price"]);
-		}
+		$objSheet->setCellValue("I".($key+4), $arrOrder["price"]);
 
 	}
 
