@@ -17,12 +17,12 @@ if(is_file($_SERVER['DOCUMENT_ROOT'].'/360safe/360webscan.php')){
 function dbSetByIp($ip) {
 	if ($ip=="127.0.0.1") {
 
-		$GLOBALS['dbhost'] = '116.255.235.26';		//数据库服务器
-		$GLOBALS['dbuser'] = 'advertorial';			//数据库用户名
-		$GLOBALS['dbpasswd'] = 'huo15_adv';		//数据库密码
-		$GLOBALS['dbname'] = 'advertorial';		//数据库名
+		//$GLOBALS['dbhost'] = '116.255.235.26';		//数据库服务器
+		//$GLOBALS['dbuser'] = 'advertorial';			//数据库用户名
+		//$GLOBALS['dbpasswd'] = 'huo15_adv';		//数据库密码
+		//$GLOBALS['dbname'] = 'advertorial';		//数据库名
 
-		/*$GLOBALS['dbhost'] = 'localhost';		//数据库服务器
+		$GLOBALS['dbhost'] = 'localhost';		//数据库服务器
 		$GLOBALS['dbuser'] = 'root';			//数据库用户名
 		$GLOBALS['dbpasswd'] = 'huo15com';		//数据库密码
 		$GLOBALS['dbname'] = 'advertorial';		//数据库名*/

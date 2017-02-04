@@ -44,6 +44,31 @@ a:hover, a:focus {
     height: 90px;
 }
 /*王庆路   主页logo增大 end*/
+
+
+/*导航按钮*/
+
+.navBtn-wrapper {
+    width:720px;
+    float: right;
+}
+.navBtn-wrapper ul li {
+    float: left;
+    width:90px;
+    height:90px;
+
+}
+.navBtn-wrapper ul li a, .navBtn-wrapper ul li a.cur {
+    display: block;
+    width: 90px;
+    height: 90px;
+    font-size:14px;
+    line-height:140px;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+
 .header .txt {
     position: absolute;
     left: 300px;
