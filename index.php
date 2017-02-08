@@ -98,6 +98,7 @@ if ($VipUser <> "") {
 	<link rel="stylesheet" href="huo15template/css/base.css">
 	<link rel="stylesheet" href="huo15template/css/style.css">
 	<!--公共样式 end-->
+	<link rel="stylesheet" href="huo15template/css/index.css">
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -140,8 +141,244 @@ include("menu.php");
 <!--banner end-->
 
 <!--main-->
-<div class="main">
+
+
+<div id="service">
+	<div class="warp">
+		<p class="p1">服务项目</p>
+		<p class="p2">SERVICE TYPE</p>
+		<ul class="ul1">
+			<li class="li1">
+				<span>新闻源发布</span>
+				<p class="img1"></p>
+				<p>新闻源是指符合百度、谷歌等搜索引擎种子新闻站的标准，站内信息第一时间被搜索引擎优先收录，且被网络媒体转载成为网络海量新闻的源头媒体。</p>
+			</li>
+			<li class="li2">
+				<span>软文发布</span>
+				<p class="img2"></p>
+				<p>企业在论坛发布的产品和服务的信息，从而让目标客户更加深刻地了解企业的产品和服务。最终达到企业宣传企业的品牌、加深市场认知度的网络营销活动，就是论坛推广。</p>
+			</li>
+			<li class="li3">
+				<span>微信推广</span>
+				<p class="img3"></p>
+				<p>利用公众账户的大量精准粉丝进行推广，企业根据不同的行业广告选择适合的公众号，提供用户需要的信息，推广自己的产品，从而实现点对点的营销。</p>
+			</li>
+			<li class="li4">
+				<span>全案策划</span>
+				<p class="img4"></p>
+				<p>不知道如何选？各行业软文套餐一键发布，全行业媒体资源覆盖，一手直接渠道，优惠活动折上折，享受冰点价格!软文套餐效果好!点我查看软文套餐！</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="process">
+	<div class="warp">
+		<p class="p1">服务流程</p>
+		<p class="p2">SERVICE  PROCESS</p>
+		<ul>
+			<li>
+				<span class="iconfont icon-account"></span>
+				<p>登录注册</p>
+			</li>
+			<li>
+				<span class="iconfont icon-survey"></span>
+				<p>填写邮件</p>
+			</li>
+			<li>
+				<span class="iconfont icon-selected"></span>
+				<p>选择媒体</p>
+			</li>
+			<li>
+				<span class="iconfont icon-cart"></span>
+				<p>确认支付</p>
+			</li>
+			<li class="lastli">
+				<span class="iconfont icon-form"></span>
+				<p>媒体出稿</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="meal">
+	<div class="warp">
+		<p class="p1">特价套餐</p>
+		<p class="p2">SPECIAL  OFFER</p>
+		<ul class="ull1">
+			<li>门户网综合套餐</li>
+			<li>IT科技类套餐</li>
+			<li class="lii1">财经商业套餐</li>
+		</ul>
+		<ul class="ull2">
+			<li>
+				<div class="bor">
+					<p><a href="#">新浪网-辽宁/内蒙古</a></p>
+					<p><a href="#">网易-太原/山东/山西</a></p>
+					<p><a href="#">搜狐网-媒体新闻/滚动</a></p>
+					<p><a href="#">凤凰网-手机端</a></p>
+					<p><a href="#">慧聪网-商业</a></p>
+					<p><a href="#">腾讯网-新闻[手机版]</a></p>
+					<p><a href="#">中国网-投资/优讯</a></p>
+					<p><a href="#">中华网-财经凤凰网-宁波/海南</a></p>
+				</div>
+				<p class="lastp"><a href="#">抢购价 ￥500元</a></p>
+			</li>
+			<li class="oli1">
+				<div class="bor" style="padding-left:142px; width:360px;">
+					<p><a href="#">IT世界网</a></p>
+					<p><a href="#">IT168</a></p>
+					<p><a href="#">电脑之家</a></p>
+					<p><a href="#">比特网</a></p>
+					<p><a href="#">赛迪网</a></p>
+					<p><a href="#">IT专家网</a></p>
+					<p><a href="#">小熊在线</a></p>
+					<p><a href="#">硅谷网</a></p>
+				</div>
+				<p class="lastp"><a href="#">抢购价 ￥600元</a></p>
+			</li>
+			<li class="lii1">
+				<div class="bor" style="padding-left:123px; width:360px;">
+					<p><a href="#">国际在线-企业</a></p>
+					<p><a href="#">中华网-财经</a></p>
+					<p><a href="#">中国网-投资</a></p>
+					<p><a href="#">证券之星</a></p>
+					<p><a href="#">慧聪网-商业</a></p>
+					<p><a href="#">中国企业网</a></p>
+					<p><a href="#">金融界网</a></p>
+					<p><a href="#">中国经营网</a></p>
+				</div>
+				<p class="lastp"><a href="#">抢购价 ￥800元</a></p>
+			</li>
+		</ul>
+		<ul class="ull1" id="oull1">
+			<li>家居房产套餐</li>
+			<li>千城联播140+媒体</li>
+			<li class="lii1">会员充值</li>
+		</ul>
+		<ul class="ull2">
+			<li id="ooli1">
+				<div class="bor">
+					<p><a href="#">搜狐网-家居</a></p>
+					<p><a href="#">新浪网-家居</a></p>
+					<p><a href="#">网易-家居</a></p>
+					<p><a href="#">太平洋-家居网</a></p>
+					<p><a href="#">中国网-地产家天下</a></p>
+					<p><a href="#">腾讯-亚太家居</a></p>
+					<p><a href="#">凤凰网-居悦</a></p>
+					<p><a href="#">搜房网-家居</a></p>
+				</div>
+				<p class="lastp"><a href="#">抢购价 ￥800元</a></p>
+			</li>
+			<li class="oli1" id="ooli2">
+				<div class="bor" style="padding-left:142px; width:360px;">
+					<p><a href="#">新浪网</a></p>
+					<p><a href="#">光明网</a></p>
+					<p><a href="#">凤凰网</a></p>
+					<p><a href="#">搜狐网</a> </p>
+					<p><a href="#">金融界</a></p>
+					<p><a href="#">证券之星</a></p>
+					<p><a href="#">扬子晚报</a> </p>
+					<p><a href="#">南方网</a></p>
+				</div>
+				<p class="lastp"><a href="#">抢购价 ￥500元</a></p>
+			</li>
+			<li class="lii1" id="ooli3">
+				<div class="bor" style="padding-left:123px; width:360px">
+					<p><a href="#">预存款项</a></p>
+					<p><a href="#">自助发稿</a></p>
+					<p><a href="#">一次充值</a></p>
+					<p><a href="#">终身会员</a></p>
+					<p><a href="#">享受历史最低价！</a></p>
+				</div>
+				<p class="lastp"><a href="#">查看详情&gt;&gt;</a></p>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="advantage">
+	<p class="p1">我们的优势</p>
+	<p class="p2">OUR  ADVANTAGE</p>
+	<div class="warp">
+		<ul>
+			<li style="width:172px;">
+				<span class="iconfont icon-zhuanji"></span>
+				<p>8000+媒体资源</p>
+				<i style=" font-style:normal">媒体资源覆盖国内各大门户及行业垂直网站</i>
+			</li>
+			<li style="width:172px;">
+				<span class="iconfont icon-appreciatefill"></span>
+				<p>5000合作客户</p>
+				<i style=" font-style:normal">上市集团、企业客户、政府机构、公关公司战略合作</i>
+			</li>
+			<li style="width:172px; margin-right:0;">
+				<span class="iconfont icon-ziyouanpai"></span>
+				<p>300专业写手</p>
+				<i style=" font-style:normal">覆盖各大行业</i>
+			</li>
+		</ul>
+		<ul>
+			<li style="width:172px;">
+				<span class="iconfont icon-discoverfill"></span>
+				<p>方便快捷</p>
+				<i style=" font-style:normal">免费注册，24小时自助新闻发布平台</i>
+			</li>
+			<li style="width:172px;">
+				<span class="iconfont icon-form"></span>
+				<p>优势发稿</p>
+				<i style=" font-style:normal">当天出稿，高效率，百度收录快，效果好</i>
+			</li>
+			<li style="width:172px; margin-right:0;">
+				<span class="iconfont icon-repairfill"></span>
+				<p>企业保障</p>
+				<i style=" font-style:normal">正规企业，合同、发票走正规流程</i>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="news">
+	<div class="wrap">
+		<p class="p1">行业新闻</p>
+		<p class="p2">INDUSTRY NEWS</p>
+		<div class="newsbt">
+			<div class="newsleft"><img src="huo15template/newSkin/image/t.jpg" title="软文发布"></div>
+			<div class="newsright">
+				<p class="p1">
+					<a href="#">什么是新闻营销的核心竞争力?新闻营销的核心是要有是一篇好的软文，好的软文需要有说服力和感染力，说服力是.....</a>
+				</p>
+				<p class="p2">
+					<a href="#">什么是新闻营销的核心竞争力?新闻营销的核心是要有是一篇好的软文，好的软文需要有说服力和感染力，说服力是.....</a>
+				</p>
+				<p class="p3">
+					<a href="#">什么是新闻营销的核心竞争力?新闻营销的核心是要有是一篇好的软文，好的软文需要有说服力和感染力，说服力是.....</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="cooperation">
+	<div class="warp">
+		<p class="p1">合作伙伴</p>
+		<p class="p2">COOPERATIVE PARTNER</p>
+		<ul>
+			<li></li>
+			<li class="Li2"></li>
+			<li class="Li3"></li>
+			<li class="Li4"></li>
+			<li class="rightli Li5"></li>
+			<li class="Li6"></li>
+			<li class="Li7"></li>
+			<li class="Li8"></li>
+			<li class="Li9"></li>
+			<li class="rightli Li10"></li>
+		</ul>
+	</div>
+</div>
+<div class="main" style="display: none;">
 	<div class="bk50"></div>
+
+
+
+
+
 	<div class="row_01">
 		<!--王庆路 内容替换-->
 		<div class="wrapper">

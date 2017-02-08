@@ -14,7 +14,8 @@ $navName = $_SERVER['PHP_SELF'];
 
 
 ?>
-<script src="huo15template/js/jquery1.42.min.js"></script>
+<script src="/huo15template/js/jquery1.42.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/huo15template/font_m5n5v8k9t0dlsor/iconfont.css">
 
 <!--王庆路 添加浏览器标签栏图标-->
 <script>
@@ -94,4 +95,11 @@ $navName = $_SERVER['PHP_SELF'];
 		});
 	});
 </script>
+
+<style>
+	/*轮播图*/
+	.fullSlide {
+		margin-top:-20px!important;
+	}
+</style>
 <!--header end-->

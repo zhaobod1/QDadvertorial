@@ -254,7 +254,7 @@ $result = mysql_db_query($dbname, $sql);
 					<td height="25" width="33" align="center"><input name="xz[]" type="checkbox"
 					                                                 id="xz_<?php echo $rs["ID"]; ?>"
 					                                                 value="<?php echo $rs["ID"] ?>"
-					                                                 onclick="sel(<?php echo $rs["ID"]; ?>,<?php echo $rs["ID"]; ?>,<?php echo $rs["dlprice"]; ?>,<?php echo $rsu["yue"]; ?>);"/>
+					                                                 onclick="sel(<?php echo $rs["ID"]; ?>,<?php echo $rs["ID"]; ?>,<?php echo $rs["price"]; ?>,<?php echo $rsu["yue"]; ?>);"/>
 					</td>
 				<?php } elseif ($flag == 2) { ?>
 					<td height="25" width="33" align="center"><input name="xz[]" type="checkbox"
@@ -262,16 +262,30 @@ $result = mysql_db_query($dbname, $sql);
 					                                                 value="<?php echo $rs["ID"] ?>"
 					                                                 onclick="sel(<?php echo $rs["ID"]; ?>,<?php echo $rs["ID"]; ?>,<?php echo $rs["scprice"]; ?>,<?php echo $rsu["yue"]; ?>);"/>
 					</td>
-				<?php } else {
+				<?php } elseif ($flag == 3) {
 					?>
 					<td height="25" width="33" align="center"><input name="xz[]" type="checkbox"
 					                                                 id="xz_<?php echo $rs["ID"]; ?>"
 					                                                 value="<?php echo $rs["ID"] ?>"
-					                                                 onclick="sel(<?php echo $rs["ID"]; ?>,<?php echo $rs["ID"]; ?>,<?php echo $rs["price"]; ?>,<?php echo $rsu["yue"]; ?>);"/>
+					                                                 onclick="sel(<?php echo $rs["ID"]; ?>,<?php echo $rs["ID"]; ?>,<?php echo $rs["dlprice1"]; ?>,<?php echo $rsu["yue"]; ?>);"/>
 					</td>
 					<?php
-				}
+				} elseif ($flag == 4) {
 				?>
+				<td height="25" width="33" align="center"><input name="xz[]" type="checkbox"
+				                                                 id="xz_<?php echo $rs["ID"]; ?>"
+				                                                 value="<?php echo $rs["ID"] ?>"
+				                                                 onclick="sel(<?php echo $rs["ID"]; ?>,<?php echo $rs["ID"]; ?>,<?php echo $rs["dlprice2"]; ?>,<?php echo $rsu["yue"]; ?>);"/>
+				</td>
+				<?php
+			} elseif ($flag == 5) {
+				?>
+				<td height="25" width="33" align="center"><input name="xz[]" type="checkbox"
+				                                                 id="xz_<?php echo $rs["ID"]; ?>"
+				                                                 value="<?php echo $rs["ID"] ?>"
+				                                                 onclick="sel(<?php echo $rs["ID"]; ?>,<?php echo $rs["ID"]; ?>,<?php echo $rs["dlprice3"]; ?>,<?php echo $rsu["yue"]; ?>);"/>
+				</td>
+				<?php } ?>
 				<td height="25" width="100" align="center"><?php echo $rsb["SmallClass"]; ?></td>
 
 				<td width="130">
