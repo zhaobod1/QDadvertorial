@@ -37,13 +37,13 @@ $navName = $_SERVER['PHP_SELF'];
 		<div class="navBtn-wrapper">
 			<ul>
 				<li><a class="<?php echo $navName=='/index.php'?'cur':''; ?>" href="/">网站首页</a></li>
-				<li><a href="">微信价格</a></li>
+				<li><a class="<?php echo $navName=='/weixin.php'?'cur':''; ?>" href="/weixin.php">微信营销</a></li>
 				<li><a class="<?php echo $navName=='/popularize.php'? 'cur':''; ?>" href="../popularize.php">软文推广</a></li>
 				<li><a class="<?php echo $navName=='/vip/index.php?back=1'?'cur':''; ?>" href="../vip/index.php?back=1">软文价格</a></li>
 				<li><a class="<?php echo $navName=='/system/daixie.php'?'cur':''; ?>" href="../system/daixie.php">软文代写</a></li>
 				<li><a class="<?php echo $navName=='/system/taocan.php'?'cur':''; ?>" href="../system/taocan.php">优惠套餐</a></li>
-				<li><a class="<?php echo $navName=='/system/contact.php'?'cur':''; ?>" href="../system/contact.php">媒体资源</a></li>
-				<li><a href="#">联系我们</a></li>
+				<li><a class="<?php echo $navName=='/mediaSource.php'?'cur':''; ?>" href="/mediaSource.php">媒体资源</a></li>
+				<li><a class="<?php echo $navName=='/system/contact.php'?'cur':''; ?>" href="../system/contact.php">联系我们</a></li>
 			</ul>
 		</div>
 	</div>

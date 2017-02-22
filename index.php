@@ -9,6 +9,7 @@
  * Time: 上午8:07
  */
 session_start();
+
 require_once("rand.inc.php");
 include("include/config.php");
 include("include/function.php");
@@ -341,15 +342,24 @@ include("menu.php");
 		<div class="newsbt">
 			<div class="newsleft"><img src="huo15template/newSkin/image/t.jpg" title="软文发布"></div>
 			<div class="newsright">
-				<p class="p1">
-					<a href="#">什么是新闻营销的核心竞争力?新闻营销的核心是要有是一篇好的软文，好的软文需要有说服力和感染力，说服力是.....</a>
-				</p>
-				<p class="p2">
-					<a href="#">什么是新闻营销的核心竞争力?新闻营销的核心是要有是一篇好的软文，好的软文需要有说服力和感染力，说服力是.....</a>
-				</p>
-				<p class="p3">
-					<a href="#">什么是新闻营销的核心竞争力?新闻营销的核心是要有是一篇好的软文，好的软文需要有说服力和感染力，说服力是.....</a>
-				</p>
+
+				<?php
+				$sqls = "select * from news_info where class_id=30 order by data desc limit 0,20";
+				//$results=mysql_db_query($dbname,$sqls);
+				mysql_select_db($dbname);
+				$results = mysql_query($sqls);
+				$autoindex =1;
+				while ($rss = mysql_fetch_array($results)) {
+				?>
+                    <p class="p<?php echo $autoindex;  ?>">
+                        <a href="../news/newsinfo.php?ID=<?php echo $rss["ID"]; ?>"><?php echo $newsOB->utfSubstr($rss["title"], 0, 42); ?></a>
+                    </p>
+				<?php
+                    $autoindex++;
+				}
+				?>
+
+
 			</div>
 		</div>
 	</div>
@@ -549,6 +559,7 @@ include("menu.php");
 	</div>
 	<!--王庆路 添加发稿流程 end-->
 	<!--王庆路 内容更改-->
+
 	<div class="row_03">
 		<div class="wrapper">
 			<div class="head">

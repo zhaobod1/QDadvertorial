@@ -1,11 +1,11 @@
 /*---------service--------*/
 #service{
-    height: 562px;
+    height: 567px;
     padding-top:10px;
 }
 #service .warp{
     width:1200px;
-    height: 562px;
+
     margin:0 auto;
     text-align:center;
 }
@@ -73,7 +73,7 @@
 #process{
     height:376px;
     padding-top:18px;
-    background:url(/huo15template/newSkin/image/liucheng.jpg) no-repeat;
+    background:url(/huo15template/newSkin/image/liucheng.jpg) no-repeat center;
     /*background-size:100%;*/
 }
 #process .warp{
@@ -298,7 +298,10 @@
 }
 #news .newsright{
     width:551px;
+    height:365px;
+    overflow: hidden;
     float:right;
+
 }
 #news .newsright p{
     width:538px;
@@ -328,7 +331,7 @@
 
 #cooperation{
     height:500px;
-    background:url(/huo15template/newSkin/image/a1.jpg) no-repeat;
+    background:url(/huo15template/newSkin/image/a1.jpg) no-repeat center;
 }
 #cooperation .warp{
     width:1200px;

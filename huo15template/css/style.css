@@ -1887,7 +1887,7 @@ a:hover, a:focus {
 }
 .medias .g-down {
     padding: 20px 0;
-    background: url(http://www.ruanwen.la/new_images/img56.png) no-repeat center center;
+    background: url(/huo15template/newSkin/image/img56.png) no-repeat center center;
     width: 443px;
     margin: 0 auto;
     height: 77px;
@@ -1917,7 +1917,7 @@ a:hover, a:focus {
     height: 49px;
 }
 .medias .hd h2 {
-    background: url(http://www.ruanwen.la/new_images/img58.png) no-repeat center center;
+    background: url(/huo15template/newSkin/image/img58.png) no-repeat center center;
     width: 413px;
     height: 49px;
     text-align: center;
@@ -1932,7 +1932,7 @@ a:hover, a:focus {
     overflow: hidden;
 }
 .medias .bd dl dd {
-    border: 1px solid #ddd;
+    border: 1px solid #47b6fb;
     width: 170px;
     height: 26px;
     line-height: 26px;
