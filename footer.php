@@ -98,16 +98,16 @@
 		<div class="thumb">
 			<ul>
 				<li><a rel="nofollow" target="_blank"
-				       href="http://si.trustutn.org/info?sn=186140812000704408375&amp;certType=1"><img
+				       href="/"><img
 							src="/huo15template/img/img74.gif"></a></li>
 				<li><a rel="nofollow" target="_blank"
-				       href="http://www.anquan.org/authenticate/cert/?site=www.ruanwen.la&amp;at=realname"><img
+				       href="/"><img
 							src="/huo15template/img/img75.gif"></a></li>
 				<li><a rel="nofollow" target="_blank"
-				       href="https://ss.knet.cn/verifyseal.dll?sn=e13093031010042722vbvh000000&amp;ct=df&amp;a=1&amp;pa=0.9446448010858148"><img
+				       href="/"><img
 							src="/huo15template/img/img76.gif"></a></li>
 				<li><a rel="nofollow" target="_blank"
-				       href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20140912120743293"><img
+				       href="/"><img
 							src="/huo15template/img/img77.png"></a></li>
 			</ul>
 		</div>
