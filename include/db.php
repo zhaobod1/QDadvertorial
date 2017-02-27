@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 $ip = real_ip();
 if ($ip != "127.0.0.1") {
 	error_reporting(0);

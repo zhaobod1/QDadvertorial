@@ -9,6 +9,7 @@
  * Time: 上午8:07
  */
 
+
 require_once("rand.inc.php");
 include("include/config.php");
 include("include/function.php");
@@ -152,55 +153,57 @@ include("menu.php");
 <div class="main">
 	<div class="bk50"></div>
 	<div class="row_01">
-		<div class="wrapper">
-			<div class="body1">
-				<div class="hd">
-					<ul>
-						<li><img src="huo15template/img/popularize/pic_01.png" alt="软文推广"></li>
-						<li><img src="huo15template/img/popularize/pic_02.png" alt=""></li>
-						<li><img src="huo15template/img/popularize/pic_03.png" alt=""></li>
-						<li><img src="huo15template/img/popularize/pic_04.png" alt=""></li>
-						<li><img src="huo15template/img/popularize/pic_05.png" alt=""></li>
-						<li><img src="huo15template/img/popularize/pic_06.png" alt=""></li>
-						<li><img src="huo15template/img/popularize/pic_07.png" alt=""></li>
-						<div class="clear"></div>
-					</ul>
-				</div>
-				<div class="bd">
-					<div class="left">
-						<ul>
-							<li><img src="huo15template/img/popularize/pic_08.png" alt=""></li>
-							<li><img src="huo15template/img/popularize/pic_09.png" alt=""></li>
-						</ul>
-					</div>
-					<div class="center">
-						<p style="font-size: 34px;color: #20bdf7;">全网最大超10000家新闻媒体资源</p>
-					</div>
-					<div class="right">
-						<ul>
-							<li><img src="huo15template/img/popularize/pic_10.png" alt=""></li>
-							<li><img src="huo15template/img/popularize/pic_11.png" alt=""></li>
-						</ul>
-					</div>
-					<div class="clear"></div>
-				</div>
-				<div class="hd">
-					<ul>
-						<li><img src="huo15template/img/popularize/pic_12.png" alt="软文广告"></li>
-						<li><img src="huo15template/img/popularize/pic_13.png" alt="新闻稿"></li>
-						<li><img src="huo15template/img/popularize/pic_14.png" alt="新闻推广"></li>
-						<li><img src="huo15template/img/popularize/pic_15.png" alt="软文发布"></li>
-						<li><img src="huo15template/img/popularize/pic_16.png" alt="新闻营销"></li>
-						<li><img src="huo15template/img/popularize/pic_17.png" alt="文章代写"></li>
-						<li><img src="huo15template/img/popularize/pic_18.png" alt="微信营销"></li>
-					</ul>
-				</div>
-			</div>
+		<div class="wrapper article">
+            <div class="clearfix">
+                <div class="x2">
+                    <ol class="text-dark mr50">
+                        <li>
+                            产品和企业，不受客户的认可和信任。做任何广告只是增加了客户的认识但是不见得认可。；</li>
+                        <li>
+                            产品和企业，毫无知名度，尝试各种推广，都是成本昂贵，效果差。；</li>
+                        <li>
+                            百度，360，搜狗等等各大搜索上找不到你的信息，或者搜索第一页没有你的信息。；</li>
+                        <li>
+                            有新产品上市，有企业新闻，企业文化理念，没法有效地传播出去。；</li>
+                        <li>
+                            产品无人知，总之做不到广告而告知。电视，户外，广播任何广告都非常昂贵，而且效果不可控。；</li>
+                    </ol>
+                </div>
+                <div class="x2">
+                    <img class="img" src="huo15template/newSkin/image/fenxiao-1.jpg"></div>
+            </div>
 			<div class="bk40"></div>
 		</div>
 		<!--wrapper end-->
 	</div>
 	<div class="clearfix"></div>
+    <div class="layout bg-bluel article">
+        <div class="mainer">
+            <h3 align="center">新闻软文营销推广有什么用？</h3>
+            <br>
+            <br>
+            <p>新闻稿营销是指利用新闻传播为企业、品牌等做宣传推广的一种营销方式。新闻推广模式非常有利于引导市场消费，在较短时间内快速提升产品的知名度，塑造品牌的美誉度和公信力。新闻稿推广成为很多企业打造品牌，扩 大品牌影响力，提高品牌公信力的重要手段之一。选择软文直通车新闻软文营销有如下好处：</p>
+            <p>1、让您企业的产品、活动、新闻信息分秒之间高效传播出去，24小时立竿见影。</p>
+            <p>2、百度、360、搜狗搜索第一页立即找到大量的企业正面新闻与产品活动信息。</p>
+            <p>3、媒体报道二次利用：把媒体报道放到官网，企业宣传手册，宣传栏，提高客户认可及品牌知名度。</p>
+            <p>4、各大门户媒体、行业网站报道轻松获得高质量，高权威外链快速提升网站SEO效果。</p>
+            <p>5、低成本大曝光：但相对于传统媒体新闻软文营销推广非常低廉且有效。</p>
+            <p>6、企业危机公关：快速、精准、高效、有效地传播正面信息，击破压制污蔑谣言，化解企业危机。</p>
+            <p>7、新浪、腾讯、网易、搜狐等的各大媒体争相报道，提升品牌知名度，增强客户信任感。</p>
+            <br>
+            <br>
+            <div class="clearfix">
+                <div class="x2"><img src="huo15template/newSkin/image/fenxiao-2.jpg" class="img"></div>
+                <div class="x2"> <br>
+                    <br>
+                    <br>
+                    <h4 class="text-dark">如何做新闻软文营销推广？</h4>
+                    <br>
+                    <p>哪个时间段发布稿件被媒体记者采编可能性大？ <br>针对品牌日常公关、新品推广、 促销推广、市场活动等不同营销 目标确定新闻发布频率。 <br>根据目标用户浏览新闻习惯，定向推荐特定的媒体增强新闻报道影响力。 <br>既定传播范围内发布发布多少媒体数量才合适。</p>
+                </div>
+            </div>
+        </div>
+    </div>
 	<div class="row_09 com_bg">
 		<div class="wrapper">
 			<div class="bk40"></div>
@@ -253,82 +256,8 @@ include("menu.php");
 		</div>
 		<!--wrapper end-->
 	</div>
-	<div class="row_01">
-		<div class="bk40"></div>
-		<div class="wrapper">
-			<div class="head">
-				<h2>软文营销</h2>
-			</div>
-			<div class="bk40"></div>
-			<div class="body2">
-				<!--王庆路 文字替换-->
-				<div class="box1">
-					<div class="hd">
-						<h3>什么是软文推广？</h3>
-					</div>
-					<div class="bd">
-						软文推广是指以文字的形式对自己所要营销的产品进行推广，来促进产品的销售。
-						把自己的产品、服务、技术、文化、事迹等等通过不同的新闻媒体宣传让更多的人和组织机构等了解、接受，在搜索从而达到宣传普及的目的。
-					</div>
-				</div>
-				<div class="bk30"></div>
-				<div class="box2">
-					<div class="hd">
-						<h3>为什么要选择软文推广？</h3>
-					</div>
-					<div class="bd">
-						在信息化急速发展的新时代，传统硬性广告已经不能满足于企业发展及推广的需要，软文推广相对于传统硬性广告，有着强大的优势：成本更低；且软文追求的是春风化雨、润物无声的传播效果，因此在传播过程中更容易被受众接受；传播速度快，无网不欢的互联网时代，更极速的推进了传播的速度，据研究报告表明，同等费用支出下，网络广告已经达到四倍于传统媒体广告的效果；各大新闻媒体权威报道，更具公信力！
-					</div>
-				</div>
-				<div class="bk30"></div>
-				<!--王庆路 文字替换 end-->
-			</div>
-		</div>
-		<!--wrapper end-->
-	</div>
-	<div class="row_10 com_bg">
-		<div class="wrapper">
-			<div class="bk30"></div>
-			<div class="head">
-				<!--王庆路 内容替换-->
-				<h2>软文营销——对症下药，方得效果</h2>
-				<!--王庆路 内容替换 end-->
-			</div>
-			<div class="body">
-				<div class="hd">
-					<h3>您是否遇到以下问题？</h3>
-				</div>
-				<div class="bd">
-					<div class="left">
-						<ul>
-							<!--王庆路 内容替换-->
 
-							<li>品牌缺乏知名度，客户不信任？</li>
-							<li>企业有负面信息，客户不认可？</li>
-							<li>天价竞价推广，高成本低回报？</li>
-							<li>迷茫，找不到合适的更专业的服务商？</li>
 
-							<!--王庆路 内容替换 end-->
-						</ul>
-					</div>
-					<div class="icon"></div>
-					<div class="right">
-						<h4>我们能做什么？</h4>
-						<div class="desc">
-							<!--王庆路 内容替换-->
-							<p>软文营销，权威媒体发布，提升品牌公信力和知名度；</p>
-							<p>软文营销，大范围投放，全面撒网，有效压制；</p>
-							<p>软文营销，成本低，效率高，提升企业形象；</p>
-							<p>软文直通车，一站式解决软文营销问题，高效专业。</p>
-							<!--王庆路 内容替换 end-->
-						</div>
-					</div>
-					<div class="clear"></div>
-				</div>
-			</div>
-		</div>
-		<!--wrapper end-->
-	</div>
 	<!--王庆路 删除"我们的四大优势"-->
 	<!--王庆路 删除"我们的四大优势" end-->
 	<div class="row_10 com_bg">

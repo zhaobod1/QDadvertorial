@@ -1753,7 +1753,7 @@ a:hover, a:focus {
 }
 .writes .part02 h3 {
     font-size: 36px;
-    color: #c40000;
+    color: #1a569b;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -1762,7 +1762,7 @@ a:hover, a:focus {
     line-height: 62px;
     text-align: center;
     color: #FFF;
-    background: #C7002D;
+    background: #1a569b;
     font-size: 22px;
     font-weight: normal;
     border-right: 1px solid #fff;
@@ -2403,5 +2403,55 @@ a.uchat-close:hover {
 /*王庆路 首页"联系我们"模块样式添加 end*/
 
 
+/*软文推广修改*/
+.mainer {
+    margin: 0 auto;
+    width: 100%;
+}
+@media (min-width: 760px) {
+    .x2 {
+        float: left;
+        width: 50%;
+    }
+    .mainer {
+        width: 1024px;
+    }
+}
+.text-dark {
+    color: #333;
+}
+.mr50 {
+    margin-right: 50px;
+}
+.layout {
+    width: 100%;
+}
+.bg-bluel {
+    background: #e0f7fa;
+}
+.article {
+    padding: 50px 0;
+    font-size: 16px;
+}
 
+.article ol {
+    margin-left: 20px;
+}
+.article ol li {
+    margin-bottom: 20px;
+    font-size:16px;
+    height:44px;
+}
+.article h3 {
+    font-size: 36px;
+    color: #555;
+}
+.article p {
+    text-indent: 2em;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.clearfix, .layout, .container, .mainer {
+    display: block;
+}
 
